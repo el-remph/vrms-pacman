@@ -141,7 +141,7 @@ sub scancode_ok {
 
 	return 0 unless $spdx_fsf or $spdx_osi or any(values %scancode);
 
-	local $_ = $scancode_db->{shift};
+	local $_ = $scancode_db->{shift()};
 	return 0 unless defined;
 	return 1 if $scancode{$_->{category}};
 	for ($_->{spdx}) {
