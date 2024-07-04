@@ -93,8 +93,9 @@ sub parse_cmdline {
 			}
 		},
 		'h|?|help' => sub { pod2usage(0) },
-		'V|version' => sub {
+		'version' => sub {
 			pod2usage({
+				-msg => "$0: vrms-pacman version $VERSION\n",
 				-exitval => 0,
 				-verbose => 99,
 				-sections => [ 'COPYRIGHT' ]
@@ -312,7 +313,11 @@ Options may be preceded by one (as here) or two dashes.
 
 =item B<-h>, B<-?>, B<-help>
 
-Print this text and exit
+Print a short help message and exit
+
+=item B<-version>
+
+Print version number and copyright information and exit
 
 =item B<-colour>=I<WHEN>
 
