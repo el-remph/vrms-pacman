@@ -1,5 +1,5 @@
 TARGETS=vrms-pacman.1 Licences/Scancode.pst.bz2 Licences/SPDX.pst.bz2
-BZIP2  ?= bzip2 -9
+BZIP2  ?= bzip2 -9f
 .PHONY = all clean
 
 all: $(TARGETS)

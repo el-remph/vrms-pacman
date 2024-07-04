@@ -55,7 +55,7 @@
 .\" ========================================================================
 .\"
 .IX Title "VRMS-PACMAN 1"
-.TH VRMS-PACMAN 1 2024-06-26 "perl v5.38.2" "User Contributed Perl Documentation"
+.TH VRMS-PACMAN 1 2024-07-04 "perl v5.38.2" "User Contributed Perl Documentation"
 .\" For nroff, turn off justification.  Always turn off hyphenation; it makes
 .\" way too many mistakes in technical documents.
 .if n .ad l
@@ -113,8 +113,7 @@ of the following:
 .Sp
 \&\f(CW\*(C`default\*(C'\fR is a special category that can also be used, equivalent
 to \f(CW\*(C`Copyleft,Copyleft\ Limited,Permissive,Public\ Domain\*(C'\fR. No
-categories (an empty string) turns off scancode usage (unless
-\&\fB\-spdx\-fsf\fR or \fB\-spdx\-osi\fR is set; TODO)
+categories (an empty string) is equivalent to \f(CW\*(C`default\*(C'\fR.
 .RE
 .PP
 The following options may be preceded with ‘no\-’ (as in,
@@ -124,9 +123,6 @@ The following options may be preceded with ‘no\-’ (as in,
 Count the plain licence string ‘custom’ as free. This can
 lead to many false negatives, but the converse can lead to many false
 positives, bah. Default: \fIno\fR
-.IP \fB\-caveat\fR 4
-.IX Item "-caveat"
-Print caveat banner. Default: \fIyes\fR
 .IP \fB\-heuristics\fR 4
 .IX Item "-heuristics"
 Arch/pacman\-specific, tailored heuristics; the main and default method.
@@ -137,6 +133,12 @@ Search SPDX for FSF-approved licences. Default: \fIno\fR
 .IP \fB\-spdx\-osi\fR 4
 .IX Item "-spdx-osi"
 Search SPDX for OSI-approved licences. Default: \fIno\fR
+.SH "ENVIRONMENT VARIABLES"
+.IX Header "ENVIRONMENT VARIABLES"
+.IP \fBVRMS_SHUTUP\fR 4
+.IX Item "VRMS_SHUTUP"
+Don't print the caveat message at the end of input if this is set to a true
+value
 .SH NOTES
 .IX Header "NOTES"
 Inspired by the original \fBvrms\fR\|(1) on debian (now renamed \fBcheck\-dsfg\-status\fR\|(1))

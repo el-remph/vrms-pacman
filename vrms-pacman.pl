@@ -66,21 +66,21 @@ sub get_db {
 
 sub parse_cmdline {
 	# More options and defaults:
-	my ($caveat, $colour) = (1, 'auto');
+	my $colour = 'auto';
 
 	GetOptions
 		'allow-custom!'	=> \$allow_custom,
-		'caveat!'	=> \$caveat,
 		'heuristics!'	=> \$heuristics,
 		'spdx-fsf!'	=> \$spdx_fsf,
 		'spdx-osi!'	=> \$spdx_osi,
 
 		'f|file=s' => \$file,
 		'color|colour=s' => \$colour,
-		'scancode-db=s' => sub {
+		'scancode-db:s' => sub {
 			local $_;
 			# Set all scancode entries to false (not searching for them)
 			%scancode = map { $_ => 0 } keys %scancode;
+			$_[1] = 'defaults' if $_[1] eq '';
 			for (split ',', $_[1]) {
 				if (/^defaults?$/i) {
 					@scancode{'Copyleft','Copyleft Limited','Permissive','Public Domain'}
@@ -111,16 +111,6 @@ sub parse_cmdline {
 
 	$spdx_db = get_db('SPDX') if $spdx_fsf or $spdx_osi;
 	$scancode_db = get_db('Scancode') if $spdx_fsf or $spdx_osi or any(values %scancode);
-
-	if ($caveat) {
-		print STDERR <<CAVEAT;
-NB: pacman (and Arch specifically) are not very good at labelling licences;
-Arch is working on a transition to SPDX expressions, but unfortunately until
-this is completed, many false positives must be expected, especially licences
-mislabeled `custom'. Check /usr/share/licenses/ for possible clarity
-
-CAVEAT
-	}
 }
 
 sub spdx_ok {
@@ -283,6 +273,17 @@ Packages searched: %d
 	$free_packages, $free_packages / $total_packages * 100,
 	$nonfree_packages, $nonfree_packages / $total_packages * 100;
 
+unless ($ENV{VRMS_SHUTUP}) {
+		print STDERR <<CAVEAT;
+
+NB: pacman (and Arch specifically) are not very good at labelling licences;
+Arch is working on a transition to SPDX expressions, but unfortunately until
+this is completed, many false positives must be expected, especially licences
+mislabeled `custom'. Check /usr/share/licenses/ for possible clarity. Set the
+environment variable VRMS_SHUTUP to a true value to stop this warning.
+CAVEAT
+}
+
 exit !!$nonfree_packages;
 
 
@@ -349,8 +350,7 @@ of the following:
 
 C<default> is a special category that can also be used, equivalent
 to S<C<Copyleft,Copyleft Limited,Permissive,Public Domain>>. No
-categories (an empty string) turns off scancode usage (unless
-B<-spdx-fsf> or B<-spdx-osi> is set; TODO)
+categories (an empty string) is equivalent to C<default>.
 
 =back
 
@@ -365,10 +365,6 @@ Count the plain licence string E<lsquo>customE<rsquo> as free. This can
 lead to many false negatives, but the converse can lead to many false
 positives, bah. Default: I<no>
 
-=item B<-caveat>
-
-Print caveat banner. Default: I<yes>
-
 =item B<-heuristics>
 
 Arch/pacman-specific, tailored heuristics; the main and default method.
@@ -381,6 +377,17 @@ Search SPDX for FSF-approved licences. Default: I<no>
 =item B<-spdx-osi>
 
 Search SPDX for OSI-approved licences. Default: I<no>
+
+=back
+
+=head1 ENVIRONMENT VARIABLES
+
+=over
+
+=item B<VRMS_SHUTUP>
+
+Don't print the caveat message at the end of input if this is set to a true
+value
 
 =back
 
