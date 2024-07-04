@@ -12,11 +12,12 @@ use strict;
 use warnings;
 use feature 'fc';
 use Getopt::Long;
+use IO::Uncompress::Bunzip2 ':all';
 use Pod::Usage;
+use Storable 'thaw';
 
 push @INC, '.'; # FIXME: for temporary testing purposes only
 require Licences::Heuristics;
-# Further <require>s of Licences::* are found in sub parse_cmdline
 
 our $VERSION = 0;
 our $REGMARK;
@@ -31,6 +32,7 @@ sub any {
 
 my ($total_packages, $free_packages, $nonfree_packages) = (0, 0, 0);
 my ($start_bad, $end_bad);
+my ($spdx_db, $scancode_db) = (undef, undef);
 
 # options and defaults:
 my ($allow_custom, $file, $heuristics, $spdx_fsf, $spdx_osi)
@@ -52,6 +54,15 @@ my %scancode = (
 	'Patent License'   => 0,
 	'CLA'              => 0
 );
+
+sub get_db {
+	die unless @_ == 1;
+	my $stored;
+	my $file = './Licences/' . shift . '.pst.bz2';
+	bunzip2($file => \$stored) or die $Bunzip2Error;
+	$stored =~ s/^pst0// or die "$file: Bad perl Storable file";
+	return thaw $stored;
+}
 
 sub parse_cmdline {
 	# More options and defaults:
@@ -98,8 +109,8 @@ sub parse_cmdline {
 
 	($start_bad, $end_bad) = $colour ? ("\e[31m<\e[1m", "\e[0;31m>\e[m") : qw/< >/;
 
-	require Licences::SPDX if $spdx_fsf or $spdx_osi;
-	require Licences::Scancode if $spdx_fsf or $spdx_osi or any(values %scancode);
+	$spdx_db = get_db('SPDX') if $spdx_fsf or $spdx_osi;
+	$scancode_db = get_db('Scancode') if $spdx_fsf or $spdx_osi or any(values %scancode);
 
 	if ($caveat) {
 		print STDERR <<CAVEAT;
@@ -118,7 +129,7 @@ sub spdx_ok {
 
 	return 0 unless $spdx_fsf or $spdx_osi;
 
-	for ($Licences::SPDX::db{$_}) {
+	for ($spdx_db->{$_}) {
 		return 0 unless defined;
 		return 1 if $spdx_fsf and $_->{isFsfLibre};
 		return 1 if $spdx_osi and $_->{isOsiApproved};
@@ -129,19 +140,15 @@ sub spdx_ok {
 
 sub scancode_ok {
 	die if @_ != 1;
-	local $_;
 
 	return 0 unless $spdx_fsf or $spdx_osi or any(values %scancode);
 
-	{
-		no warnings 'once';
-		$_ = $Licences::Scancode::db{shift};
-	}
+	local $_ = $scancode_db->{shift};
 	return 0 unless defined;
 	return 1 if $scancode{$_->{category}};
 	for ($_->{spdx}) {
 		return 0 unless defined;
-		for ($Licences::SPDX::db{fc $_}) {
+		for ($spdx_db->{fc $_}) {
 			return 1 if $spdx_fsf and $_->{isFsfLibre};
 			return 1 if $spdx_osi and $_->{isOsiApproved};
 		}
@@ -261,12 +268,9 @@ while (<$pacman>) {
 	}mx) {
 		inspect_package(defined $1 ? "$1/$2" : $2, split m/  | AND /, $3);
 	} else {
-		print STDERR "$0: pacman: bad record\n";
+		print STDERR "$0: bad pacman record\n";
 	}
 }
-
-#my @pkgs = $alpm->localdb->pkgs;
-#inspect_package($_->name, $_->licenses) while defined($_ = shift @pkgs);
 
 close $pacman or die $?;
 die 'Sanity check failed' unless $free_packages + $nonfree_packages == $total_packages;

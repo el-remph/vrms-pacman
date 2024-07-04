@@ -1,4 +1,10 @@
-all: vrms-pacman.1 Licences/Scancode.pm Licences/SPDX.pm
+TARGETS=vrms-pacman.1 Licences/Scancode.pst.bz2 Licences/SPDX.pst.bz2
+BZIP2  ?= bzip2 -9
+.PHONY = all clean
+
+all: $(TARGETS)
+clean:
+	rm -f $(TARGETS) contrib/spdx-licences.json contrib/scancode-licensedb.json
 
 # `wget -O' would also work here
 DOWNLOAD_TO=curl -o
@@ -8,9 +14,12 @@ CLEANUP={ exit_val=$$?; rm -f $@; exit $$exit_val; }
 vrms-pacman.1: vrms-pacman.pl
 	pod2man $< $@
 
-Licences/Scancode.pm: contrib/scancode-licensedb.json
+%.bz2: %
+	$(BZIP2) $<
+
+Licences/Scancode.pst: contrib/scancode-licensedb.json
 	./util/scancode-hack.pl process <$< >$@ || $(CLEANUP)
-Licences/SPDX.pm: contrib/spdx-licenses.json
+Licences/SPDX.pst: contrib/spdx-licenses.json
 	./util/spdx-hack.pl <$< >$@ || $(CLEANUP)
 
 contrib/spdx-licenses.json:
