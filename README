@@ -1,0 +1,14 @@
+This is a `port' of Virtual Richard Matthew Stallman to pacman-based
+distributions such as Arch Linux (also Manjaro, Endeavour, Artix, Oberun...)
+
+It is VERY EXPERIMENTAL and NOT VERY GOOD OR RELIABLE. It could change
+any minute. You have been warned
+
+Documentation and copyright info are in the embedded POD of the
+vrms-pacman.pl script, and can be read with eg. `perldoc -F vrms-pacman.pl'
+-- for your comfort and convenience, a manpage I preprocessed earlier is
+included in the repository. Full licence text can be found in the file `GPL'
+
+The original vrms was a perl script on Debian, now going by
+check-dsfg-status, which just isn't quite so snappy. vrms-rpm is available
+for rpm-based systems (Fedora, RHEL, SuSE, Rocky...) in C, using librpm.
