@@ -120,7 +120,6 @@ our $gnu = qr{^(?:
 |	L?LGPL(-?2(\.[01])?|-?3(\.0)?)?
 )(-o(nly|r-later))?$}ixn;
 
-# supplement rather than supplant the proper DBs
 our $free_other = qr{^(?inx:
 	\Q0BSD\E
 |	\QAFL-2.1\E
@@ -149,7 +148,7 @@ our $free_other = qr{^(?inx:
 |	EUPL(-?1\.[12])?
 |	ex			# BSD-4-Clause
 |	Expat
-|	FIPL(-?1(\.0)?)	# MPL-1.0
+|	FIPL(-?1(\.0)?)?	# MPL-1.0
 |	FSF(AP|UL(LR(WD)?)?)
 |	\QGL2PS\E
 |	HPND(-sell-variant)?

@@ -13,14 +13,16 @@ use warnings;
 use feature 'fc';
 use Getopt::Long;
 use Pod::Usage;
+
+push @INC, '.'; # FIXME: for temporary testing purposes only
+require Licences::Heuristics;
 # Further <require>s of Licences::* are found in sub parse_cmdline
 
 our $VERSION = 0;
 our $REGMARK;
 
-push @INC, '.'; # FIXME: for temporary testing purposes only
-
 sub any {
+	local $_;
 	foreach (@_) {
 		return 1 if $_;
 	}
@@ -82,6 +84,8 @@ sub parse_cmdline {
 		'h|?|help' => sub { pod2usage(0) }
 	or die;
 
+	die 'Too many arguments (pass -help for usage)' if @ARGV;
+
 	if ($colour eq 'auto') {
 		$colour = -t STDOUT;
 	} elsif ($colour eq 'always') {
@@ -94,14 +98,14 @@ sub parse_cmdline {
 
 	($start_bad, $end_bad) = $colour ? ("\e[31m<\e[1m", "\e[0;31m>\e[m") : qw/< >/;
 
-	require Licences::Heuristics if $heuristics;
 	require Licences::SPDX if $spdx_fsf or $spdx_osi;
 	require Licences::Scancode if $spdx_fsf or $spdx_osi or any(values %scancode);
 
 	if ($caveat) {
 		print STDERR <<CAVEAT;
 NB: pacman (and Arch specifically) are not very good at labelling licences;
-unfortunately, many false positives must be expected, especially licences
+Arch is working on a transition to SPDX expressions, but unfortunately until
+this is completed, many false positives must be expected, especially licences
 mislabeled `custom'. Check /usr/share/licenses/ for possible clarity
 
 CAVEAT
@@ -124,20 +128,22 @@ sub spdx_ok {
 }
 
 sub scancode_ok {
-	local $_ = shift;
-	die if @_ or not defined;
+	die if @_ != 1;
+	local $_;
 
 	return 0 unless $spdx_fsf or $spdx_osi or any(values %scancode);
 
-	for ($Licences::Scancode::db{$_}) {
+	{
+		no warnings 'once';
+		$_ = $Licences::Scancode::db{shift};
+	}
+	return 0 unless defined;
+	return 1 if $scancode{$_->{category}};
+	for ($_->{spdx}) {
 		return 0 unless defined;
-		return 1 if $scancode{$_->{category}};
-		for ($_->{spdx}) {
-			return 0 unless defined;
-			for ($Licences::SPDX::db{fc $_}) {
-				return 1 if $spdx_fsf and $_->{isFsfLibre};
-				return 1 if $spdx_osi and $_->{isOsiApproved};
-			}
+		for ($Licences::SPDX::db{fc $_}) {
+			return 1 if $spdx_fsf and $_->{isFsfLibre};
+			return 1 if $spdx_osi and $_->{isOsiApproved};
 		}
 	}
 
@@ -146,7 +152,10 @@ sub scancode_ok {
 
 sub handle_LicenseRef {
 	die if @_;	# Just inherits $_ from parent scope
-	return 0 if $_ !~ $Licences::Heuristics::LicenseRef_table;
+	{
+		no warnings 'once';
+		return 0 if $_ !~ $Licences::Heuristics::LicenseRef_table;
+	}
 	local $_ = $REGMARK;
 	return 0 unless defined and m/,/; # The comma means it's probably one of mine
 	return 1 if $heuristics;
