@@ -326,11 +326,11 @@ I<WHEN> to colour output: B<always>, B<never>, or B<auto>. Default: B<auto>
 Read input from I<FILE> instead of searching pacman's localdb. Reads from
 stdin if I<FILE> is -. Input is expected to be output of S<C<pacman --info>>
 
-=item B<-scancode-db>=I<CATEGORIES>
+=item B<-scancode-db>[=I<CATEGORIES>]
 
-Search the Scancode LicenseDB for licence; consider it free if it falls
-into one of the Scancode CATEGORIES, a comma-separated list of zero or more
-of the following:
+Search the Scancode LicenseDB for licence. If I<CATEGORIES> is optionally
+given, consider a licence free if it falls into one of the Scancode
+I<CATEGORIES>, a comma-separated list of zero or more of the following:
 
 =over
 
@@ -350,17 +350,13 @@ of the following:
 
 =item Public Domain
 
-=item Unstated License
-
 =item Patent License
-
-=item CLA
 
 =back
 
-C<default> is a special category that can also be used, equivalent
-to S<C<Copyleft,Copyleft Limited,Permissive,Public Domain>>. No
-categories (an empty string) is equivalent to C<default>.
+C<default> is a special category that can also be used, equivalent to
+S<C<Copyleft,Copyleft Limited,Permissive,Public Domain>>. These are the
+values used if I<CATEGORIES> is not given.
 
 =back
 

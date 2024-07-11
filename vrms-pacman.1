@@ -55,7 +55,7 @@
 .\" ========================================================================
 .\"
 .IX Title "VRMS-PACMAN 1"
-.TH VRMS-PACMAN 1 2024-07-04 "perl v5.38.2" "User Contributed Perl Documentation"
+.TH VRMS-PACMAN 1 2024-07-11 "perl v5.38.2" "User Contributed Perl Documentation"
 .\" For nroff, turn off justification.  Always turn off hyphenation; it makes
 .\" way too many mistakes in technical documents.
 .if n .ad l
@@ -81,11 +81,11 @@ Print version number and copyright information and exit
 .IX Item "-f, -file=FILE"
 Read input from \fIFILE\fR instead of searching pacman's localdb. Reads from
 stdin if \fIFILE\fR is \-. Input is expected to be output of \f(CW\*(C`pacman\ \-\-info\*(C'\fR
-.IP \fB\-scancode\-db\fR=\fICATEGORIES\fR 4
-.IX Item "-scancode-db=CATEGORIES"
-Search the Scancode LicenseDB for licence; consider it free if it falls
-into one of the Scancode CATEGORIES, a comma-separated list of zero or more
-of the following:
+.IP \fB\-scancode\-db\fR[=\fICATEGORIES\fR] 4
+.IX Item "-scancode-db[=CATEGORIES]"
+Search the Scancode LicenseDB for licence. If \fICATEGORIES\fR is optionally
+given, consider a licence free if it falls into one of the Scancode
+\&\fICATEGORIES\fR, a comma-separated list of zero or more of the following:
 .RS 4
 .IP Commercial 4
 .IX Item "Commercial"
@@ -104,19 +104,15 @@ of the following:
 .IX Item "Permissive"
 .IP "Public Domain" 4
 .IX Item "Public Domain"
-.IP "Unstated License" 4
-.IX Item "Unstated License"
 .IP "Patent License" 4
 .IX Item "Patent License"
-.IP CLA 4
-.IX Item "CLA"
 .RE
 .RS 4
 .PD
 .Sp
-\&\f(CW\*(C`default\*(C'\fR is a special category that can also be used, equivalent
-to \f(CW\*(C`Copyleft,Copyleft\ Limited,Permissive,Public\ Domain\*(C'\fR. No
-categories (an empty string) is equivalent to \f(CW\*(C`default\*(C'\fR.
+\&\f(CW\*(C`default\*(C'\fR is a special category that can also be used, equivalent to
+\&\f(CW\*(C`Copyleft,Copyleft\ Limited,Permissive,Public\ Domain\*(C'\fR. These are the
+values used if \fICATEGORIES\fR is not given.
 .RE
 .PP
 The following options may be preceded with ‘no\-’ (as in,
