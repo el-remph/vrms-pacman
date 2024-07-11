@@ -11,12 +11,17 @@
 use strict;
 use warnings;
 use feature 'fc';
+
+use File::BaseDir 'data_files';
 use Getopt::Long;
 use IO::Uncompress::Bunzip2 ':all';
 use Pod::Usage;
 use Storable 'thaw';
 
-push @INC, '.'; # FIXME: for temporary testing purposes only
+# FIXME: for temporary testing purposes only
+push @INC, '.';
+$_ = length ? ".:$_" : '.' for $ENV{XDG_DATA_DIRS};
+
 require Licences::Heuristics;
 
 our $VERSION = 0;
@@ -32,7 +37,7 @@ sub any {
 
 my ($total_packages, $free_packages, $nonfree_packages) = (0, 0, 0);
 my ($start_bad, $end_bad);
-my ($spdx_db, $scancode_db) = (undef, undef);
+my $db = undef;
 
 # options and defaults:
 my ($allow_custom, $file, $heuristics, $spdx_fsf, $spdx_osi)
@@ -47,20 +52,18 @@ my %scancode = (
 	'Copyleft Limited' => 0,
 	'Permissive'       => 0,
 	'Public Domain'    => 0,
-
-	# TODO: Should these even be here? Should licences matching these
-	# be stripped out of Licenses::Scancode?
-	'Unstated License' => 0,
-	'Patent License'   => 0,
-	'CLA'              => 0
+	'Patent License'   => 0	# TODO: what to do with this..?
 );
 
 sub get_db {
 	die unless @_ == 1;
-	my $stored;
-	my $file = './Licences/' . shift . '.pst.bz2';
-	bunzip2($file => \$stored) or die $Bunzip2Error;
-	$stored =~ s/^pst0// or die "$file: Bad perl Storable file";
+	my $file = shift . '.pst.bz2';
+	my $path = data_files($file) # data_files('vrms-pacman', $file)
+		// die "$file: can't find readable in XDG_DATA_DIRS";
+	bunzip2($path => \my $stored)
+		or die $Bunzip2Error;
+	$stored =~ s/^pst0//
+		or die "$path: Bad perl Storable file";
 	return thaw $stored;
 }
 
@@ -117,8 +120,7 @@ sub parse_cmdline {
 
 	($start_bad, $end_bad) = $colour ? ("\e[31m<\e[1m", "\e[0;31m>\e[m") : qw/< >/;
 
-	$spdx_db = get_db('SPDX') if $spdx_fsf or $spdx_osi;
-	$scancode_db = get_db('Scancode') if $spdx_fsf or $spdx_osi or any(values %scancode);
+	$db = get_db('licences') if $spdx_fsf or $spdx_osi or any(values %scancode);
 }
 
 sub spdx_ok {
@@ -127,7 +129,7 @@ sub spdx_ok {
 
 	return 0 unless $spdx_fsf or $spdx_osi;
 
-	for ($spdx_db->{$_}) {
+	for ($db->{$_}) {
 		return 0 unless defined;
 		return 1 if $spdx_fsf and $_->{isFsfLibre};
 		return 1 if $spdx_osi and $_->{isOsiApproved};
@@ -141,17 +143,12 @@ sub scancode_ok {
 
 	return 0 unless $spdx_fsf or $spdx_osi or any(values %scancode);
 
-	local $_ = $scancode_db->{shift()};
+	local $_ = $db->{shift()};
 	return 0 unless defined;
-	return 1 if $scancode{$_->{category}};
-	for ($_->{spdx}) {
+	for ($_->{scancode_category}) {
 		return 0 unless defined;
-		for ($spdx_db->{fc $_}) {
-			return 1 if $spdx_fsf and $_->{isFsfLibre};
-			return 1 if $spdx_osi and $_->{isOsiApproved};
-		}
+		return 1 if $scancode{$_};
 	}
-
 	return 0;
 }
 
@@ -189,8 +186,9 @@ sub licence_isfree {
 	# make a licence *less* free)
 	s/[ -]WITH[ -].+//i;
 	# Remove version upgrade specifier (GNU licences' *-or-later/*-only
-	# is handled in $Licences::*)
-	s/\+$//;
+	# is handled in $Licences::*). Also remove irritating trailing comma
+	# separator sometimes present
+	s/\+?,?$//;
 
 	if ($heuristics) {
 		no warnings 'once';
@@ -246,9 +244,9 @@ sub inspect_package {
 
 if (defined $file) {
 	if ($file ne '-') {
-		# Credit to ARGV::readonly
+		# Credit to ARGV::readonly, by <davidnico@cpan.org> (public domain)
 		$file =~ s|^(\s)|./$1|;
-		$file = "<$file";
+		$file = "<$file\0";
 	}
 } else {
 	$file = 'pacman -Qi |';

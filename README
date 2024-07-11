@@ -1,5 +1,5 @@
 This is a `port' of Virtual Richard Matthew Stallman to pacman-based
-distributions such as Arch Linux (also Manjaro, Endeavour, Artix, Oberun...)
+distributions such as Arch Linux (also Manjaro, Endeavour, Artix, Obarun...)
 
 It is VERY EXPERIMENTAL and NOT VERY GOOD OR RELIABLE. It could change
 any minute. You have been warned
@@ -12,3 +12,8 @@ included in the repository. Full licence text can be found in the file `GPL'
 The original vrms was a perl script on Debian, now going by
 check-dsfg-status, which just isn't quite so snappy. vrms-rpm is available
 for rpm-based systems (Fedora, RHEL, SuSE, Rocky...) in C, using librpm.
+
+=== TODO ===
+- Change Licences::Heuristics supplement rather than supplant the
+  SPDX/Scancode databases, by preprocessing odd names and mapping them to
+  proper ones. Incorporate the resultant stub into the main script
