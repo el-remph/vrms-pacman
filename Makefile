@@ -7,7 +7,7 @@ clean:
 	rm -f $(TARGETS) contrib/spdx-licences.json contrib/scancode-licensedb.json
 
 # `wget -O' would also work here
-DOWNLOAD_TO=curl -o
+DOWNLOAD_TO=curl -Lo
 
 CLEANUP={ exit_val=$$?; rm -f $@; exit $$exit_val; }
 

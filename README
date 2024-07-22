@@ -17,3 +17,7 @@ for rpm-based systems (Fedora, RHEL, SuSE, Rocky...) in C, using librpm.
 - Change Licences::Heuristics supplement rather than supplant the
   SPDX/Scancode databases, by preprocessing odd names and mapping them to
   proper ones. Incorporate the resultant stub into the main script
+- Many malformed licence strings are missing only a version suffix, which
+  is inconsistently formatted anyway. Can we strip version suffices and
+  somehow disambiguate malformed ones? Can't just strip and leave it at
+  that, since eg. the ASPL-1.x are nonfree, while the APSL-2.0 is free
