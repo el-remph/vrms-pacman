@@ -1113,19 +1113,6 @@
         "spdx_abbrev": "TPDL"
     },
     "79": {
-        "approved": "yes",
-        "spdx_abbrev": "LicenseRef-framed",
-        "license": {
-            "expression": "LicenseRef-framed",
-            "status": [
-                "allowed"
-            ],
-            "usage": "Replace this with an SPDX identifier when possible (likely a revised version of\n`ulem` which as of 2024-06-21 is not a match for this license text).",
-            "text": "These macros may be freely transmitted, reproduced, or modified\nfor any purpose provided that this notice is left intact."
-        },
-        "fedora": {}
-    },
-    "80": {
         "license": {
             "expression": "Plexus",
             "status": [
@@ -1146,7 +1133,7 @@
         "fedora_name": "Plexus Classworlds License",
         "spdx_abbrev": "Plexus"
     },
-    "81": {
+    "80": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-scilab-en-2005",
         "license": {
@@ -1158,7 +1145,7 @@
         },
         "fedora": {}
     },
-    "82": {
+    "81": {
         "approved": "yes",
         "spdx_abbrev": "GD",
         "license": {
@@ -1169,7 +1156,7 @@
         },
         "fedora": {}
     },
-    "83": {
+    "82": {
         "license": {
             "expression": "GPL-3.0-or-later WITH Classpath-exception-2.0",
             "status": [
@@ -1190,7 +1177,7 @@
         "fedora_name": "GNU General Public License v3.0 or later, with Classpath exception",
         "spdx_abbrev": "GPL-3.0-or-later WITH Classpath-exception-2.0"
     },
-    "84": {
+    "83": {
         "license": {
             "expression": "AFL-3.0",
             "status": [
@@ -1211,7 +1198,7 @@
         "fedora_name": "Academic Free License",
         "spdx_abbrev": "AFL-3.0"
     },
-    "85": {
+    "84": {
         "license": {
             "expression": "LicenseRef-OFSFDL",
             "status": [
@@ -1231,7 +1218,7 @@
         "fedora_name": "Old FSF Documentation License",
         "spdx_abbrev": "LicenseRef-OFSFDL"
     },
-    "86": {
+    "85": {
         "approved": "yes",
         "spdx_abbrev": "NIST-Software",
         "license": {
@@ -1242,7 +1229,7 @@
         },
         "fedora": {}
     },
-    "87": {
+    "86": {
         "license": {
             "expression": "AMPAS",
             "status": [
@@ -1263,7 +1250,7 @@
         "fedora_name": "Academy of Motion Picture Arts and Sciences BSD",
         "spdx_abbrev": "AMPAS"
     },
-    "88": {
+    "87": {
         "approved": "no",
         "spdx_abbrev": "CC-BY-NC-SA-2.0",
         "license": {
@@ -1275,7 +1262,7 @@
         },
         "fedora": {}
     },
-    "89": {
+    "88": {
         "approved": "yes",
         "spdx_abbrev": "BSD-Systemics",
         "license": {
@@ -1286,7 +1273,7 @@
         },
         "fedora": {}
     },
-    "90": {
+    "89": {
         "license": {
             "expression": "threeparttable",
             "status": [
@@ -1306,7 +1293,7 @@
         "fedora_name": "Threeparttable License",
         "spdx_abbrev": "threeparttable"
     },
-    "91": {
+    "90": {
         "license": {
             "expression": "MIT-advertising",
             "status": [
@@ -1327,7 +1314,7 @@
         "fedora_name": "Enlightenment License (e16)",
         "spdx_abbrev": "MIT-advertising"
     },
-    "92": {
+    "91": {
         "license": {
             "expression": "LicenseRef-Fedora-Public-Domain",
             "status": [
@@ -1348,7 +1335,7 @@
         "fedora_name": "Public Domain",
         "spdx_abbrev": "LicenseRef-Fedora-Public-Domain"
     },
-    "93": {
+    "92": {
         "approved": "yes",
         "spdx_abbrev": "SL",
         "license": {
@@ -1359,7 +1346,7 @@
         },
         "fedora": {}
     },
-    "94": {
+    "93": {
         "license": {
             "expression": "APAFML",
             "status": [
@@ -1380,7 +1367,7 @@
         "fedora_name": "Adobe Postscript AFM License",
         "spdx_abbrev": "APAFML"
     },
-    "95": {
+    "94": {
         "license": {
             "expression": "LicenseRef-HOFL",
             "status": [
@@ -1400,7 +1387,7 @@
         "fedora_name": "Hack Open Font License",
         "spdx_abbrev": "LicenseRef-HOFL"
     },
-    "96": {
+    "95": {
         "approved": "yes",
         "spdx_abbrev": "HPND-DEC",
         "license": {
@@ -1411,7 +1398,7 @@
         },
         "fedora": {}
     },
-    "97": {
+    "96": {
         "license": {
             "expression": "LicenseRef-Wadalab",
             "status": [
@@ -1431,7 +1418,7 @@
         "fedora_name": "Wadalab Font License",
         "spdx_abbrev": "LicenseRef-Wadalab"
     },
-    "98": {
+    "97": {
         "approved": "no",
         "spdx_abbrev": "OSLC-2.0",
         "license": {
@@ -1443,7 +1430,7 @@
         },
         "fedora": {}
     },
-    "99": {
+    "98": {
         "approved": "no",
         "spdx_abbrev": "BUSL-1.1",
         "license": {
@@ -1455,7 +1442,7 @@
         },
         "fedora": {}
     },
-    "100": {
+    "99": {
         "approved": "yes",
         "spdx_abbrev": "LicenseRef-W3C-Document-2023",
         "license": {
@@ -1468,7 +1455,7 @@
         },
         "fedora": {}
     },
-    "101": {
+    "100": {
         "license": {
             "expression": "ECL-2.0",
             "status": [
@@ -1489,7 +1476,7 @@
         "fedora_name": "Educational Community License 2.0",
         "spdx_abbrev": "ECL-2.0"
     },
-    "102": {
+    "101": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-RSALv2",
         "license": {
@@ -1501,7 +1488,7 @@
         },
         "fedora": {}
     },
-    "103": {
+    "102": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-amazon-sl",
         "license": {
@@ -1513,7 +1500,7 @@
         },
         "fedora": {}
     },
-    "104": {
+    "103": {
         "license": {
             "expression": "LicenseRef-Fedora-UltraPermissive",
             "status": [
@@ -1534,7 +1521,7 @@
         "fedora_name": "Freely redistributable without restriction",
         "spdx_abbrev": "LicenseRef-Fedora-UltraPermissive"
     },
-    "105": {
+    "104": {
         "approved": "no",
         "spdx_abbrev": "CPOL-1.02",
         "license": {
@@ -1546,7 +1533,7 @@
         },
         "fedora": {}
     },
-    "106": {
+    "105": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-paul-hsieh-exposition",
         "license": {
@@ -1558,7 +1545,7 @@
         },
         "fedora": {}
     },
-    "107": {
+    "106": {
         "approved": "no",
         "spdx_abbrev": "MagniComp-EULA",
         "license": {
@@ -1571,7 +1558,7 @@
         },
         "fedora": {}
     },
-    "108": {
+    "107": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-NPSL-0.95",
         "license": {
@@ -1584,7 +1571,7 @@
         },
         "fedora": {}
     },
-    "109": {
+    "108": {
         "approved": "yes",
         "spdx_abbrev": "LicenseRef-docbook-dtds",
         "license": {
@@ -1596,7 +1583,7 @@
         },
         "fedora": {}
     },
-    "110": {
+    "109": {
         "license": {
             "expression": "TOSL",
             "status": [
@@ -1617,7 +1604,7 @@
         "fedora_name": "Trusster Open Source License",
         "spdx_abbrev": "TOSL"
     },
-    "111": {
+    "110": {
         "license": {
             "expression": "SGI-B-2.0",
             "status": [
@@ -1638,7 +1625,7 @@
         "fedora_name": "SGI Free Software License B 2.0",
         "spdx_abbrev": "SGI-B-2.0"
     },
-    "112": {
+    "111": {
         "approved": "yes",
         "spdx_abbrev": "HPND-sell-MIT-disclaimer-xserver",
         "license": {
@@ -1649,7 +1636,7 @@
         },
         "fedora": {}
     },
-    "113": {
+    "112": {
         "license": {
             "expression": "GPL-3.0-only WITH Classpath-exception-2.0",
             "status": [
@@ -1670,7 +1657,7 @@
         "fedora_name": "GNU General Public License v3.0 only, with Classpath exception",
         "spdx_abbrev": "GPL-3.0-only WITH Classpath-exception-2.0"
     },
-    "114": {
+    "113": {
         "license": {
             "expression": "TPL-1.0",
             "status": [
@@ -1690,7 +1677,7 @@
         "fedora_name": "THOR Public Licence",
         "spdx_abbrev": "TPL-1.0"
     },
-    "115": {
+    "114": {
         "approved": "yes",
         "spdx_abbrev": "HPND-doc",
         "license": {
@@ -1701,7 +1688,7 @@
         },
         "fedora": {}
     },
-    "116": {
+    "115": {
         "license": {
             "expression": "LicenseRef-Charter",
             "status": [
@@ -1721,7 +1708,7 @@
         "fedora_name": "Charter License",
         "spdx_abbrev": "LicenseRef-Charter"
     },
-    "117": {
+    "116": {
         "approved": "yes",
         "spdx_abbrev": "LGPL-2.1-or-later WITH cryptsetup-OpenSSL-exception",
         "license": {
@@ -1732,7 +1719,7 @@
         },
         "fedora": {}
     },
-    "118": {
+    "117": {
         "approved": "no",
         "spdx_abbrev": "CC-BY-NC-ND-4.0",
         "license": {
@@ -1744,7 +1731,7 @@
         },
         "fedora": {}
     },
-    "119": {
+    "118": {
         "approved": "no",
         "spdx_abbrev": "LPPL-1.2",
         "license": {
@@ -1756,7 +1743,7 @@
         },
         "fedora": {}
     },
-    "120": {
+    "119": {
         "license": {
             "expression": "IJG",
             "status": [
@@ -1777,7 +1764,7 @@
         "fedora_name": "Independent JPEG Group License",
         "spdx_abbrev": "IJG"
     },
-    "121": {
+    "120": {
         "approved": "no",
         "spdx_abbrev": "CC-BY-NC-ND-3.0",
         "license": {
@@ -1789,7 +1776,7 @@
         },
         "fedora": {}
     },
-    "122": {
+    "121": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-ubuntu-font-1.0",
         "license": {
@@ -1801,7 +1788,7 @@
         },
         "fedora": {}
     },
-    "123": {
+    "122": {
         "approved": "yes",
         "spdx_abbrev": "GPL-2.0-or-later WITH Autoconf-exception-generic",
         "license": {
@@ -1812,7 +1799,7 @@
         },
         "fedora": {}
     },
-    "124": {
+    "123": {
         "license": {
             "expression": "APSL-2.0",
             "status": [
@@ -1832,6 +1819,17 @@
         "fedora_abbrev": "APSL 2.0",
         "fedora_name": "Apple Public Source License 2.0",
         "spdx_abbrev": "APSL-2.0"
+    },
+    "124": {
+        "approved": "yes",
+        "spdx_abbrev": "HIDAPI",
+        "license": {
+            "expression": "HIDAPI",
+            "status": [
+                "allowed"
+            ]
+        },
+        "fedora": {}
     },
     "125": {
         "approved": "yes",
@@ -2527,6 +2525,18 @@
         "fedora": {}
     },
     "170": {
+        "approved": "no",
+        "spdx_abbrev": "LicenseRef-Frontier-Artistic-1.0",
+        "license": {
+            "expression": "LicenseRef-Frontier-Artistic-1.0",
+            "status": [
+                "not-allowed"
+            ],
+            "text": "The Frontier Artistic License Version 1.0\nDerived from the Artistic License at OpenSource.org.\nSubmitted to OpenSource.org for Open Source Initiative certification.\n   \nPreamble\n\nThe intent of this document is to state the conditions under which a\nPackage may be copied, such that the Copyright Holder maintains some\nsemblance of artistic control over the development of the package,\nwhile giving the users of the package the right to use and distribute\nthe Package in a more-or-less customary fashion, plus the right to\nmake reasonable modifications.\n   \nDefinitions\n\n  \"Package\" refers to the script, suite, file, or collection of\n  scripts, suites, and/or files distributed by the Copyright Holder,\n  and to derivatives of that Package created through textual modification.\n\n  \"Standard Version\" refers to such a Package if it has not been\n  modified, or has been modified in accordance with the wishes of\n  the Copyright Holder.\n\n  \"Copyright Holder\" is whoever is named in the copyright statement\n  or statements for the package.\n\n  \"You\" is you, if you're thinking about copying or distributing\n  this Package.\n\n  \"Reasonable copying fee\" is whatever you can justify on the basis\n  of media cost, duplication charges, time of people involved, and\n  so on. (You will not be required to justify it to the Copyright\n  Holder, but only to the computing community at large as a market\n  that must bear the fee.)\n\n  \"Freely Available\" means that no fee is charged for the item\n  itself, though there may be fees involved in handling the item.\n  It also means that recipients of the item may redistribute it under\n  the same conditions they received it.\n       \n\nTerms\n\n1. You may make and give away verbatim copies of the source form of\nthe Standard Version of this Package without restriction, provided\nthat you duplicate all of the original copyright notices and\nassociated disclaimers.\n   \n2. You may apply bug fixes, portability fixes, and other modifications\nderived from the Public Domain or from the Copyright Holder. A Package\nmodified in such a way shall still be considered the Standard Version.\n   \n3. You may otherwise modify your copy of this Package in any way,\nprovided that you insert a prominent notice in each changed script,\nsuite, or file stating how and when you changed that script, suite,\nor file, and provided that you do at least ONE of the following:\n   \n  a) Use the modified Package only within your corporation or\n  organization, or retain the modified Package solely for personal use.\n     \n  b) Place your modifications in the Public Domain or otherwise make\n  them Freely Available, such as by posting said modifications to Usenet\n  or an equivalent medium, or placing the modifications on a major archive\n  site such as ftp.uu.net, or by allowing the Copyright Holder to include\n  your modifications in the Standard Version of the Package.\n     \n  c) Rename any non-standard executables so the names do not conflict\n  with standard executables, which must also be provided, and provide\n  a separate manual page (or equivalent) for each non-standard executable\n  that clearly documents how it differs from the Standard Version.\n     \n  d) Make other distribution arrangements with the Copyright Holder.\n     \n4. You may distribute the programs of this Package in object code or\nexecutable form, provided that you do at least ONE of the following:\n   \n  a) Distribute a Standard Version of the executables and library\n  files, together with instructions (in the manual page or\n  equivalent) on where to get the Standard Version.\n     \n  b) Accompany the distribution with the machine-readable source of\n  the Package with your modifications.\n     \n  c) Accompany any non-standard executables with their corresponding\n  Standard Version executables, give the non-standard executables\n  non-standard names, and clearly document the differences in manual\n  pages (or equivalent), together with instructions on where to get\n  the Standard Version.\n     \n  d) Make other distribution arrangements with the Copyright Holder.\n     \n5. You may charge a reasonable copying fee for any distribution of\nthis Package. You may charge any fee you choose for support of this\nPackage. You may not charge a fee for this Package itself. However,\nyou may distribute this Package in aggregate with other (possibly\ncommercial) programs as part of a larger (possibly commercial)\nsoftware distribution provided that you do not advertise this Package\nas a product of your own.\n   \n6. The scripts and library files supplied as input to or produced as\noutput from the programs of this Package do not automatically fall\nunder the copyright of this Package, but belong to whomever generated\nthem, and may be sold commercially, and may be aggregated with this\nPackage.\n   \n7. Scripts, suites, or programs supplied by you that depend on or\notherwise make use of this Package shall not be considered part of\nthis Package.\n   \n8. The name of the Copyright Holder may not be used to endorse or\npromote products derived from this software without specific prior\nwritten permission.\n   \n9. THIS PACKAGE IS PROVIDED \"AS IS\" AND WITHOUT ANY EXPRESS OR IMPLIED\nWARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.\n   \n                        The End"
+        },
+        "fedora": {}
+    },
+    "171": {
         "license": {
             "expression": "GFDL-1.2-invariants-only",
             "status": [
@@ -2546,7 +2556,7 @@
         "fedora_name": "GNU Free Documentation License v1.2 only - invariants",
         "spdx_abbrev": "GFDL-1.2-invariants-only"
     },
-    "171": {
+    "172": {
         "license": {
             "expression": "LicenseRef-radvd",
             "status": [
@@ -2567,7 +2577,7 @@
         "fedora_name": "radvd License",
         "spdx_abbrev": "LicenseRef-radvd"
     },
-    "172": {
+    "173": {
         "license": {
             "expression": "CC-BY-3.0-DE",
             "status": [
@@ -2588,7 +2598,7 @@
         "fedora_name": "Creative Commons Attribution license 3.0 Germany",
         "spdx_abbrev": "CC-BY-3.0-DE"
     },
-    "173": {
+    "174": {
         "license": {
             "expression": "PSF-2.0",
             "status": [
@@ -2608,7 +2618,7 @@
         "fedora_name": "Python License",
         "spdx_abbrev": "PSF-2.0"
     },
-    "174": {
+    "175": {
         "license": {
             "expression": "NOSL",
             "status": [
@@ -2629,7 +2639,7 @@
         "fedora_name": "Netizen Open Source License",
         "spdx_abbrev": "NOSL"
     },
-    "175": {
+    "176": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-wrk",
         "license": {
@@ -2641,7 +2651,7 @@
         },
         "fedora": {}
     },
-    "176": {
+    "177": {
         "approved": "yes",
         "spdx_abbrev": "SSH-OpenSSH",
         "license": {
@@ -2652,7 +2662,7 @@
         },
         "fedora": {}
     },
-    "177": {
+    "178": {
         "approved": "yes",
         "spdx_abbrev": "LGPL-2.1-only WITH Linux-syscall-note",
         "license": {
@@ -2663,7 +2673,7 @@
         },
         "fedora": {}
     },
-    "178": {
+    "179": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-ISO-8879",
         "license": {
@@ -2680,7 +2690,7 @@
         },
         "fedora": {}
     },
-    "179": {
+    "180": {
         "license": {
             "expression": "MPL-1.0",
             "status": [
@@ -2701,7 +2711,7 @@
         "fedora_name": "Mozilla Public License v1.0",
         "spdx_abbrev": "MPL-1.0"
     },
-    "180": {
+    "181": {
         "approved": "yes",
         "spdx_abbrev": "FBM",
         "license": {
@@ -2712,7 +2722,7 @@
         },
         "fedora": {}
     },
-    "181": {
+    "182": {
         "approved": "yes",
         "spdx_abbrev": "UMich-Merit",
         "license": {
@@ -2723,7 +2733,7 @@
         },
         "fedora": {}
     },
-    "182": {
+    "183": {
         "approved": "yes",
         "spdx_abbrev": "BSD-3-Clause-HP",
         "license": {
@@ -2734,7 +2744,7 @@
         },
         "fedora": {}
     },
-    "183": {
+    "184": {
         "license": {
             "expression": "TCP-wrappers",
             "status": [
@@ -2752,7 +2762,7 @@
         "fedora_name": "",
         "spdx_abbrev": "TCP-wrappers"
     },
-    "184": {
+    "185": {
         "approved": "yes",
         "spdx_abbrev": "BSD-2-Clause-Darwin",
         "license": {
@@ -2763,7 +2773,7 @@
         },
         "fedora": {}
     },
-    "185": {
+    "186": {
         "approved": "yes",
         "spdx_abbrev": "Xdebug-1.03",
         "license": {
@@ -2774,7 +2784,7 @@
         },
         "fedora": {}
     },
-    "186": {
+    "187": {
         "approved": "yes",
         "spdx_abbrev": "LicenseRef-License-of-Licenses",
         "license": {
@@ -2786,7 +2796,7 @@
         },
         "fedora": {}
     },
-    "187": {
+    "188": {
         "license": {
             "expression": "BSL-1.0",
             "status": [
@@ -2809,25 +2819,25 @@
         "fedora_name": "Boost Software License",
         "spdx_abbrev": "BSL-1.0"
     },
-    "188": {
+    "189": {
         "approved": "yes",
         "fedora_abbrev": "Boost",
         "fedora_name": "MIT:Thrift variant",
         "spdx_abbrev": "BSL-1.0"
     },
-    "189": {
+    "190": {
         "approved": "yes",
         "fedora_abbrev": "MIT",
         "fedora_name": "Boost Software License",
         "spdx_abbrev": "BSL-1.0"
     },
-    "190": {
+    "191": {
         "approved": "yes",
         "fedora_abbrev": "MIT",
         "fedora_name": "MIT:Thrift variant",
         "spdx_abbrev": "BSL-1.0"
     },
-    "191": {
+    "192": {
         "approved": "yes",
         "spdx_abbrev": "GPL-3.0-or-later WITH Autoconf-exception-generic",
         "license": {
@@ -2838,7 +2848,7 @@
         },
         "fedora": {}
     },
-    "192": {
+    "193": {
         "license": {
             "expression": "TMate",
             "status": [
@@ -2859,7 +2869,7 @@
         "fedora_name": "TMate Open Source License",
         "spdx_abbrev": "TMate"
     },
-    "193": {
+    "194": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-tpl-1.0",
         "license": {
@@ -2871,7 +2881,7 @@
         },
         "fedora": {}
     },
-    "194": {
+    "195": {
         "approved": "no",
         "spdx_abbrev": "RSCPL",
         "license": {
@@ -2883,7 +2893,7 @@
         },
         "fedora": {}
     },
-    "195": {
+    "196": {
         "license": {
             "expression": "ImageMagick",
             "status": [
@@ -2904,7 +2914,7 @@
         "fedora_name": "ImageMagick License",
         "spdx_abbrev": "ImageMagick"
     },
-    "196": {
+    "197": {
         "approved": "no",
         "spdx_abbrev": "CC-BY-NC-SA-4.0",
         "license": {
@@ -2916,7 +2926,7 @@
         },
         "fedora": {}
     },
-    "197": {
+    "198": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-aptana-1.0",
         "license": {
@@ -2928,7 +2938,7 @@
         },
         "fedora": {}
     },
-    "198": {
+    "199": {
         "approved": "yes",
         "spdx_abbrev": "OAR",
         "license": {
@@ -2939,7 +2949,7 @@
         },
         "fedora": {}
     },
-    "199": {
+    "200": {
         "license": {
             "expression": "PHP-3.01",
             "status": [
@@ -2960,7 +2970,7 @@
         "fedora_name": "PHP License v3.0",
         "spdx_abbrev": "PHP-3.01"
     },
-    "200": {
+    "201": {
         "license": {
             "expression": "CATOSL-1.1",
             "status": [
@@ -2981,7 +2991,7 @@
         "fedora_name": "Computer Associates Trusted Open Source License 1.1",
         "spdx_abbrev": "CATOSL-1.1"
     },
-    "201": {
+    "202": {
         "license": {
             "expression": "GPL-3.0-only",
             "status": [
@@ -3002,7 +3012,7 @@
         "fedora_name": "GNU General Public License v3.0 only",
         "spdx_abbrev": "GPL-3.0-only"
     },
-    "202": {
+    "203": {
         "license": {
             "expression": "IPL-1.0",
             "status": [
@@ -3023,7 +3033,7 @@
         "fedora_name": "IBM Public License",
         "spdx_abbrev": "IPL-1.0"
     },
-    "203": {
+    "204": {
         "license": {
             "expression": "BSD-Protection",
             "status": [
@@ -3044,7 +3054,7 @@
         "fedora_name": "BSD Protection License",
         "spdx_abbrev": "BSD-Protection"
     },
-    "204": {
+    "205": {
         "approved": "yes",
         "spdx_abbrev": "McPhee-slideshow",
         "license": {
@@ -3055,7 +3065,7 @@
         },
         "fedora": {}
     },
-    "205": {
+    "206": {
         "approved": "yes",
         "spdx_abbrev": "Martin-Birgmeier",
         "license": {
@@ -3066,7 +3076,7 @@
         },
         "fedora": {}
     },
-    "206": {
+    "207": {
         "approved": "no",
         "spdx_abbrev": "CC-BY-NC-SA-2.0-FR",
         "license": {
@@ -3078,7 +3088,7 @@
         },
         "fedora": {}
     },
-    "207": {
+    "208": {
         "license": {
             "expression": "LicenseRef-Rsfs",
             "status": [
@@ -3099,7 +3109,7 @@
         "fedora_name": "Rsfs License",
         "spdx_abbrev": "LicenseRef-Rsfs"
     },
-    "208": {
+    "209": {
         "license": {
             "expression": "GFDL-1.3-invariants-or-later",
             "status": [
@@ -3119,7 +3129,7 @@
         "fedora_name": "GNU Free Documentation License v1.3 or later - invariants",
         "spdx_abbrev": "GFDL-1.3-invariants-or-later"
     },
-    "209": {
+    "210": {
         "license": {
             "expression": "EFL-2.0",
             "status": [
@@ -3140,7 +3150,7 @@
         "fedora_name": "Eiffel Forum License 2.0",
         "spdx_abbrev": "EFL-2.0"
     },
-    "210": {
+    "211": {
         "approved": "no",
         "spdx_abbrev": "NASA-1.3",
         "license": {
@@ -3152,7 +3162,7 @@
         },
         "fedora": {}
     },
-    "211": {
+    "212": {
         "license": {
             "expression": "Python-2.0.1",
             "status": [
@@ -3173,7 +3183,7 @@
         "fedora_name": "Python License",
         "spdx_abbrev": "Python-2.0.1"
     },
-    "212": {
+    "213": {
         "license": {
             "expression": "Apache-1.0",
             "status": [
@@ -3194,7 +3204,7 @@
         "fedora_name": "Apache Software License 1.0",
         "spdx_abbrev": "Apache-1.0"
     },
-    "213": {
+    "214": {
         "license": {
             "expression": "iMatix",
             "status": [
@@ -3215,7 +3225,7 @@
         "fedora_name": "iMatix Standard Function Library Agreement",
         "spdx_abbrev": "iMatix"
     },
-    "214": {
+    "215": {
         "approved": "no",
         "spdx_abbrev": "CC-BY-NC-3.0",
         "license": {
@@ -3227,7 +3237,7 @@
         },
         "fedora": {}
     },
-    "215": {
+    "216": {
         "license": {
             "expression": "AGPL-3.0-or-later",
             "status": [
@@ -3248,7 +3258,7 @@
         "fedora_name": "Affero General Public License 3.0 or later",
         "spdx_abbrev": "AGPL-3.0-or-later"
     },
-    "216": {
+    "217": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-cmigemo",
         "license": {
@@ -3260,7 +3270,7 @@
         },
         "fedora": {}
     },
-    "217": {
+    "218": {
         "license": {
             "expression": "Newsletr",
             "status": [
@@ -3281,7 +3291,7 @@
         "fedora_name": "Newsletr License",
         "spdx_abbrev": "Newsletr"
     },
-    "218": {
+    "219": {
         "license": {
             "expression": "MIT",
             "status": [
@@ -3302,7 +3312,7 @@
         "fedora_name": "MIT:Modern Style with sublicense",
         "spdx_abbrev": "MIT"
     },
-    "219": {
+    "220": {
         "approved": "no",
         "spdx_abbrev": "CC-BY-NC-SA-3.0-DE",
         "license": {
@@ -3314,7 +3324,7 @@
         },
         "fedora": {}
     },
-    "220": {
+    "221": {
         "license": {
             "expression": "Baekmuk",
             "status": [
@@ -3334,7 +3344,7 @@
         "fedora_name": "Baekmuk License",
         "spdx_abbrev": "Baekmuk"
     },
-    "221": {
+    "222": {
         "approved": "yes",
         "spdx_abbrev": "CECILL-2.1",
         "license": {
@@ -3345,7 +3355,7 @@
         },
         "fedora": {}
     },
-    "222": {
+    "223": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-TCGL",
         "license": {
@@ -3362,7 +3372,7 @@
         },
         "fedora": {}
     },
-    "223": {
+    "224": {
         "license": {
             "expression": "CC-BY-SA-3.0-DE",
             "status": [
@@ -3383,7 +3393,7 @@
         "fedora_name": "Creative Commons Attribution-ShareAlike 3.0 Germany",
         "spdx_abbrev": "CC-BY-SA-3.0-DE"
     },
-    "224": {
+    "225": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-JasPer",
         "license": {
@@ -3395,7 +3405,7 @@
         },
         "fedora": {}
     },
-    "225": {
+    "226": {
         "license": {
             "expression": "Motosoto",
             "status": [
@@ -3416,7 +3426,7 @@
         "fedora_name": "Motosoto License",
         "spdx_abbrev": "Motosoto"
     },
-    "226": {
+    "227": {
         "license": {
             "expression": "PostgreSQL",
             "status": [
@@ -3437,7 +3447,7 @@
         "fedora_name": "PostgreSQL License",
         "spdx_abbrev": "PostgreSQL"
     },
-    "227": {
+    "228": {
         "approved": "yes",
         "spdx_abbrev": "LOOP",
         "license": {
@@ -3448,7 +3458,7 @@
         },
         "fedora": {}
     },
-    "228": {
+    "229": {
         "license": {
             "expression": "LicenseRef-Hershey",
             "status": [
@@ -3468,7 +3478,7 @@
         "fedora_name": "Hershey Font License",
         "spdx_abbrev": "LicenseRef-Hershey"
     },
-    "229": {
+    "230": {
         "license": {
             "expression": "GFDL-1.1-no-invariants-or-later",
             "status": [
@@ -3488,7 +3498,7 @@
         "fedora_name": "GNU Free Documentation License v1.1 or later - no invariants",
         "spdx_abbrev": "GFDL-1.1-no-invariants-or-later"
     },
-    "230": {
+    "231": {
         "license": {
             "expression": "CrystalStacker",
             "status": [
@@ -3509,7 +3519,7 @@
         "fedora_name": "Crystal Stacker License",
         "spdx_abbrev": "CrystalStacker"
     },
-    "231": {
+    "232": {
         "approved": "yes",
         "spdx_abbrev": "libutil-David-Nugent",
         "license": {
@@ -3520,7 +3530,7 @@
         },
         "fedora": {}
     },
-    "232": {
+    "233": {
         "approved": "yes",
         "spdx_abbrev": "LGPL-2.0-or-later WITH Libtool-exception",
         "license": {
@@ -3531,7 +3541,7 @@
         },
         "fedora": {}
     },
-    "233": {
+    "234": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-NPSL-0.93",
         "license": {
@@ -3544,7 +3554,7 @@
         },
         "fedora": {}
     },
-    "234": {
+    "235": {
         "license": {
             "expression": "ICU",
             "status": [
@@ -3565,7 +3575,7 @@
         "fedora_name": "MIT:Modern style (ICU Variant)",
         "spdx_abbrev": "ICU"
     },
-    "235": {
+    "236": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-pine",
         "license": {
@@ -3577,7 +3587,7 @@
         },
         "fedora": {}
     },
-    "236": {
+    "237": {
         "license": {
             "expression": "ODbl-1.0",
             "status": [
@@ -3598,7 +3608,7 @@
         "fedora_name": "Open Data Commons Open Database License",
         "spdx_abbrev": "ODbl-1.0"
     },
-    "237": {
+    "238": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-SCSL",
         "license": {
@@ -3610,7 +3620,7 @@
         },
         "fedora": {}
     },
-    "238": {
+    "239": {
         "approved": "yes",
         "spdx_abbrev": "LGPL-2.0-or-later WITH OCaml-LGPL-linking-exception",
         "license": {
@@ -3621,7 +3631,7 @@
         },
         "fedora": {}
     },
-    "239": {
+    "240": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-MS-ss-cli",
         "license": {
@@ -3633,7 +3643,7 @@
         },
         "fedora": {}
     },
-    "240": {
+    "241": {
         "license": {
             "expression": "MIT-feh",
             "status": [
@@ -3654,7 +3664,7 @@
         "fedora_name": "feh License",
         "spdx_abbrev": "MIT-feh"
     },
-    "241": {
+    "242": {
         "license": {
             "expression": "MPL-2.0",
             "status": [
@@ -3675,7 +3685,7 @@
         "fedora_name": "Mozilla Public License v2.0",
         "spdx_abbrev": "MPL-2.0"
     },
-    "242": {
+    "243": {
         "license": {
             "expression": "GPL-1.0-only",
             "status": [
@@ -3696,7 +3706,7 @@
         "fedora_name": "GNU General Public License v1.0 only",
         "spdx_abbrev": "GPL-1.0-only"
     },
-    "243": {
+    "244": {
         "license": {
             "expression": "W3C",
             "status": [
@@ -3716,7 +3726,7 @@
         "fedora_name": "W3C Software Notice and License",
         "spdx_abbrev": "W3C"
     },
-    "244": {
+    "245": {
         "license": {
             "expression": "HaskellReport",
             "status": [
@@ -3737,7 +3747,7 @@
         "fedora_name": "Haskell Language Report License",
         "spdx_abbrev": "HaskellReport"
     },
-    "245": {
+    "246": {
         "license": {
             "expression": "Eurosym",
             "status": [
@@ -3758,7 +3768,7 @@
         "fedora_name": "Eurosym License",
         "spdx_abbrev": "Eurosym"
     },
-    "246": {
+    "247": {
         "license": {
             "expression": "MIT-Modern-Variant",
             "status": [
@@ -3779,7 +3789,7 @@
         "fedora_name": "13.1Modern Variants",
         "spdx_abbrev": "MIT-Modern-Variant"
     },
-    "247": {
+    "248": {
         "approved": "yes",
         "spdx_abbrev": "mailprio",
         "license": {
@@ -3790,7 +3800,7 @@
         },
         "fedora": {}
     },
-    "248": {
+    "249": {
         "approved": "no",
         "spdx_abbrev": "RPL-1.0",
         "license": {
@@ -3802,7 +3812,7 @@
         },
         "fedora": {}
     },
-    "249": {
+    "250": {
         "license": {
             "expression": "CC-BY-ND-3.0-DE",
             "status": [
@@ -3822,7 +3832,7 @@
         "fedora_name": "Creative Commons Attribution-NoDerivs",
         "spdx_abbrev": "CC-BY-ND-3.0-DE"
     },
-    "250": {
+    "251": {
         "license": {
             "expression": "LGPL-2.1-or-later",
             "status": [
@@ -3842,7 +3852,7 @@
         "fedora_name": "GNU Lesser General Public License v2 (or 2.1) or later",
         "spdx_abbrev": "LGPL-2.1-or-later"
     },
-    "251": {
+    "252": {
         "approved": "yes",
         "spdx_abbrev": "HPND-UC-export-US",
         "license": {
@@ -3853,7 +3863,7 @@
         },
         "fedora": {}
     },
-    "252": {
+    "253": {
         "license": {
             "expression": "LicenseRef-Bibtex",
             "status": [
@@ -3874,7 +3884,7 @@
         "fedora_name": "Bibtex License",
         "spdx_abbrev": "LicenseRef-Bibtex"
     },
-    "253": {
+    "254": {
         "license": {
             "expression": "Latex2e",
             "status": [
@@ -3895,7 +3905,7 @@
         "fedora_name": "Latex2e License",
         "spdx_abbrev": "Latex2e"
     },
-    "254": {
+    "255": {
         "license": {
             "expression": "PDDL-1.0",
             "status": [
@@ -3915,7 +3925,7 @@
         "fedora_name": "Open Data Commons Public Domain Dedication and Licence",
         "spdx_abbrev": "PDDL-1.0"
     },
-    "255": {
+    "256": {
         "license": {
             "expression": "MIT-enna",
             "status": [
@@ -3936,7 +3946,7 @@
         "fedora_name": "enna License",
         "spdx_abbrev": "MIT-enna"
     },
-    "256": {
+    "257": {
         "approved": "no",
         "spdx_abbrev": "EUPL-1.0",
         "license": {
@@ -3948,7 +3958,7 @@
         },
         "fedora": {}
     },
-    "257": {
+    "258": {
         "license": {
             "expression": "LicenseRef-OpenData",
             "status": [
@@ -3968,7 +3978,7 @@
         "fedora_name": "Open Data License (GeoLite Country and GeoLite City databases)",
         "spdx_abbrev": "LicenseRef-OpenData"
     },
-    "258": {
+    "259": {
         "approved": "yes",
         "spdx_abbrev": "SAX-PD-2.0",
         "license": {
@@ -3979,7 +3989,7 @@
         },
         "fedora": {}
     },
-    "259": {
+    "260": {
         "license": {
             "expression": "Vim",
             "status": [
@@ -4000,7 +4010,18 @@
         "fedora_name": "Vim License",
         "spdx_abbrev": "Vim"
     },
-    "260": {
+    "261": {
+        "approved": "yes",
+        "spdx_abbrev": "Ruby-pty",
+        "license": {
+            "expression": "Ruby-pty",
+            "status": [
+                "allowed"
+            ]
+        },
+        "fedora": {}
+    },
+    "262": {
         "approved": "yes",
         "spdx_abbrev": "Info-ZIP",
         "license": {
@@ -4012,7 +4033,7 @@
         },
         "fedora": {}
     },
-    "261": {
+    "263": {
         "license": {
             "expression": "LicenseRef-MgOpen",
             "status": [
@@ -4032,7 +4053,7 @@
         "fedora_name": "MgOpen Font License",
         "spdx_abbrev": "LicenseRef-MgOpen"
     },
-    "262": {
+    "264": {
         "approved": "yes",
         "spdx_abbrev": "CC-BY-SA-3.0 WITH GNOME-examples-exception",
         "license": {
@@ -4044,7 +4065,7 @@
         },
         "fedora": {}
     },
-    "263": {
+    "265": {
         "license": {
             "expression": "libtiff",
             "status": [
@@ -4067,25 +4088,25 @@
         "fedora_name": "libtiff License",
         "spdx_abbrev": "libtiff"
     },
-    "264": {
+    "266": {
         "approved": "yes",
         "fedora_abbrev": "libtiff",
         "fedora_name": "MIT:Hylafax Variant",
         "spdx_abbrev": "libtiff"
     },
-    "265": {
+    "267": {
         "approved": "yes",
         "fedora_abbrev": "MIT",
         "fedora_name": "libtiff License",
         "spdx_abbrev": "libtiff"
     },
-    "266": {
+    "268": {
         "approved": "yes",
         "fedora_abbrev": "MIT",
         "fedora_name": "MIT:Hylafax Variant",
         "spdx_abbrev": "libtiff"
     },
-    "267": {
+    "269": {
         "approved": "yes",
         "spdx_abbrev": "LicenseRef-CCLP2",
         "license": {
@@ -4097,7 +4118,7 @@
         },
         "fedora": {}
     },
-    "268": {
+    "270": {
         "approved": "yes",
         "spdx_abbrev": "GPL-2.0-or-later WITH SWI-exception",
         "license": {
@@ -4108,7 +4129,7 @@
         },
         "fedora": {}
     },
-    "269": {
+    "271": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-DIP-SIPA-font",
         "license": {
@@ -4120,7 +4141,7 @@
         },
         "fedora": {}
     },
-    "270": {
+    "272": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-Iozone",
         "license": {
@@ -4133,7 +4154,7 @@
         },
         "fedora": {}
     },
-    "271": {
+    "273": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-lha",
         "license": {
@@ -4145,7 +4166,7 @@
         },
         "fedora": {}
     },
-    "272": {
+    "274": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-MS-.NET-Library-2014",
         "license": {
@@ -4157,7 +4178,7 @@
         },
         "fedora": {}
     },
-    "273": {
+    "275": {
         "license": {
             "expression": "LicenseRef-AHFL",
             "status": [
@@ -4177,7 +4198,7 @@
         "fedora_name": "Atkinson Hyperlegible Font License",
         "spdx_abbrev": "LicenseRef-AHFL"
     },
-    "274": {
+    "276": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-Spin",
         "license": {
@@ -4189,7 +4210,7 @@
         },
         "fedora": {}
     },
-    "275": {
+    "277": {
         "approved": "yes",
         "spdx_abbrev": "GPL-2.0-only WITH Linux-syscall-note",
         "license": {
@@ -4200,7 +4221,7 @@
         },
         "fedora": {}
     },
-    "276": {
+    "278": {
         "license": {
             "expression": "LicenseRef-DMIT",
             "status": [
@@ -4221,7 +4242,7 @@
         "fedora_name": "Docbook MIT License",
         "spdx_abbrev": "LicenseRef-DMIT"
     },
-    "277": {
+    "279": {
         "license": {
             "expression": "CC-BY-SA-4.0",
             "status": [
@@ -4242,7 +4263,7 @@
         "fedora_name": "Creative Commons Attribution-ShareAlike 4.0",
         "spdx_abbrev": "CC-BY-SA-4.0"
     },
-    "278": {
+    "280": {
         "license": {
             "expression": "CC-BY-SA-3.0",
             "status": [
@@ -4263,7 +4284,7 @@
         "fedora_name": "Creative Commons Attribution-ShareAlike 3.0",
         "spdx_abbrev": "CC-BY-SA-3.0"
     },
-    "279": {
+    "281": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-Sleepycat-HtDig",
         "license": {
@@ -4275,7 +4296,7 @@
         },
         "fedora": {}
     },
-    "280": {
+    "282": {
         "approved": "yes",
         "spdx_abbrev": "CFITSIO",
         "license": {
@@ -4286,7 +4307,7 @@
         },
         "fedora": {}
     },
-    "281": {
+    "283": {
         "approved": "yes",
         "spdx_abbrev": "GPL-3.0-or-later WITH Autoconf-exception-generic-3.0",
         "license": {
@@ -4297,7 +4318,7 @@
         },
         "fedora": {}
     },
-    "282": {
+    "284": {
         "license": {
             "expression": "Adobe-2006",
             "status": [
@@ -4318,7 +4339,7 @@
         "fedora_name": "Adobe Systems Incorporated Source Code License Agreement",
         "spdx_abbrev": "Adobe-2006"
     },
-    "283": {
+    "285": {
         "approved": "no",
         "spdx_abbrev": "CC-BY-NC-3.0-DE",
         "license": {
@@ -4330,7 +4351,7 @@
         },
         "fedora": {}
     },
-    "284": {
+    "286": {
         "license": {
             "expression": "LicenseRef-STIX",
             "status": [
@@ -4350,7 +4371,7 @@
         "fedora_name": "STIX Fonts User License",
         "spdx_abbrev": "LicenseRef-STIX"
     },
-    "285": {
+    "287": {
         "license": {
             "expression": "MirOS",
             "status": [
@@ -4371,7 +4392,7 @@
         "fedora_name": "MirOS License",
         "spdx_abbrev": "MirOS"
     },
-    "286": {
+    "288": {
         "approved": "yes",
         "spdx_abbrev": "HPND-Kevlin-Henney",
         "license": {
@@ -4382,7 +4403,7 @@
         },
         "fedora": {}
     },
-    "287": {
+    "289": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-agere-sla",
         "license": {
@@ -4394,7 +4415,7 @@
         },
         "fedora": {}
     },
-    "288": {
+    "290": {
         "approved": "yes",
         "spdx_abbrev": "pnmstitch",
         "license": {
@@ -4405,7 +4426,7 @@
         },
         "fedora": {}
     },
-    "289": {
+    "291": {
         "license": {
             "expression": "ECL-1.0",
             "status": [
@@ -4426,7 +4447,7 @@
         "fedora_name": "Educational Community License 1.0",
         "spdx_abbrev": "ECL-1.0"
     },
-    "290": {
+    "292": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-Waqf",
         "license": {
@@ -4439,7 +4460,7 @@
         },
         "fedora": {}
     },
-    "291": {
+    "293": {
         "license": {
             "expression": "LicenseRef-OAL",
             "status": [
@@ -4459,7 +4480,7 @@
         "fedora_name": "EFF Open Audio License v1",
         "spdx_abbrev": "LicenseRef-OAL"
     },
-    "292": {
+    "294": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-Nikto",
         "license": {
@@ -4472,7 +4493,7 @@
         },
         "fedora": {}
     },
-    "293": {
+    "295": {
         "approved": "yes",
         "spdx_abbrev": "Catharon",
         "license": {
@@ -4483,7 +4504,7 @@
         },
         "fedora": {}
     },
-    "294": {
+    "296": {
         "approved": "yes",
         "spdx_abbrev": "GPL-2.0-only WITH 389-exception",
         "license": {
@@ -4494,7 +4515,7 @@
         },
         "fedora": {}
     },
-    "295": {
+    "297": {
         "license": {
             "expression": "LGPL-2.1-or-later WITH Qwt-exception-1.0",
             "status": [
@@ -4515,7 +4536,7 @@
         "fedora_name": "Qwt License 1.0",
         "spdx_abbrev": "LGPL-2.1-or-later WITH Qwt-exception-1.0"
     },
-    "296": {
+    "298": {
         "license": {
             "expression": "CC-BY-4.0",
             "status": [
@@ -4536,7 +4557,7 @@
         "fedora_name": "Creative Commons Attribution license 4.0",
         "spdx_abbrev": "CC-BY-4.0"
     },
-    "297": {
+    "299": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-Riverbank-SIP",
         "license": {
@@ -4549,7 +4570,7 @@
         },
         "fedora": {}
     },
-    "298": {
+    "300": {
         "approved": "no",
         "spdx_abbrev": "CC-BY-NC-SA-2.5",
         "license": {
@@ -4561,7 +4582,7 @@
         },
         "fedora": {}
     },
-    "299": {
+    "301": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-unicode-mappings",
         "license": {
@@ -4575,7 +4596,7 @@
         },
         "fedora": {}
     },
-    "300": {
+    "302": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-AMAP",
         "license": {
@@ -4587,7 +4608,7 @@
         },
         "fedora": {}
     },
-    "301": {
+    "303": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-Glyphicons",
         "license": {
@@ -4600,7 +4621,7 @@
         },
         "fedora": {}
     },
-    "302": {
+    "304": {
         "license": {
             "expression": "Artistic-2.0",
             "status": [
@@ -4621,7 +4642,7 @@
         "fedora_name": "Artistic 2.0",
         "spdx_abbrev": "Artistic-2.0"
     },
-    "303": {
+    "305": {
         "approved": "yes",
         "spdx_abbrev": "GPL-2.0-only WITH Asterisk-exception",
         "license": {
@@ -4632,7 +4653,7 @@
         },
         "fedora": {}
     },
-    "304": {
+    "306": {
         "license": {
             "expression": "NLPL",
             "status": [
@@ -4653,7 +4674,7 @@
         "fedora_name": "No Limit Public License",
         "spdx_abbrev": "NLPL"
     },
-    "305": {
+    "307": {
         "license": {
             "expression": "LGPL-2.0-or-later WITH FLTK-exception",
             "status": [
@@ -4674,7 +4695,7 @@
         "fedora_name": "FLTK License",
         "spdx_abbrev": "LGPL-2.0-or-later WITH FLTK-exception"
     },
-    "306": {
+    "308": {
         "license": {
             "expression": "LicenseRef-AMS",
             "status": [
@@ -4694,7 +4715,7 @@
         "fedora_name": "AMS Bluesky Font License",
         "spdx_abbrev": "LicenseRef-AMS"
     },
-    "307": {
+    "309": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-IBMsample",
         "license": {
@@ -4706,7 +4727,7 @@
         },
         "fedora": {}
     },
-    "308": {
+    "310": {
         "license": {
             "expression": "LicenseRef-SCRIP",
             "status": [
@@ -4727,7 +4748,7 @@
         "fedora_name": "SCRIP License",
         "spdx_abbrev": "LicenseRef-SCRIP"
     },
-    "309": {
+    "311": {
         "license": {
             "expression": "etalab-2.0",
             "status": [
@@ -4747,7 +4768,7 @@
         "fedora_name": "License Ouverte",
         "spdx_abbrev": "etalab-2.0"
     },
-    "310": {
+    "312": {
         "license": {
             "expression": "ISC",
             "status": [
@@ -4768,7 +4789,7 @@
         "fedora_name": "ISC License (Bind, DHCP Server)",
         "spdx_abbrev": "ISC"
     },
-    "311": {
+    "313": {
         "approved": "yes",
         "spdx_abbrev": "GPL-3.0-or-later WITH Autoconf-exception-macro",
         "license": {
@@ -4779,7 +4800,7 @@
         },
         "fedora": {}
     },
-    "312": {
+    "314": {
         "approved": "no",
         "spdx_abbrev": "CC-BY-NC-ND-3.0-IGO",
         "license": {
@@ -4791,7 +4812,7 @@
         },
         "fedora": {}
     },
-    "313": {
+    "315": {
         "license": {
             "expression": "Ruby",
             "status": [
@@ -4812,7 +4833,7 @@
         "fedora_name": "Ruby License",
         "spdx_abbrev": "Ruby"
     },
-    "314": {
+    "316": {
         "license": {
             "expression": "Knuth-CTAN",
             "status": [
@@ -4832,7 +4853,7 @@
         "fedora_name": "Knuth License",
         "spdx_abbrev": "Knuth-CTAN"
     },
-    "315": {
+    "317": {
         "approved": "yes",
         "spdx_abbrev": "BSD-4.3RENO",
         "license": {
@@ -4843,7 +4864,7 @@
         },
         "fedora": {}
     },
-    "316": {
+    "318": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-helix",
         "license": {
@@ -4855,7 +4876,7 @@
         },
         "fedora": {}
     },
-    "317": {
+    "319": {
         "license": {
             "expression": "GPL-1.0-or-later",
             "status": [
@@ -4876,13 +4897,13 @@
         "fedora_name": "GNU General Public License (no version)",
         "spdx_abbrev": "GPL-1.0-or-later"
     },
-    "318": {
+    "320": {
         "approved": "yes",
         "fedora_abbrev": "GPL+",
         "fedora_name": "GNU General Public License v1.0 or later",
         "spdx_abbrev": "GPL-1.0-or-later"
     },
-    "319": {
+    "321": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-hessla",
         "license": {
@@ -4894,7 +4915,7 @@
         },
         "fedora": {}
     },
-    "320": {
+    "322": {
         "approved": "yes",
         "spdx_abbrev": "ISC-Veillard",
         "license": {
@@ -4905,7 +4926,7 @@
         },
         "fedora": {}
     },
-    "321": {
+    "323": {
         "license": {
             "expression": "CC-BY-SA-2.0",
             "status": [
@@ -4926,7 +4947,7 @@
         "fedora_name": "Creative Commons Attribution-ShareAlike 2.0",
         "spdx_abbrev": "CC-BY-SA-2.0"
     },
-    "322": {
+    "324": {
         "approved": "yes",
         "spdx_abbrev": "LicenseRef-Not-Copyrightable",
         "license": {
@@ -4938,7 +4959,7 @@
         },
         "fedora": {}
     },
-    "323": {
+    "325": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-qmail",
         "license": {
@@ -4950,7 +4971,7 @@
         },
         "fedora": {}
     },
-    "324": {
+    "326": {
         "license": {
             "expression": "LGPL-2.1-only",
             "status": [
@@ -4970,7 +4991,7 @@
         "fedora_name": "GNU Lesser General Public License v2 (or 2.1) only",
         "spdx_abbrev": "LGPL-2.1-only"
     },
-    "325": {
+    "327": {
         "approved": "yes",
         "spdx_abbrev": "Soundex",
         "license": {
@@ -4981,7 +5002,7 @@
         },
         "fedora": {}
     },
-    "326": {
+    "328": {
         "approved": "no",
         "spdx_abbrev": "Zimbra-1.3",
         "license": {
@@ -4992,7 +5013,7 @@
         },
         "fedora": {}
     },
-    "327": {
+    "329": {
         "license": {
             "expression": "LicenseRef-softSurfer",
             "status": [
@@ -5013,7 +5034,7 @@
         "fedora_name": "softSurfer License",
         "spdx_abbrev": "LicenseRef-softSurfer"
     },
-    "328": {
+    "330": {
         "license": {
             "expression": "EPICS",
             "status": [
@@ -5034,7 +5055,7 @@
         "fedora_name": "EPICS Open License",
         "spdx_abbrev": "EPICS"
     },
-    "329": {
+    "331": {
         "approved": "no",
         "spdx_abbrev": "CC-BY-NC-ND-2.0",
         "license": {
@@ -5046,7 +5067,7 @@
         },
         "fedora": {}
     },
-    "330": {
+    "332": {
         "license": {
             "expression": "CPL-1.0",
             "status": [
@@ -5067,7 +5088,7 @@
         "fedora_name": "Common Public License",
         "spdx_abbrev": "CPL-1.0"
     },
-    "331": {
+    "333": {
         "license": {
             "expression": "EPL-1.0",
             "status": [
@@ -5088,7 +5109,7 @@
         "fedora_name": "Eclipse Public License 1.0",
         "spdx_abbrev": "EPL-1.0"
     },
-    "332": {
+    "334": {
         "approved": "yes",
         "spdx_abbrev": "Kazlib",
         "license": {
@@ -5099,7 +5120,7 @@
         },
         "fedora": {}
     },
-    "333": {
+    "335": {
         "approved": "yes",
         "spdx_abbrev": "OFFIS",
         "license": {
@@ -5110,7 +5131,7 @@
         },
         "fedora": {}
     },
-    "334": {
+    "336": {
         "license": {
             "expression": "GFDL-1.2-only",
             "status": [
@@ -5130,7 +5151,7 @@
         "fedora_name": "GNU Free Documentation License v1.2 only",
         "spdx_abbrev": "GFDL-1.2-only"
     },
-    "335": {
+    "337": {
         "approved": "yes",
         "spdx_abbrev": "GPL-3.0-or-later WITH GPL-3.0-interface-exception",
         "license": {
@@ -5141,7 +5162,7 @@
         },
         "fedora": {}
     },
-    "336": {
+    "338": {
         "license": {
             "expression": "Zed",
             "status": [
@@ -5161,7 +5182,7 @@
         "fedora_name": "Zed License",
         "spdx_abbrev": "Zed"
     },
-    "337": {
+    "339": {
         "license": {
             "expression": "OLDAP-2.7",
             "status": [
@@ -5181,7 +5202,7 @@
         "fedora_name": "OpenLDAP License",
         "spdx_abbrev": "OLDAP-2.7"
     },
-    "338": {
+    "340": {
         "license": {
             "expression": "zlib-acknowledgement",
             "status": [
@@ -5203,25 +5224,25 @@
         "fedora_name": "Nunit License",
         "spdx_abbrev": "zlib-acknowledgement"
     },
-    "339": {
+    "341": {
         "approved": "yes",
         "fedora_abbrev": "MIT with advertising",
         "fedora_name": "zlib/libpng License with Acknowledgement",
         "spdx_abbrev": "zlib-acknowledgement"
     },
-    "340": {
+    "342": {
         "approved": "yes",
         "fedora_abbrev": "zlib with acknowledgement",
         "fedora_name": "Nunit License",
         "spdx_abbrev": "zlib-acknowledgement"
     },
-    "341": {
+    "343": {
         "approved": "yes",
         "fedora_abbrev": "zlib with acknowledgement",
         "fedora_name": "zlib/libpng License with Acknowledgement",
         "spdx_abbrev": "zlib-acknowledgement"
     },
-    "342": {
+    "344": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-novint",
         "license": {
@@ -5234,7 +5255,7 @@
         },
         "fedora": {}
     },
-    "343": {
+    "345": {
         "license": {
             "expression": "Rdisc",
             "status": [
@@ -5255,7 +5276,7 @@
         "fedora_name": "Rdisc License",
         "spdx_abbrev": "Rdisc"
     },
-    "344": {
+    "346": {
         "license": {
             "expression": "Interbase-1.0",
             "status": [
@@ -5276,7 +5297,7 @@
         "fedora_name": "Interbase Public License",
         "spdx_abbrev": "Interbase-1.0"
     },
-    "345": {
+    "347": {
         "license": {
             "expression": "MS-PL",
             "status": [
@@ -5297,7 +5318,7 @@
         "fedora_name": "Microsoft Public License",
         "spdx_abbrev": "MS-PL"
     },
-    "346": {
+    "348": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-iTunes",
         "license": {
@@ -5309,7 +5330,7 @@
         },
         "fedora": {}
     },
-    "347": {
+    "349": {
         "approved": "yes",
         "spdx_abbrev": "GPL-2.0-or-later WITH SANE-exception",
         "license": {
@@ -5320,7 +5341,7 @@
         },
         "fedora": {}
     },
-    "348": {
+    "350": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-quicktime",
         "license": {
@@ -5332,7 +5353,7 @@
         },
         "fedora": {}
     },
-    "349": {
+    "351": {
         "approved": "yes",
         "spdx_abbrev": "swrule",
         "license": {
@@ -5343,7 +5364,7 @@
         },
         "fedora": {}
     },
-    "350": {
+    "352": {
         "approved": "yes",
         "spdx_abbrev": "GPL-2.0-or-later WITH Linux-syscall-note",
         "license": {
@@ -5354,7 +5375,7 @@
         },
         "fedora": {}
     },
-    "351": {
+    "353": {
         "license": {
             "expression": "LicenseRef-STMPL",
             "status": [
@@ -5375,7 +5396,7 @@
         "fedora_name": "SciTech MGL Public License",
         "spdx_abbrev": "LicenseRef-STMPL"
     },
-    "352": {
+    "354": {
         "license": {
             "expression": "NRL",
             "status": [
@@ -5396,7 +5417,7 @@
         "fedora_name": "NRL License",
         "spdx_abbrev": "NRL"
     },
-    "353": {
+    "355": {
         "approved": "yes",
         "spdx_abbrev": "pkgconf",
         "license": {
@@ -5407,7 +5428,7 @@
         },
         "fedora": {}
     },
-    "354": {
+    "356": {
         "approved": "no",
         "spdx_abbrev": "ODC-By-1.0",
         "license": {
@@ -5418,7 +5439,7 @@
         },
         "fedora": {}
     },
-    "355": {
+    "357": {
         "license": {
             "expression": "GFDL-1.3-only",
             "status": [
@@ -5438,7 +5459,7 @@
         "fedora_name": "GNU Free Documentation License v1.3 only",
         "spdx_abbrev": "GFDL-1.3-only"
     },
-    "356": {
+    "358": {
         "license": {
             "expression": "NAIST-2003",
             "status": [
@@ -5458,7 +5479,7 @@
         "fedora_name": "mecab-ipadic license",
         "spdx_abbrev": "NAIST-2003"
     },
-    "357": {
+    "359": {
         "approved": "no",
         "spdx_abbrev": "CC-BY-NC-SA-3.0",
         "license": {
@@ -5470,7 +5491,7 @@
         },
         "fedora": {}
     },
-    "358": {
+    "360": {
         "license": {
             "expression": "GFDL-1.1-invariants-only",
             "status": [
@@ -5490,7 +5511,7 @@
         "fedora_name": "GNU Free Documentation License v1.1 only - invariants",
         "spdx_abbrev": "GFDL-1.1-invariants-only"
     },
-    "359": {
+    "361": {
         "approved": "yes",
         "spdx_abbrev": "GPL-2.0-or-later WITH UBDL-exception",
         "license": {
@@ -5501,7 +5522,7 @@
         },
         "fedora": {}
     },
-    "360": {
+    "362": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-Metasploit-1.2",
         "license": {
@@ -5513,7 +5534,7 @@
         },
         "fedora": {}
     },
-    "361": {
+    "363": {
         "license": {
             "expression": "ClArtistic",
             "status": [
@@ -5534,7 +5555,7 @@
         "fedora_name": "Artistic (clarified)",
         "spdx_abbrev": "ClArtistic"
     },
-    "362": {
+    "364": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-CoreMark-Pro",
         "license": {
@@ -5547,7 +5568,7 @@
         },
         "fedora": {}
     },
-    "363": {
+    "365": {
         "license": {
             "expression": "LicenseRef-EFML",
             "status": [
@@ -5567,7 +5588,7 @@
         "fedora_name": "Ethymonics Free Music License",
         "spdx_abbrev": "LicenseRef-EFML"
     },
-    "364": {
+    "366": {
         "license": {
             "expression": "BSD-3-Clause",
             "status": [
@@ -5592,49 +5613,49 @@
         "fedora_name": "BSD License (no advertising)",
         "spdx_abbrev": "BSD-3-Clause"
     },
-    "365": {
+    "367": {
         "approved": "yes",
         "fedora_abbrev": "BSD",
         "fedora_name": "Metasploit Framework License (post 2006)",
         "spdx_abbrev": "BSD-3-Clause"
     },
-    "366": {
+    "368": {
         "approved": "yes",
         "fedora_abbrev": "BSD",
         "fedora_name": "NetCDF License",
         "spdx_abbrev": "BSD-3-Clause"
     },
-    "367": {
+    "369": {
         "approved": "yes",
         "fedora_abbrev": "BSD",
         "fedora_name": "Eclipse Distribution License 1.0",
-        "spdx_abbrev": "BSD-3-Clause"
-    },
-    "368": {
-        "approved": "yes",
-        "fedora_abbrev": "NetCDF",
-        "fedora_name": "BSD License (no advertising)",
-        "spdx_abbrev": "BSD-3-Clause"
-    },
-    "369": {
-        "approved": "yes",
-        "fedora_abbrev": "NetCDF",
-        "fedora_name": "Metasploit Framework License (post 2006)",
         "spdx_abbrev": "BSD-3-Clause"
     },
     "370": {
         "approved": "yes",
         "fedora_abbrev": "NetCDF",
-        "fedora_name": "NetCDF License",
+        "fedora_name": "BSD License (no advertising)",
         "spdx_abbrev": "BSD-3-Clause"
     },
     "371": {
         "approved": "yes",
         "fedora_abbrev": "NetCDF",
-        "fedora_name": "Eclipse Distribution License 1.0",
+        "fedora_name": "Metasploit Framework License (post 2006)",
         "spdx_abbrev": "BSD-3-Clause"
     },
     "372": {
+        "approved": "yes",
+        "fedora_abbrev": "NetCDF",
+        "fedora_name": "NetCDF License",
+        "spdx_abbrev": "BSD-3-Clause"
+    },
+    "373": {
+        "approved": "yes",
+        "fedora_abbrev": "NetCDF",
+        "fedora_name": "Eclipse Distribution License 1.0",
+        "spdx_abbrev": "BSD-3-Clause"
+    },
+    "374": {
         "approved": "yes",
         "spdx_abbrev": "CMU-Mach",
         "license": {
@@ -5645,7 +5666,7 @@
         },
         "fedora": {}
     },
-    "373": {
+    "375": {
         "approved": "yes",
         "spdx_abbrev": "Adobe-Display-Postscript",
         "license": {
@@ -5656,7 +5677,7 @@
         },
         "fedora": {}
     },
-    "374": {
+    "376": {
         "approved": "yes",
         "spdx_abbrev": "GPL-2.0-or-later WITH WxWindows-exception-3.1",
         "license": {
@@ -5667,7 +5688,7 @@
         },
         "fedora": {}
     },
-    "375": {
+    "377": {
         "license": {
             "expression": "Crossword",
             "status": [
@@ -5688,7 +5709,7 @@
         "fedora_name": "Crossword License",
         "spdx_abbrev": "Crossword"
     },
-    "376": {
+    "378": {
         "license": {
             "expression": "Xerox",
             "status": [
@@ -5708,7 +5729,7 @@
         "fedora_name": "Xerox License",
         "spdx_abbrev": "Xerox"
     },
-    "377": {
+    "379": {
         "license": {
             "expression": "LicenseRef-Par",
             "status": [
@@ -5729,7 +5750,7 @@
         "fedora_name": "Par License",
         "spdx_abbrev": "LicenseRef-Par"
     },
-    "378": {
+    "380": {
         "license": {
             "expression": "JasPer-2.0",
             "status": [
@@ -5750,7 +5771,7 @@
         "fedora_name": "JasPer License",
         "spdx_abbrev": "JasPer-2.0"
     },
-    "379": {
+    "381": {
         "approved": "yes",
         "spdx_abbrev": "Sun-PPP-2000",
         "license": {
@@ -5761,7 +5782,7 @@
         },
         "fedora": {}
     },
-    "380": {
+    "382": {
         "approved": "yes",
         "spdx_abbrev": "GPL-2.0-or-later WITH GStreamer-exception-2008",
         "license": {
@@ -5772,7 +5793,7 @@
         },
         "fedora": {}
     },
-    "381": {
+    "383": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-9wm",
         "license": {
@@ -5784,7 +5805,7 @@
         },
         "fedora": {}
     },
-    "382": {
+    "384": {
         "license": {
             "expression": "OLDAP-2.8",
             "status": [
@@ -5805,7 +5826,7 @@
         "fedora_name": "OpenLDAP License",
         "spdx_abbrev": "OLDAP-2.8"
     },
-    "383": {
+    "385": {
         "license": {
             "expression": "LicenseRef-ec",
             "status": [
@@ -5825,7 +5846,7 @@
         "fedora_name": "ec Font License",
         "spdx_abbrev": "LicenseRef-ec"
     },
-    "384": {
+    "386": {
         "approved": "yes",
         "spdx_abbrev": "AMD-newlib",
         "license": {
@@ -5836,7 +5857,7 @@
         },
         "fedora": {}
     },
-    "385": {
+    "387": {
         "approved": "yes",
         "spdx_abbrev": "GPL-2.0-or-later WITH Libtool-exception",
         "license": {
@@ -5847,7 +5868,7 @@
         },
         "fedora": {}
     },
-    "386": {
+    "388": {
         "approved": "yes",
         "spdx_abbrev": "HPND-export-US-acknowledgement",
         "license": {
@@ -5858,7 +5879,7 @@
         },
         "fedora": {}
     },
-    "387": {
+    "389": {
         "license": {
             "expression": "BSD-4-Clause-UC",
             "status": [
@@ -5879,7 +5900,7 @@
         "fedora_name": "BSD License (Advertising Variant)",
         "spdx_abbrev": "BSD-4-Clause-UC"
     },
-    "388": {
+    "390": {
         "license": {
             "expression": "MakeIndex",
             "status": [
@@ -5900,7 +5921,7 @@
         "fedora_name": "MakeIndex License",
         "spdx_abbrev": "MakeIndex"
     },
-    "389": {
+    "391": {
         "license": {
             "expression": "GPL-3.0-or-later",
             "status": [
@@ -5921,7 +5942,7 @@
         "fedora_name": "GNU General Public License v3.0 or later",
         "spdx_abbrev": "GPL-3.0-or-later"
     },
-    "390": {
+    "392": {
         "license": {
             "expression": "Unlicense",
             "status": [
@@ -5942,7 +5963,7 @@
         "fedora_name": "Unlicense",
         "spdx_abbrev": "Unlicense"
     },
-    "391": {
+    "393": {
         "license": {
             "expression": "GPL-3.0-or-later WITH Font-exception-2.0",
             "status": [
@@ -5963,7 +5984,7 @@
         "fedora_name": "GNU General Public License v3.0 or later, with font embedding exception",
         "spdx_abbrev": "GPL-3.0-or-later WITH Font-exception-2.0"
     },
-    "392": {
+    "394": {
         "approved": "yes",
         "spdx_abbrev": "NIST-PD",
         "license": {
@@ -5975,7 +5996,7 @@
         },
         "fedora": {}
     },
-    "393": {
+    "395": {
         "license": {
             "expression": "OSL-2.0",
             "status": [
@@ -5996,7 +6017,7 @@
         "fedora_name": "Open Software License 2.0",
         "spdx_abbrev": "OSL-2.0"
     },
-    "394": {
+    "396": {
         "approved": "yes",
         "spdx_abbrev": "snprintf",
         "license": {
@@ -6007,7 +6028,7 @@
         },
         "fedora": {}
     },
-    "395": {
+    "397": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-rdist-Cooper",
         "license": {
@@ -6020,7 +6041,7 @@
         },
         "fedora": {}
     },
-    "396": {
+    "398": {
         "approved": "yes",
         "spdx_abbrev": "MMIXware",
         "license": {
@@ -6031,7 +6052,7 @@
         },
         "fedora": {}
     },
-    "397": {
+    "399": {
         "license": {
             "expression": "CNRI-Python",
             "status": [
@@ -6052,7 +6073,7 @@
         "fedora_name": "CNRI License (Old Python)",
         "spdx_abbrev": "CNRI-Python"
     },
-    "398": {
+    "400": {
         "license": {
             "expression": "CECILL-1.1",
             "status": [
@@ -6073,7 +6094,7 @@
         "fedora_name": "CeCILL License v1.1",
         "spdx_abbrev": "CECILL-1.1"
     },
-    "399": {
+    "401": {
         "license": {
             "expression": "LicenseRef-Logica",
             "status": [
@@ -6094,7 +6115,7 @@
         "fedora_name": "Logica Open Source License",
         "spdx_abbrev": "LicenseRef-Logica"
     },
-    "400": {
+    "402": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-paul-hsieh-derivative",
         "license": {
@@ -6106,7 +6127,7 @@
         },
         "fedora": {}
     },
-    "401": {
+    "403": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-Fedora-Logos",
         "license": {
@@ -6122,7 +6143,7 @@
         },
         "fedora": {}
     },
-    "402": {
+    "404": {
         "license": {
             "expression": "xpp",
             "status": [
@@ -6142,7 +6163,7 @@
         "fedora_name": "XPP License",
         "spdx_abbrev": "xpp"
     },
-    "403": {
+    "405": {
         "approved": "yes",
         "spdx_abbrev": "DEC-3-Clause",
         "license": {
@@ -6153,7 +6174,7 @@
         },
         "fedora": {}
     },
-    "404": {
+    "406": {
         "license": {
             "expression": "Borceux",
             "status": [
@@ -6174,7 +6195,7 @@
         "fedora_name": "Borceux license",
         "spdx_abbrev": "Borceux"
     },
-    "405": {
+    "407": {
         "license": {
             "expression": "OFL-1.1-RFN",
             "status": [
@@ -6194,7 +6215,7 @@
         "fedora_name": "SIL Open Font License 1.1",
         "spdx_abbrev": "OFL-1.1-RFN"
     },
-    "406": {
+    "408": {
         "license": {
             "expression": "CC-BY-ND-1.0",
             "status": [
@@ -6214,7 +6235,7 @@
         "fedora_name": "Creative Commons Attribution-NoDerivs",
         "spdx_abbrev": "CC-BY-ND-1.0"
     },
-    "407": {
+    "409": {
         "approved": "yes",
         "spdx_abbrev": "AML-glslang",
         "license": {
@@ -6225,7 +6246,7 @@
         },
         "fedora": {}
     },
-    "408": {
+    "410": {
         "license": {
             "expression": "dvipdfm",
             "status": [
@@ -6246,7 +6267,7 @@
         "fedora_name": "dvipdfm License",
         "spdx_abbrev": "dvipdfm"
     },
-    "409": {
+    "411": {
         "approved": "yes",
         "spdx_abbrev": "BSD-3-Clause-acpica",
         "license": {
@@ -6257,7 +6278,7 @@
         },
         "fedora": {}
     },
-    "410": {
+    "412": {
         "approved": "yes",
         "spdx_abbrev": "Linux-man-pages-1-para",
         "license": {
@@ -6268,7 +6289,7 @@
         },
         "fedora": {}
     },
-    "411": {
+    "413": {
         "license": {
             "expression": "GFDL-1.1-invariants-or-later",
             "status": [
@@ -6288,7 +6309,7 @@
         "fedora_name": "GNU Free Documentation License v1.1 or later - invariants",
         "spdx_abbrev": "GFDL-1.1-invariants-or-later"
     },
-    "412": {
+    "414": {
         "license": {
             "expression": "LicenseRef-LOSLA",
             "status": [
@@ -6309,7 +6330,7 @@
         "fedora_name": "LEGO Open Source License Agreement",
         "spdx_abbrev": "LicenseRef-LOSLA"
     },
-    "413": {
+    "415": {
         "license": {
             "expression": "ZPL-2.1",
             "status": [
@@ -6329,7 +6350,7 @@
         "fedora_name": "Zope Public License v 2.1",
         "spdx_abbrev": "ZPL-2.1"
     },
-    "414": {
+    "416": {
         "license": {
             "expression": "LGPL-3.0-or-later",
             "status": [
@@ -6350,7 +6371,7 @@
         "fedora_name": "GNU Lesser General Public License v3.0 or later",
         "spdx_abbrev": "LGPL-3.0-or-later"
     },
-    "415": {
+    "417": {
         "approved": "yes",
         "spdx_abbrev": "IJG-short",
         "license": {
@@ -6361,7 +6382,7 @@
         },
         "fedora": {}
     },
-    "416": {
+    "418": {
         "license": {
             "expression": "LPPL-1.3a",
             "status": [
@@ -6382,7 +6403,7 @@
         "fedora_name": "LaTeX Project Public License",
         "spdx_abbrev": "LPPL-1.3a"
     },
-    "417": {
+    "419": {
         "license": {
             "expression": "AML",
             "status": [
@@ -6403,7 +6424,7 @@
         "fedora_name": "Apple MIT License",
         "spdx_abbrev": "AML"
     },
-    "418": {
+    "420": {
         "license": {
             "expression": "Arphic-1999",
             "status": [
@@ -6423,7 +6444,7 @@
         "fedora_name": "Arphic Public License",
         "spdx_abbrev": "Arphic-1999"
     },
-    "419": {
+    "421": {
         "license": {
             "expression": "GFDL-1.2-invariants-or-later",
             "status": [
@@ -6443,7 +6464,7 @@
         "fedora_name": "GNU Free Documentation License v1.2 or later - invariants",
         "spdx_abbrev": "GFDL-1.2-invariants-or-later"
     },
-    "420": {
+    "422": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-sun-ssscfr-1.1",
         "license": {
@@ -6455,7 +6476,7 @@
         },
         "fedora": {}
     },
-    "421": {
+    "423": {
         "approved": "no",
         "spdx_abbrev": "OPL-1.0",
         "license": {
@@ -6467,7 +6488,7 @@
         },
         "fedora": {}
     },
-    "422": {
+    "424": {
         "license": {
             "expression": "NIST-PD-fallback",
             "status": [
@@ -6488,7 +6509,7 @@
         "fedora_name": "NIST Software License",
         "spdx_abbrev": "NIST-PD-fallback"
     },
-    "423": {
+    "425": {
         "approved": "yes",
         "spdx_abbrev": "FSFAP-no-warranty-disclaimer",
         "license": {
@@ -6499,7 +6520,7 @@
         },
         "fedora": {}
     },
-    "424": {
+    "426": {
         "approved": "yes",
         "spdx_abbrev": "LGPL-2.0-or-later WITH Linux-syscall-note",
         "license": {
@@ -6510,7 +6531,7 @@
         },
         "fedora": {}
     },
-    "425": {
+    "427": {
         "license": {
             "expression": "LicenseRef-OpenMusic-green",
             "status": [
@@ -6531,7 +6552,7 @@
         "fedora_name": "LinuxTag Green OpenMusic License",
         "spdx_abbrev": "LicenseRef-OpenMusic-green"
     },
-    "426": {
+    "428": {
         "license": {
             "expression": "Giftware",
             "status": [
@@ -6552,7 +6573,7 @@
         "fedora_name": "Giftware License",
         "spdx_abbrev": "Giftware"
     },
-    "427": {
+    "429": {
         "license": {
             "expression": "GPL-2.0-only",
             "status": [
@@ -6573,7 +6594,7 @@
         "fedora_name": "GNU General Public License v2.0 only",
         "spdx_abbrev": "GPL-2.0-only"
     },
-    "428": {
+    "430": {
         "license": {
             "expression": "ErlPL-1.1",
             "status": [
@@ -6594,7 +6615,7 @@
         "fedora_name": "Erlang Public License 1.1",
         "spdx_abbrev": "ErlPL-1.1"
     },
-    "429": {
+    "431": {
         "license": {
             "expression": "IPA",
             "status": [
@@ -6614,7 +6635,7 @@
         "fedora_name": "IPA Font License",
         "spdx_abbrev": "IPA"
     },
-    "430": {
+    "432": {
         "license": {
             "expression": "OML",
             "status": [
@@ -6635,7 +6656,7 @@
         "fedora_name": "Open Market License",
         "spdx_abbrev": "OML"
     },
-    "431": {
+    "433": {
         "approved": "yes",
         "spdx_abbrev": "SunPro",
         "license": {
@@ -6646,7 +6667,7 @@
         },
         "fedora": {}
     },
-    "432": {
+    "434": {
         "license": {
             "expression": "LicenseRef-RSA",
             "status": [
@@ -6667,7 +6688,7 @@
         "fedora_name": "RSA License",
         "spdx_abbrev": "LicenseRef-RSA"
     },
-    "433": {
+    "435": {
         "license": {
             "expression": "psfrag",
             "status": [
@@ -6688,7 +6709,7 @@
         "fedora_name": "psfrag License",
         "spdx_abbrev": "psfrag"
     },
-    "434": {
+    "436": {
         "approved": "yes",
         "spdx_abbrev": "GPL-2.0-or-later WITH Autoconf-exception-macro",
         "license": {
@@ -6699,7 +6720,7 @@
         },
         "fedora": {}
     },
-    "435": {
+    "437": {
         "approved": "yes",
         "spdx_abbrev": "W3C-19980720",
         "license": {
@@ -6710,7 +6731,7 @@
         },
         "fedora": {}
     },
-    "436": {
+    "438": {
         "license": {
             "expression": "Artistic-1.0-Perl",
             "status": [
@@ -6731,7 +6752,7 @@
         "fedora_name": "Artistic 1.0 (original)",
         "spdx_abbrev": "Artistic-1.0-Perl"
     },
-    "437": {
+    "439": {
         "license": {
             "expression": "SMLNJ",
             "status": [
@@ -6753,13 +6774,13 @@
         "fedora_name": "MIT:9MLton variant",
         "spdx_abbrev": "SMLNJ"
     },
-    "438": {
+    "440": {
         "approved": "yes",
         "fedora_abbrev": "MIT",
         "fedora_name": "Standard ML of New Jersey License",
         "spdx_abbrev": "SMLNJ"
     },
-    "439": {
+    "441": {
         "license": {
             "expression": "MIT-open-group",
             "status": [
@@ -6778,7 +6799,7 @@
         "fedora_name": "",
         "spdx_abbrev": "MIT-open-group"
     },
-    "440": {
+    "442": {
         "license": {
             "expression": "GPL-2.0-or-later",
             "status": [
@@ -6799,7 +6820,7 @@
         "fedora_name": "GNU General Public License v2.0 or later",
         "spdx_abbrev": "GPL-2.0-or-later"
     },
-    "441": {
+    "443": {
         "license": {
             "expression": "NPL-1.0",
             "status": [
@@ -6820,7 +6841,7 @@
         "fedora_name": "Netscape Public License",
         "spdx_abbrev": "NPL-1.0"
     },
-    "442": {
+    "444": {
         "approved": "yes",
         "spdx_abbrev": "BSD-2-Clause-first-lines",
         "license": {
@@ -6831,7 +6852,7 @@
         },
         "fedora": {}
     },
-    "443": {
+    "445": {
         "approved": "yes",
         "spdx_abbrev": "TermReadKey",
         "license": {
@@ -6842,7 +6863,7 @@
         },
         "fedora": {}
     },
-    "444": {
+    "446": {
         "approved": "yes",
         "spdx_abbrev": "HPND-export-US-modify",
         "license": {
@@ -6853,7 +6874,7 @@
         },
         "fedora": {}
     },
-    "445": {
+    "447": {
         "license": {
             "expression": "LicenseRef-Array",
             "status": [
@@ -6874,7 +6895,7 @@
         "fedora_name": "Array",
         "spdx_abbrev": "LicenseRef-Array"
     },
-    "446": {
+    "448": {
         "approved": "yes",
         "spdx_abbrev": "GPL-3.0-or-later WITH cryptsetup-OpenSSL-exception",
         "license": {
@@ -6885,7 +6906,7 @@
         },
         "fedora": {}
     },
-    "447": {
+    "449": {
         "license": {
             "expression": "LicenseRef-Tolua",
             "status": [
@@ -6906,7 +6927,7 @@
         "fedora_name": "Tolua License",
         "spdx_abbrev": "LicenseRef-Tolua"
     },
-    "448": {
+    "450": {
         "approved": "yes",
         "spdx_abbrev": "GPL-2.0-or-later WITH GPL-3.0-linking-source-exception",
         "license": {
@@ -6917,7 +6938,7 @@
         },
         "fedora": {}
     },
-    "449": {
+    "451": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-STREAM",
         "license": {
@@ -6930,7 +6951,7 @@
         },
         "fedora": {}
     },
-    "450": {
+    "452": {
         "license": {
             "expression": "XSkat",
             "status": [
@@ -6950,7 +6971,7 @@
         "fedora_name": "XSkat License",
         "spdx_abbrev": "XSkat"
     },
-    "451": {
+    "453": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-HP-archival-only",
         "license": {
@@ -6962,7 +6983,7 @@
         },
         "fedora": {}
     },
-    "452": {
+    "454": {
         "approved": "yes",
         "spdx_abbrev": "GPL-2.0-or-later WITH GNU-compiler-exception",
         "license": {
@@ -6973,7 +6994,7 @@
         },
         "fedora": {}
     },
-    "453": {
+    "455": {
         "approved": "yes",
         "spdx_abbrev": "Unicode-DFS-2016",
         "license": {
@@ -6985,7 +7006,7 @@
         },
         "fedora": {}
     },
-    "454": {
+    "456": {
         "license": {
             "expression": "0BSD",
             "status": [
@@ -7006,7 +7027,7 @@
         "fedora_name": "Zero-Clause BSD",
         "spdx_abbrev": "0BSD"
     },
-    "455": {
+    "457": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-SunBCL",
         "license": {
@@ -7018,7 +7039,7 @@
         },
         "fedora": {}
     },
-    "456": {
+    "458": {
         "license": {
             "expression": "CC-BY-1.0",
             "status": [
@@ -7039,7 +7060,7 @@
         "fedora_name": "Creative Commons Attribution license 1.0",
         "spdx_abbrev": "CC-BY-1.0"
     },
-    "457": {
+    "459": {
         "approved": "yes",
         "spdx_abbrev": "LicenseRef-BSD-2-Clause-WITH-AdditionRef-AOMPL-1.0",
         "license": {
@@ -7050,7 +7071,7 @@
         },
         "fedora": {}
     },
-    "458": {
+    "460": {
         "approved": "yes",
         "spdx_abbrev": "Sun-PPP",
         "license": {
@@ -7061,7 +7082,7 @@
         },
         "fedora": {}
     },
-    "459": {
+    "461": {
         "license": {
             "expression": "MTLL",
             "status": [
@@ -7082,7 +7103,7 @@
         "fedora_name": "Matrix Template Library License",
         "spdx_abbrev": "MTLL"
     },
-    "460": {
+    "462": {
         "license": {
             "expression": "NCSA",
             "status": [
@@ -7103,7 +7124,7 @@
         "fedora_name": "NCSA/University of Illinois Open Source License",
         "spdx_abbrev": "NCSA"
     },
-    "461": {
+    "463": {
         "approved": "yes",
         "spdx_abbrev": "Apache-2.0 WITH LLVM-exception",
         "license": {
@@ -7114,7 +7135,7 @@
         },
         "fedora": {}
     },
-    "462": {
+    "464": {
         "approved": "yes",
         "spdx_abbrev": "HPND-Markus-Kuhn",
         "license": {
@@ -7125,7 +7146,7 @@
         },
         "fedora": {}
     },
-    "463": {
+    "465": {
         "approved": "yes",
         "spdx_abbrev": "BSD-3-Clause-Open-MPI",
         "license": {
@@ -7136,7 +7157,7 @@
         },
         "fedora": {}
     },
-    "464": {
+    "466": {
         "approved": "yes",
         "spdx_abbrev": "SSH-short",
         "license": {
@@ -7147,7 +7168,7 @@
         },
         "fedora": {}
     },
-    "465": {
+    "467": {
         "license": {
             "expression": "HPND",
             "status": [
@@ -7169,13 +7190,13 @@
         "fedora_name": "Historical Permission Notice and Disclaimer",
         "spdx_abbrev": "HPND"
     },
-    "466": {
+    "468": {
         "approved": "yes",
         "fedora_abbrev": "MIT",
         "fedora_name": "MIT:Old Style with legal disclaimer",
         "spdx_abbrev": "HPND"
     },
-    "467": {
+    "469": {
         "license": {
             "expression": "CDDL-1.0",
             "status": [
@@ -7196,7 +7217,7 @@
         "fedora_name": "Common Development Distribution License 1.0",
         "spdx_abbrev": "CDDL-1.0"
     },
-    "468": {
+    "470": {
         "approved": "yes",
         "spdx_abbrev": "GPL-3.0-or-later WITH GCC-exception-3.1",
         "license": {
@@ -7207,7 +7228,7 @@
         },
         "fedora": {}
     },
-    "469": {
+    "471": {
         "license": {
             "expression": "Leptonica",
             "status": [
@@ -7228,7 +7249,7 @@
         "fedora_name": "Leptonica License",
         "spdx_abbrev": "Leptonica"
     },
-    "470": {
+    "472": {
         "license": {
             "expression": "Linux-man-pages-copyleft",
             "status": [
@@ -7248,7 +7269,7 @@
         "fedora_name": "Verbatim License",
         "spdx_abbrev": "Linux-man-pages-copyleft"
     },
-    "471": {
+    "473": {
         "approved": "yes",
         "spdx_abbrev": "Cronyx",
         "license": {
@@ -7259,7 +7280,7 @@
         },
         "fedora": {}
     },
-    "472": {
+    "474": {
         "license": {
             "expression": "Beerware",
             "status": [
@@ -7280,7 +7301,7 @@
         "fedora_name": "Beerware License",
         "spdx_abbrev": "Beerware"
     },
-    "473": {
+    "475": {
         "license": {
             "expression": "GPL-3.0-only WITH Font-exception-2.0",
             "status": [
@@ -7301,7 +7322,7 @@
         "fedora_name": "GNU General Public License v3.0 only, with font embedding exception",
         "spdx_abbrev": "GPL-3.0-only WITH Font-exception-2.0"
     },
-    "474": {
+    "476": {
         "license": {
             "expression": "ADSL",
             "status": [
@@ -7322,7 +7343,7 @@
         "fedora_name": "Amazon Digital Services License",
         "spdx_abbrev": "ADSL"
     },
-    "475": {
+    "477": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-IEEE-2017",
         "license": {
@@ -7334,7 +7355,7 @@
         },
         "fedora": {}
     },
-    "476": {
+    "478": {
         "license": {
             "expression": "CC-BY-3.0-NL",
             "status": [
@@ -7355,7 +7376,7 @@
         "fedora_name": "Creative Commons Attribution license 3.0 Netherlands",
         "spdx_abbrev": "CC-BY-3.0-NL"
     },
-    "477": {
+    "479": {
         "approved": "yes",
         "spdx_abbrev": "BSD-4.3TAHOE",
         "license": {
@@ -7366,7 +7387,7 @@
         },
         "fedora": {}
     },
-    "478": {
+    "480": {
         "license": {
             "expression": "LicenseRef-PTFL",
             "status": [
@@ -7386,7 +7407,7 @@
         "fedora_name": "ParaType Font License",
         "spdx_abbrev": "LicenseRef-PTFL"
     },
-    "479": {
+    "481": {
         "license": {
             "expression": "Sendmail-8.23",
             "status": [
@@ -7407,7 +7428,7 @@
         "fedora_name": "Sendmail License",
         "spdx_abbrev": "Sendmail-8.23"
     },
-    "480": {
+    "482": {
         "license": {
             "expression": "LicenseRef-DMTF",
             "status": [
@@ -7427,7 +7448,7 @@
         "fedora_name": "Distributed Management Task Force License",
         "spdx_abbrev": "LicenseRef-DMTF"
     },
-    "481": {
+    "483": {
         "approved": "yes",
         "spdx_abbrev": "Latex2e-translated-notice",
         "license": {
@@ -7438,7 +7459,7 @@
         },
         "fedora": {}
     },
-    "482": {
+    "484": {
         "license": {
             "expression": "MIT-0",
             "status": [
@@ -7459,7 +7480,7 @@
         "fedora_name": "MIT No Attribution (MIT-0)",
         "spdx_abbrev": "MIT-0"
     },
-    "483": {
+    "485": {
         "license": {
             "expression": "EPL-2.0",
             "status": [
@@ -7480,7 +7501,7 @@
         "fedora_name": "Eclipse Public License 2.0",
         "spdx_abbrev": "EPL-2.0"
     },
-    "484": {
+    "486": {
         "approved": "yes",
         "spdx_abbrev": "GPL-2.0-only WITH cryptsetup-OpenSSL-exception",
         "license": {
@@ -7491,7 +7512,7 @@
         },
         "fedora": {}
     },
-    "485": {
+    "487": {
         "approved": "no",
         "spdx_abbrev": "CC-BY-NC-SA-3.0-IGO",
         "license": {
@@ -7503,7 +7524,7 @@
         },
         "fedora": {}
     },
-    "486": {
+    "488": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-cc-nc-sampling-plus-1.0",
         "license": {
@@ -7515,7 +7536,7 @@
         },
         "fedora": {}
     },
-    "487": {
+    "489": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-mame",
         "license": {
@@ -7527,7 +7548,7 @@
         },
         "fedora": {}
     },
-    "488": {
+    "490": {
         "approved": "yes",
         "spdx_abbrev": "LicenseRef-libzmq",
         "license": {
@@ -7539,7 +7560,7 @@
         },
         "fedora": {}
     },
-    "489": {
+    "491": {
         "approved": "no",
         "spdx_abbrev": "APSL-1.1",
         "license": {
@@ -7551,7 +7572,7 @@
         },
         "fedora": {}
     },
-    "490": {
+    "492": {
         "license": {
             "expression": "LLGPL",
             "status": [
@@ -7572,7 +7593,7 @@
         "fedora_name": "LLGPL",
         "spdx_abbrev": "LLGPL"
     },
-    "491": {
+    "493": {
         "approved": "yes",
         "spdx_abbrev": "GPL-1.0-or-later WITH Linux-syscall-note",
         "license": {
@@ -7583,7 +7604,7 @@
         },
         "fedora": {}
     },
-    "492": {
+    "494": {
         "license": {
             "expression": "SWL",
             "status": [
@@ -7604,7 +7625,7 @@
         "fedora_name": "Scheme Widget Library (SWL) Software License Agreement",
         "spdx_abbrev": "SWL"
     },
-    "493": {
+    "495": {
         "approved": "yes",
         "spdx_abbrev": "GPL-2.0-only WITH vsftpd-openssl-exception",
         "license": {
@@ -7615,7 +7636,7 @@
         },
         "fedora": {}
     },
-    "494": {
+    "496": {
         "approved": "yes",
         "spdx_abbrev": "Apache-2.0 WITH Swift-exception",
         "license": {
@@ -7626,7 +7647,7 @@
         },
         "fedora": {}
     },
-    "495": {
+    "497": {
         "approved": "yes",
         "spdx_abbrev": "LGPL-3.0-or-later WITH Autoconf-exception-macro",
         "license": {
@@ -7637,7 +7658,7 @@
         },
         "fedora": {}
     },
-    "496": {
+    "498": {
         "license": {
             "expression": "CC-BY-ND-2.5",
             "status": [
@@ -7657,7 +7678,7 @@
         "fedora_name": "Creative Commons Attribution-NoDerivs",
         "spdx_abbrev": "CC-BY-ND-2.5"
     },
-    "497": {
+    "499": {
         "license": {
             "expression": "Dotseqn",
             "status": [
@@ -7678,7 +7699,7 @@
         "fedora_name": "Dotseqn License",
         "spdx_abbrev": "Dotseqn"
     },
-    "498": {
+    "500": {
         "approved": "yes",
         "spdx_abbrev": "QPL-1.0-INRIA-2004 WITH QPL-1.0-INRIA-2004-exception",
         "license": {
@@ -7689,7 +7710,7 @@
         },
         "fedora": {}
     },
-    "499": {
+    "501": {
         "license": {
             "expression": "Qhull",
             "status": [
@@ -7710,7 +7731,7 @@
         "fedora_name": "Qhull License",
         "spdx_abbrev": "Qhull"
     },
-    "500": {
+    "502": {
         "approved": "yes",
         "spdx_abbrev": "LGPL-2.1-or-later WITH GCC-exception-2.0",
         "license": {
@@ -7721,7 +7742,7 @@
         },
         "fedora": {}
     },
-    "501": {
+    "503": {
         "approved": "yes",
         "spdx_abbrev": "Lucida-Bitmap-Fonts",
         "license": {
@@ -7732,7 +7753,7 @@
         },
         "fedora": {}
     },
-    "502": {
+    "504": {
         "approved": "yes",
         "spdx_abbrev": "GPL-2.0-or-later WITH RRDtool-FLOSS-exception-2.0",
         "license": {
@@ -7743,7 +7764,7 @@
         },
         "fedora": {}
     },
-    "503": {
+    "505": {
         "approved": "yes",
         "spdx_abbrev": "BSD-3-Clause-No-Nuclear-Warranty",
         "license": {
@@ -7754,7 +7775,7 @@
         },
         "fedora": {}
     },
-    "504": {
+    "506": {
         "license": {
             "expression": "AMDPLPA",
             "status": [
@@ -7775,7 +7796,7 @@
         "fedora_name": "AMD's plpa_map.c License",
         "spdx_abbrev": "AMDPLPA"
     },
-    "505": {
+    "507": {
         "approved": "no",
         "spdx_abbrev": "SGI-B-1.0",
         "license": {
@@ -7787,7 +7808,7 @@
         },
         "fedora": {}
     },
-    "506": {
+    "508": {
         "license": {
             "expression": "FDK-AAC",
             "status": [
@@ -7812,7 +7833,7 @@
         "fedora_name": "Fraunhofer FDK AAC License",
         "spdx_abbrev": "FDK-AAC"
     },
-    "507": {
+    "509": {
         "approved": "yes",
         "spdx_abbrev": "HPND-export-US",
         "license": {
@@ -7823,7 +7844,7 @@
         },
         "fedora": {}
     },
-    "508": {
+    "510": {
         "license": {
             "expression": "Fair",
             "status": [
@@ -7844,7 +7865,7 @@
         "fedora_name": "Fair License",
         "spdx_abbrev": "Fair"
     },
-    "509": {
+    "511": {
         "approved": "yes",
         "spdx_abbrev": "ulem",
         "license": {
@@ -7855,7 +7876,7 @@
         },
         "fedora": {}
     },
-    "510": {
+    "512": {
         "approved": "no",
         "spdx_abbrev": "CC-BY-NC-SA-2.0-UK",
         "license": {
@@ -7867,7 +7888,7 @@
         },
         "fedora": {}
     },
-    "511": {
+    "513": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-Literat-font",
         "license": {
@@ -7879,7 +7900,7 @@
         },
         "fedora": {}
     },
-    "512": {
+    "514": {
         "approved": "yes",
         "spdx_abbrev": "Brian-Gladman-3-Clause",
         "license": {
@@ -7890,7 +7911,7 @@
         },
         "fedora": {}
     },
-    "513": {
+    "515": {
         "license": {
             "expression": "YPL-1.1",
             "status": [
@@ -7910,7 +7931,7 @@
         "fedora_name": "Yahoo Public License v 1.1",
         "spdx_abbrev": "YPL-1.1"
     },
-    "514": {
+    "516": {
         "approved": "no",
         "spdx_abbrev": "Frameworx-1.0",
         "license": {
@@ -7922,7 +7943,7 @@
         },
         "fedora": {}
     },
-    "515": {
+    "517": {
         "license": {
             "expression": "BSD-2-Clause-Views",
             "status": [
@@ -7942,7 +7963,7 @@
         "fedora_name": "FreeBSD BSD Variant (2 clause BSD)",
         "spdx_abbrev": "BSD-2-Clause-Views"
     },
-    "516": {
+    "518": {
         "license": {
             "expression": "DSDP",
             "status": [
@@ -7963,7 +7984,7 @@
         "fedora_name": "DSDP License",
         "spdx_abbrev": "DSDP"
     },
-    "517": {
+    "519": {
         "license": {
             "expression": "VOSTROM",
             "status": [
@@ -7983,7 +8004,7 @@
         "fedora_name": "VOSTROM Public License for Open Source",
         "spdx_abbrev": "VOSTROM"
     },
-    "518": {
+    "520": {
         "license": {
             "expression": "mplus",
             "status": [
@@ -8003,7 +8024,7 @@
         "fedora_name": "mplus Font License",
         "spdx_abbrev": "mplus"
     },
-    "519": {
+    "521": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-odl",
         "license": {
@@ -8015,7 +8036,7 @@
         },
         "fedora": {}
     },
-    "520": {
+    "522": {
         "license": {
             "expression": "Imlib2",
             "status": [
@@ -8036,7 +8057,7 @@
         "fedora_name": "Imlib2 License",
         "spdx_abbrev": "Imlib2"
     },
-    "521": {
+    "523": {
         "license": {
             "expression": "Zlib",
             "status": [
@@ -8056,7 +8077,7 @@
         "fedora_name": "zlib/libpng License",
         "spdx_abbrev": "Zlib"
     },
-    "522": {
+    "524": {
         "approved": "yes",
         "spdx_abbrev": "Gutmann",
         "license": {
@@ -8067,7 +8088,7 @@
         },
         "fedora": {}
     },
-    "523": {
+    "525": {
         "license": {
             "expression": "TGPPL-1.0",
             "status": [
@@ -8087,7 +8108,7 @@
         "fedora_name": "Transitive Grace Period Public Licence",
         "spdx_abbrev": "TGPPL-1.0"
     },
-    "524": {
+    "526": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-BSD-HP-nonfree-variant",
         "license": {
@@ -8099,7 +8120,7 @@
         },
         "fedora": {}
     },
-    "525": {
+    "527": {
         "approved": "yes",
         "spdx_abbrev": "HPND-merchantability-variant",
         "license": {
@@ -8110,7 +8131,7 @@
         },
         "fedora": {}
     },
-    "526": {
+    "528": {
         "approved": "yes",
         "spdx_abbrev": "Linux-man-pages-copyleft-2-para",
         "license": {
@@ -8121,7 +8142,7 @@
         },
         "fedora": {}
     },
-    "527": {
+    "529": {
         "approved": "yes",
         "spdx_abbrev": "BSD-3-Clause-flex",
         "license": {
@@ -8132,7 +8153,7 @@
         },
         "fedora": {}
     },
-    "528": {
+    "530": {
         "license": {
             "expression": "AFL-2.1",
             "status": [
@@ -8152,7 +8173,7 @@
         "fedora_name": "Academic Free License v2.1",
         "spdx_abbrev": "AFL-2.1"
     },
-    "529": {
+    "531": {
         "approved": "yes",
         "spdx_abbrev": "GPL-2.0-or-later WITH cryptsetup-OpenSSL-exception",
         "license": {
@@ -8163,7 +8184,7 @@
         },
         "fedora": {}
     },
-    "530": {
+    "532": {
         "license": {
             "expression": "LGPL-2.0-or-later",
             "status": [
@@ -8185,13 +8206,13 @@
         "fedora_name": "GNU Lesser General Public License (no version)",
         "spdx_abbrev": "LGPL-2.0-or-later"
     },
-    "531": {
+    "533": {
         "approved": "yes",
         "fedora_abbrev": "LGPLv2+",
         "fedora_name": "GNU Lesser General Public License v2 (or 2.1) or later",
         "spdx_abbrev": "LGPL-2.0-or-later"
     },
-    "532": {
+    "534": {
         "approved": "yes",
         "spdx_abbrev": "python-ldap",
         "license": {
@@ -8202,7 +8223,7 @@
         },
         "fedora": {}
     },
-    "533": {
+    "535": {
         "license": {
             "expression": "FreeBSD-DOC",
             "status": [
@@ -8222,7 +8243,7 @@
         "fedora_name": "FreeBSD Documentation License",
         "spdx_abbrev": "FreeBSD-DOC"
     },
-    "534": {
+    "536": {
         "approved": "no",
         "spdx_abbrev": "BSD-3-Clause-Clear",
         "license": {
@@ -8234,7 +8255,7 @@
         },
         "fedora": {}
     },
-    "535": {
+    "537": {
         "approved": "no",
         "spdx_abbrev": "Artistic-1.0",
         "license": {
@@ -8245,7 +8266,7 @@
         },
         "fedora": {}
     },
-    "536": {
+    "538": {
         "approved": "yes",
         "spdx_abbrev": "BlueOak-1.0.0",
         "license": {
@@ -8257,7 +8278,7 @@
         },
         "fedora": {}
     },
-    "537": {
+    "539": {
         "approved": "yes",
         "spdx_abbrev": "MulanPSL-2.0",
         "license": {
@@ -8268,7 +8289,7 @@
         },
         "fedora": {}
     },
-    "538": {
+    "540": {
         "license": {
             "expression": "App-s2p",
             "status": [
@@ -8289,7 +8310,7 @@
         "fedora_name": "App::s2p License",
         "spdx_abbrev": "App-s2p"
     },
-    "539": {
+    "541": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-sph2pipe",
         "license": {
@@ -8302,7 +8323,7 @@
         },
         "fedora": {}
     },
-    "540": {
+    "542": {
         "approved": "yes",
         "spdx_abbrev": "LGPL-2.1-or-later WITH Linux-syscall-note",
         "license": {
@@ -8313,7 +8334,7 @@
         },
         "fedora": {}
     },
-    "541": {
+    "543": {
         "license": {
             "expression": "LicenseRef-VNLSL",
             "status": [
@@ -8334,7 +8355,7 @@
         "fedora_name": "Vita Nuova Liberal Source License",
         "spdx_abbrev": "LicenseRef-VNLSL"
     },
-    "542": {
+    "544": {
         "license": {
             "expression": "GFDL-1.1-no-invariants-only",
             "status": [
@@ -8354,7 +8375,7 @@
         "fedora_name": "GNU Free Documentation License v1.1 only - no invariants",
         "spdx_abbrev": "GFDL-1.1-no-invariants-only"
     },
-    "543": {
+    "545": {
         "approved": "yes",
         "spdx_abbrev": "BSD-Attribution-HPND-disclaimer",
         "license": {
@@ -8365,7 +8386,7 @@
         },
         "fedora": {}
     },
-    "544": {
+    "546": {
         "license": {
             "expression": "GFDL-1.2-no-invariants-or-later",
             "status": [
@@ -8385,7 +8406,7 @@
         "fedora_name": "GNU Free Documentation License v1.2 or later - no invariants",
         "spdx_abbrev": "GFDL-1.2-no-invariants-or-later"
     },
-    "545": {
+    "547": {
         "license": {
             "expression": "LicenseRef-CRC32",
             "status": [
@@ -8406,7 +8427,7 @@
         "fedora_name": "CRC32 License",
         "spdx_abbrev": "LicenseRef-CRC32"
     },
-    "546": {
+    "548": {
         "license": {
             "expression": "TTWL",
             "status": [
@@ -8426,7 +8447,7 @@
         "fedora_name": "Text-Tabs+Wrap License",
         "spdx_abbrev": "TTWL"
     },
-    "547": {
+    "549": {
         "approved": "yes",
         "spdx_abbrev": "check-cvs",
         "license": {
@@ -8437,7 +8458,7 @@
         },
         "fedora": {}
     },
-    "548": {
+    "550": {
         "license": {
             "expression": "CC-BY-SA-2.0-UK",
             "status": [
@@ -8458,7 +8479,7 @@
         "fedora_name": "Creative Commons Attribution-ShareAlike2.0 England and Wales",
         "spdx_abbrev": "CC-BY-SA-2.0-UK"
     },
-    "549": {
+    "551": {
         "approved": "yes",
         "spdx_abbrev": "Ferguson-Twofish",
         "license": {
@@ -8469,7 +8490,7 @@
         },
         "fedora": {}
     },
-    "550": {
+    "552": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-Intel",
         "license": {
@@ -8481,7 +8502,7 @@
         },
         "fedora": {}
     },
-    "551": {
+    "553": {
         "license": {
             "expression": "LGPL-3.0-only WITH LGPL-3.0-linking-exception",
             "status": [
@@ -8501,7 +8522,7 @@
         "fedora_name": "LGPLv3 with exceptions",
         "spdx_abbrev": "LGPL-3.0-only WITH LGPL-3.0-linking-exception"
     },
-    "552": {
+    "554": {
         "approved": "yes",
         "spdx_abbrev": "metamail",
         "license": {
@@ -8512,7 +8533,7 @@
         },
         "fedora": {}
     },
-    "553": {
+    "555": {
         "approved": "no",
         "spdx_abbrev": "APSL-1.0",
         "license": {
@@ -8524,7 +8545,7 @@
         },
         "fedora": {}
     },
-    "554": {
+    "556": {
         "license": {
             "expression": "Mup",
             "status": [
@@ -8545,7 +8566,7 @@
         "fedora_name": "Mup License",
         "spdx_abbrev": "Mup"
     },
-    "555": {
+    "557": {
         "license": {
             "expression": "MITNFA",
             "status": [
@@ -8566,7 +8587,7 @@
         "fedora_name": "MIT +no-false-attribs license",
         "spdx_abbrev": "MITNFA"
     },
-    "556": {
+    "558": {
         "license": {
             "expression": "LicenseRef-CPM",
             "status": [
@@ -8587,7 +8608,7 @@
         "fedora_name": "CP/M License",
         "spdx_abbrev": "LicenseRef-CPM"
     },
-    "557": {
+    "559": {
         "approved": "yes",
         "spdx_abbrev": "BSD-3-Clause-Sun",
         "license": {
@@ -8598,7 +8619,7 @@
         },
         "fedora": {}
     },
-    "558": {
+    "560": {
         "approved": "yes",
         "spdx_abbrev": "GPL-3.0-only WITH Qt-GPL-exception-1.0",
         "license": {
@@ -8609,7 +8630,7 @@
         },
         "fedora": {}
     },
-    "559": {
+    "561": {
         "approved": "yes",
         "spdx_abbrev": "HPND-MIT-disclaimer",
         "license": {
@@ -8620,7 +8641,7 @@
         },
         "fedora": {}
     },
-    "560": {
+    "562": {
         "approved": "yes",
         "spdx_abbrev": "gtkbook",
         "license": {
@@ -8631,7 +8652,7 @@
         },
         "fedora": {}
     },
-    "561": {
+    "563": {
         "license": {
             "expression": "LicenseRef-XANO",
             "status": [
@@ -8651,7 +8672,7 @@
         "fedora_name": "XANO Mincho Font License",
         "spdx_abbrev": "LicenseRef-XANO"
     },
-    "562": {
+    "564": {
         "license": {
             "expression": "LicenseRef-Punknova",
             "status": [
@@ -8671,7 +8692,7 @@
         "fedora_name": "Punknova Font License",
         "spdx_abbrev": "LicenseRef-Punknova"
     },
-    "563": {
+    "565": {
         "approved": "yes",
         "spdx_abbrev": "Mackerras-3-Clause-acknowledgment",
         "license": {
@@ -8682,7 +8703,7 @@
         },
         "fedora": {}
     },
-    "564": {
+    "566": {
         "approved": "yes",
         "spdx_abbrev": "blessing",
         "license": {
@@ -8693,7 +8714,7 @@
         },
         "fedora": {}
     },
-    "565": {
+    "567": {
         "license": {
             "expression": "LicenseRef-ZPLv1.0",
             "status": [
@@ -8714,7 +8735,7 @@
         "fedora_name": "Zope Public License v 1.0",
         "spdx_abbrev": "LicenseRef-ZPLv1.0"
     },
-    "566": {
+    "568": {
         "approved": "yes",
         "spdx_abbrev": "GPL-2.0-or-later WITH Bison-exception-1.24",
         "license": {
@@ -8725,7 +8746,7 @@
         },
         "fedora": {}
     },
-    "567": {
+    "569": {
         "approved": "yes",
         "spdx_abbrev": "BSD-3-Clause WITH AdditionRef-OpenEXR-Additional-IP-Rights-Grant",
         "license": {
@@ -8736,7 +8757,7 @@
         },
         "fedora": {}
     },
-    "568": {
+    "570": {
         "approved": "no",
         "spdx_abbrev": "YPL-1.0",
         "license": {
@@ -8747,7 +8768,7 @@
         },
         "fedora": {}
     },
-    "569": {
+    "571": {
         "license": {
             "expression": "GPL-1.0-or-later OR Artistic-1.0-Perl",
             "status": [
@@ -8768,7 +8789,7 @@
         "fedora_name": "GNU General Public License v1.0 or later or Artistic License 1.0",
         "spdx_abbrev": "GPL-1.0-or-later OR Artistic-1.0-Perl"
     },
-    "570": {
+    "572": {
         "license": {
             "expression": "AAL",
             "status": [
@@ -8789,7 +8810,7 @@
         "fedora_name": "Attribution Assurance License",
         "spdx_abbrev": "AAL"
     },
-    "571": {
+    "573": {
         "license": {
             "expression": "Nokia",
             "status": [
@@ -8810,7 +8831,7 @@
         "fedora_name": "Nokia Open Source License",
         "spdx_abbrev": "Nokia"
     },
-    "572": {
+    "574": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-unsplash",
         "license": {
@@ -8822,7 +8843,7 @@
         },
         "fedora": {}
     },
-    "573": {
+    "575": {
         "license": {
             "expression": "LicenseRef-LDPL",
             "status": [
@@ -8842,7 +8863,7 @@
         "fedora_name": "Linux Documentation Project License",
         "spdx_abbrev": "LicenseRef-LDPL"
     },
-    "574": {
+    "576": {
         "license": {
             "expression": "LicenseRef-JPython",
             "status": [
@@ -8863,7 +8884,7 @@
         "fedora_name": "JPython License (old)",
         "spdx_abbrev": "LicenseRef-JPython"
     },
-    "575": {
+    "577": {
         "license": {
             "expression": "SISSL",
             "status": [
@@ -8884,7 +8905,7 @@
         "fedora_name": "Sun Industry Standards Source License",
         "spdx_abbrev": "SISSL"
     },
-    "576": {
+    "578": {
         "license": {
             "expression": "AGPL-3.0-only",
             "status": [
@@ -8905,7 +8926,7 @@
         "fedora_name": "Affero General Public License 3.0",
         "spdx_abbrev": "AGPL-3.0-only"
     },
-    "577": {
+    "579": {
         "license": {
             "expression": "Glulxe",
             "status": [
@@ -8926,7 +8947,7 @@
         "fedora_name": "Glulxe License",
         "spdx_abbrev": "Glulxe"
     },
-    "578": {
+    "580": {
         "license": {
             "expression": "Unicode-DFS-2015",
             "status": [
@@ -8947,7 +8968,7 @@
         "fedora_name": "Unicode License",
         "spdx_abbrev": "Unicode-DFS-2015"
     },
-    "579": {
+    "581": {
         "approved": "yes",
         "spdx_abbrev": "GPL-3.0-or-later WITH Texinfo-exception",
         "license": {
@@ -8958,7 +8979,7 @@
         },
         "fedora": {}
     },
-    "580": {
+    "582": {
         "approved": "no",
         "spdx_abbrev": "CC-BY-NC-2.5",
         "license": {
@@ -8970,7 +8991,7 @@
         },
         "fedora": {}
     },
-    "581": {
+    "583": {
         "license": {
             "expression": "CC-BY-SA-2.5",
             "status": [
@@ -8991,7 +9012,7 @@
         "fedora_name": "Creative Commons Attribution-ShareAlike 2.5",
         "spdx_abbrev": "CC-BY-SA-2.5"
     },
-    "582": {
+    "584": {
         "license": {
             "expression": "BSD-3-Clause-LBNL",
             "status": [
@@ -9012,7 +9033,7 @@
         "fedora_name": "Lawrence Berkeley National Labs BSD variant license",
         "spdx_abbrev": "BSD-3-Clause-LBNL"
     },
-    "583": {
+    "585": {
         "license": {
             "expression": "CC-BY-SA-3.0-AT",
             "status": [
@@ -9033,7 +9054,7 @@
         "fedora_name": "Creative Commons Attribution-ShareAlike 3.0 Austria",
         "spdx_abbrev": "CC-BY-SA-3.0-AT"
     },
-    "584": {
+    "586": {
         "license": {
             "expression": "mpich2",
             "status": [
@@ -9054,7 +9075,7 @@
         "fedora_name": "mpich2 License",
         "spdx_abbrev": "mpich2"
     },
-    "585": {
+    "587": {
         "approved": "no",
         "spdx_abbrev": "CC-BY-NC-4.0",
         "license": {
@@ -9066,7 +9087,7 @@
         },
         "fedora": {}
     },
-    "586": {
+    "588": {
         "license": {
             "expression": "Zend-2.0",
             "status": [
@@ -9086,7 +9107,7 @@
         "fedora_name": "Zend License v2.0",
         "spdx_abbrev": "Zend-2.0"
     },
-    "587": {
+    "589": {
         "license": {
             "expression": "Intel-ACPI",
             "status": [
@@ -9107,7 +9128,7 @@
         "fedora_name": "Intel ACPI Software License Agreement",
         "spdx_abbrev": "Intel-ACPI"
     },
-    "588": {
+    "590": {
         "approved": "yes",
         "spdx_abbrev": "OpenVision",
         "license": {
@@ -9118,7 +9139,7 @@
         },
         "fedora": {}
     },
-    "589": {
+    "591": {
         "approved": "yes",
         "spdx_abbrev": "BSD-Advertising-Acknowledgement",
         "license": {
@@ -9129,7 +9150,7 @@
         },
         "fedora": {}
     },
-    "590": {
+    "592": {
         "license": {
             "expression": "CC-BY-SA-1.0",
             "status": [
@@ -9150,7 +9171,7 @@
         "fedora_name": "Creative Commons Attribution-ShareAlike 1.0",
         "spdx_abbrev": "CC-BY-SA-1.0"
     },
-    "591": {
+    "593": {
         "approved": "yes",
         "spdx_abbrev": "HPND-Pbmplus",
         "license": {
@@ -9161,7 +9182,7 @@
         },
         "fedora": {}
     },
-    "592": {
+    "594": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-UPX",
         "license": {
@@ -9175,7 +9196,7 @@
         },
         "fedora": {}
     },
-    "593": {
+    "595": {
         "license": {
             "expression": "GPL-2.0-only WITH x11vnc-openssl-exception",
             "status": [
@@ -9195,7 +9216,7 @@
         "fedora_name": "GNU General Public License v2.0, with exceptions",
         "spdx_abbrev": "GPL-2.0-only WITH x11vnc-openssl-exception"
     },
-    "594": {
+    "596": {
         "license": {
             "expression": "BSD-3-Clause-Modification",
             "status": [
@@ -9216,7 +9237,7 @@
         "fedora_name": "BSD:Modification variant",
         "spdx_abbrev": "BSD-3-Clause-Modification"
     },
-    "595": {
+    "597": {
         "license": {
             "expression": "Afmparse",
             "status": [
@@ -9237,7 +9258,7 @@
         "fedora_name": "Afmparse License",
         "spdx_abbrev": "Afmparse"
     },
-    "596": {
+    "598": {
         "license": {
             "expression": "LGPL-3.0-only",
             "status": [
@@ -9258,7 +9279,7 @@
         "fedora_name": "GNU Lesser General Public License v3.0 only",
         "spdx_abbrev": "LGPL-3.0-only"
     },
-    "597": {
+    "599": {
         "approved": "yes",
         "spdx_abbrev": "xlock",
         "license": {
@@ -9269,7 +9290,7 @@
         },
         "fedora": {}
     },
-    "598": {
+    "600": {
         "license": {
             "expression": "Noweb",
             "status": [
@@ -9290,7 +9311,7 @@
         "fedora_name": "Noweb License",
         "spdx_abbrev": "Noweb"
     },
-    "599": {
+    "601": {
         "approved": "yes",
         "spdx_abbrev": "Adobe-Utopia",
         "license": {
@@ -9301,7 +9322,7 @@
         },
         "fedora": {}
     },
-    "600": {
+    "602": {
         "approved": "yes",
         "spdx_abbrev": "LicenseRef-Bacula",
         "license": {
@@ -9314,7 +9335,7 @@
         },
         "fedora": {}
     },
-    "601": {
+    "603": {
         "license": {
             "expression": "CECILL-B",
             "status": [
@@ -9335,7 +9356,7 @@
         "fedora_name": "CeCILL-B License",
         "spdx_abbrev": "CECILL-B"
     },
-    "602": {
+    "604": {
         "approved": "yes",
         "spdx_abbrev": "hdparm",
         "license": {
@@ -9346,7 +9367,7 @@
         },
         "fedora": {}
     },
-    "603": {
+    "605": {
         "license": {
             "expression": "AGPL-1.0-only",
             "status": [
@@ -9367,7 +9388,7 @@
         "fedora_name": "Affero General Public License 1.0",
         "spdx_abbrev": "AGPL-1.0-only"
     },
-    "604": {
+    "606": {
         "license": {
             "expression": "GFDL-1.1-only",
             "status": [
@@ -9387,7 +9408,20 @@
         "fedora_name": "GNU Free Documentation License v1.1 only  ",
         "spdx_abbrev": "GFDL-1.1-only"
     },
-    "605": {
+    "607": {
+        "approved": "yes",
+        "spdx_abbrev": "LicenseRef-OASIS-spec",
+        "license": {
+            "expression": "LicenseRef-OASIS-spec",
+            "status": [
+                "allowed-content"
+            ],
+            "url": "https://invent.kde.org/libraries/kdsoap-ws-discovery-client/-/blob/master/LICENSES/LicenseRef-OASIS.txt?ref_type=heads",
+            "text": "This document and translations of it may be copied\nand furnished to others, and derivative works that comment\non or otherwise explain it or assist in its implementation\nmay be prepared, copied, published and distributed,\nin whole or in part, without restriction of any kind,\nprovided that the above copyright notice and this paragraph\nare included on all such copies and derivative works.\nHowever, this document itself may not be modified in\nany way, such as by removing the copyright notice or\nreferences to OASIS, except as needed for the purpose\nof developing OASIS specifications, in which case the\nprocedures for copyrights defined in the OASIS Intellectual\nProperty Rights document must be followed, or as required\nto translate it into languages other than English. \n\nThe limited permissions granted above are perpetual\nand will not be revoked by OASIS or its successors or\nassigns.\n\nThis document and the information contained herein\nis provided on an \"AS IS\" basis and OASIS DISCLAIMS\nALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT\nLIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION\nHEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES\nOF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE."
+        },
+        "fedora": {}
+    },
+    "608": {
         "license": {
             "expression": "GFDL-1.3-or-later",
             "status": [
@@ -9407,7 +9441,7 @@
         "fedora_name": "GNU Free Documentation License v1.3 or later",
         "spdx_abbrev": "GFDL-1.3-or-later"
     },
-    "606": {
+    "609": {
         "license": {
             "expression": "Saxpath",
             "status": [
@@ -9428,7 +9462,7 @@
         "fedora_name": "Saxpath License",
         "spdx_abbrev": "Saxpath"
     },
-    "607": {
+    "610": {
         "license": {
             "expression": "Wsuipa",
             "status": [
@@ -9448,7 +9482,7 @@
         "fedora_name": "Wsuipa License",
         "spdx_abbrev": "Wsuipa"
     },
-    "608": {
+    "611": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-commons-clause",
         "license": {
@@ -9460,7 +9494,7 @@
         },
         "fedora": {}
     },
-    "609": {
+    "612": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-NasaCDF",
         "license": {
@@ -9472,7 +9506,7 @@
         },
         "fedora": {}
     },
-    "610": {
+    "613": {
         "approved": "no",
         "spdx_abbrev": "CC-BY-NC-SA-1.0",
         "license": {
@@ -9484,7 +9518,7 @@
         },
         "fedora": {}
     },
-    "611": {
+    "614": {
         "license": {
             "expression": "HP-1986",
             "status": [
@@ -9504,7 +9538,7 @@
         "fedora_name": "MIT HP Variant",
         "spdx_abbrev": "HP-1986"
     },
-    "612": {
+    "615": {
         "approved": "yes",
         "spdx_abbrev": "GPL-2.0-or-later WITH stunnel-exception",
         "license": {
@@ -9515,7 +9549,7 @@
         },
         "fedora": {}
     },
-    "613": {
+    "616": {
         "license": {
             "expression": "LGPL-2.0-only",
             "status": [
@@ -9536,7 +9570,7 @@
         "fedora_name": "GNU Lesser General Public License v2 (or 2.1) only",
         "spdx_abbrev": "LGPL-2.0-only"
     },
-    "614": {
+    "617": {
         "approved": "yes",
         "spdx_abbrev": "GPL-2.0-only WITH GCC-exception-2.0",
         "license": {
@@ -9547,7 +9581,7 @@
         },
         "fedora": {}
     },
-    "615": {
+    "618": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-Schematron-schema",
         "license": {
@@ -9559,7 +9593,7 @@
         },
         "fedora": {}
     },
-    "616": {
+    "619": {
         "license": {
             "expression": "Spencer-94",
             "status": [
@@ -9579,7 +9613,7 @@
         "fedora_name": "Henry Spencer Reg-Ex Library License",
         "spdx_abbrev": "Spencer-94"
     },
-    "617": {
+    "620": {
         "license": {
             "expression": "CC-BY-2.0",
             "status": [
@@ -9600,7 +9634,7 @@
         "fedora_name": "Creative Commons Attribution license 2.0",
         "spdx_abbrev": "CC-BY-2.0"
     },
-    "618": {
+    "621": {
         "approved": "yes",
         "spdx_abbrev": "BSD-Inferno-Nettverk",
         "license": {
@@ -9611,7 +9645,7 @@
         },
         "fedora": {}
     },
-    "619": {
+    "622": {
         "license": {
             "expression": "LicenseRef-Nmap",
             "status": [
@@ -9633,7 +9667,7 @@
         "fedora_name": "Nmap License",
         "spdx_abbrev": "LicenseRef-Nmap"
     },
-    "620": {
+    "623": {
         "license": {
             "expression": "CUA-OPL-1.0",
             "status": [
@@ -9654,7 +9688,7 @@
         "fedora_name": "CUA Office Public License Version 1.0",
         "spdx_abbrev": "CUA-OPL-1.0"
     },
-    "621": {
+    "624": {
         "approved": "yes",
         "spdx_abbrev": "LGPL-2.1-only WITH Qt-LGPL-exception-1.1",
         "license": {
@@ -9665,7 +9699,7 @@
         },
         "fedora": {}
     },
-    "622": {
+    "625": {
         "approved": "yes",
         "spdx_abbrev": "sprintf",
         "license": {
@@ -9676,7 +9710,7 @@
         },
         "fedora": {}
     },
-    "623": {
+    "626": {
         "approved": "yes",
         "spdx_abbrev": "LGPL-2.1-or-later WITH GNU-compiler-exception",
         "license": {
@@ -9687,7 +9721,7 @@
         },
         "fedora": {}
     },
-    "624": {
+    "627": {
         "license": {
             "expression": "FSFULLR",
             "status": [
@@ -9708,7 +9742,7 @@
         "fedora_name": "FSF Unlimited License (with License Retention)",
         "spdx_abbrev": "FSFULLR"
     },
-    "625": {
+    "628": {
         "license": {
             "expression": "CECILL-C",
             "status": [
@@ -9729,7 +9763,7 @@
         "fedora_name": "CeCILL-C License",
         "spdx_abbrev": "CECILL-C"
     },
-    "626": {
+    "629": {
         "license": {
             "expression": "CC-BY-3.0-AT",
             "status": [
@@ -9750,7 +9784,7 @@
         "fedora_name": "Creative Commons Attribution license 3.0 Austria",
         "spdx_abbrev": "CC-BY-3.0-AT"
     },
-    "627": {
+    "630": {
         "license": {
             "expression": "CC-BY-ND-3.0",
             "status": [
@@ -9770,7 +9804,7 @@
         "fedora_name": "Creative Commons Attribution-NoDerivs",
         "spdx_abbrev": "CC-BY-ND-3.0"
     },
-    "628": {
+    "631": {
         "license": {
             "expression": "WTFPL",
             "status": [
@@ -9790,7 +9824,7 @@
         "fedora_name": "Do What The F*ck You Want To Public License",
         "spdx_abbrev": "WTFPL"
     },
-    "629": {
+    "632": {
         "license": {
             "expression": "LGPL-3.0-or-later WITH openvpn-openssl-exception",
             "status": [
@@ -9810,7 +9844,7 @@
         "fedora_name": "GNU Lesser General Public License v3.0 or later, with exceptions",
         "spdx_abbrev": "LGPL-3.0-or-later WITH openvpn-openssl-exception"
     },
-    "630": {
+    "633": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-W3C-20150201",
         "license": {
@@ -9822,7 +9856,7 @@
         },
         "fedora": {}
     },
-    "631": {
+    "634": {
         "approved": "yes",
         "spdx_abbrev": "URT-RLE",
         "license": {
@@ -9833,7 +9867,7 @@
         },
         "fedora": {}
     },
-    "632": {
+    "635": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-SystemC-3.0",
         "license": {
@@ -9845,7 +9879,7 @@
         },
         "fedora": {}
     },
-    "633": {
+    "636": {
         "license": {
             "expression": "CC-BY-2.5",
             "status": [
@@ -9866,7 +9900,7 @@
         "fedora_name": "Creative Commons Attribution license 2.5",
         "spdx_abbrev": "CC-BY-2.5"
     },
-    "634": {
+    "637": {
         "approved": "yes",
         "spdx_abbrev": "LicenseRef-BSD-3-Clause-Clear-WITH-AdditionRef-AOMPL-1.0",
         "license": {
@@ -9877,7 +9911,7 @@
         },
         "fedora": {}
     },
-    "635": {
+    "638": {
         "approved": "no",
         "spdx_abbrev": "Aladdin",
         "license": {
@@ -9889,7 +9923,7 @@
         },
         "fedora": {}
     },
-    "636": {
+    "639": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-OpenFlow",
         "license": {
@@ -9901,7 +9935,7 @@
         },
         "fedora": {}
     },
-    "637": {
+    "640": {
         "license": {
             "expression": "GPL-2.0-only WITH Classpath-exception-2.0",
             "status": [
@@ -9922,7 +9956,7 @@
         "fedora_name": "GNU General Public License v2.0 only, with Classpath exception",
         "spdx_abbrev": "GPL-2.0-only WITH Classpath-exception-2.0"
     },
-    "638": {
+    "641": {
         "approved": "no",
         "spdx_abbrev": "CC-BY-NC-ND-2.5",
         "license": {
@@ -9934,7 +9968,7 @@
         },
         "fedora": {}
     },
-    "639": {
+    "642": {
         "approved": "no",
         "spdx_abbrev": "MS-LPL",
         "license": {
@@ -9945,7 +9979,7 @@
         },
         "fedora": {}
     },
-    "640": {
+    "643": {
         "approved": "yes",
         "spdx_abbrev": "HPND-sell-variant-MIT-disclaimer-rev",
         "license": {
@@ -9956,7 +9990,7 @@
         },
         "fedora": {}
     },
-    "641": {
+    "644": {
         "license": {
             "expression": "xinetd",
             "status": [
@@ -9976,7 +10010,7 @@
         "fedora_name": "xinetd License",
         "spdx_abbrev": "xinetd"
     },
-    "642": {
+    "645": {
         "approved": "yes",
         "spdx_abbrev": "Brian-Gladman-2-Clause",
         "license": {
@@ -9987,7 +10021,7 @@
         },
         "fedora": {}
     },
-    "643": {
+    "646": {
         "approved": "no",
         "spdx_abbrev": "OGTSL",
         "license": {
@@ -9999,7 +10033,7 @@
         },
         "fedora": {}
     },
-    "644": {
+    "647": {
         "approved": "no",
         "spdx_abbrev": "Watcom-1.0",
         "license": {
@@ -10010,7 +10044,7 @@
         },
         "fedora": {}
     },
-    "645": {
+    "648": {
         "license": {
             "expression": "LicenseRef-DoubleStroke",
             "status": [
@@ -10030,7 +10064,7 @@
         "fedora_name": "DoubleStroke Font License",
         "spdx_abbrev": "LicenseRef-DoubleStroke"
     },
-    "646": {
+    "649": {
         "license": {
             "expression": "LicenseRef-Public-use",
             "status": [
@@ -10050,7 +10084,7 @@
         "fedora_name": "Public Use License, v1.0",
         "spdx_abbrev": "LicenseRef-Public-use"
     },
-    "647": {
+    "650": {
         "approved": "no",
         "spdx_abbrev": "OCCT-exception-1.0",
         "license": {
@@ -10062,7 +10096,7 @@
         },
         "fedora": {}
     },
-    "648": {
+    "651": {
         "license": {
             "expression": "BSD-2-Clause-Patent",
             "status": [
@@ -10083,7 +10117,7 @@
         "fedora_name": "BSD + Patent",
         "spdx_abbrev": "BSD-2-Clause-Patent"
     },
-    "649": {
+    "652": {
         "approved": "yes",
         "spdx_abbrev": "MIT-Khronos-old",
         "license": {
@@ -10094,7 +10128,7 @@
         },
         "fedora": {}
     },
-    "650": {
+    "653": {
         "license": {
             "expression": "LicenseRef-mod_macro",
             "status": [
@@ -10115,7 +10149,7 @@
         "fedora_name": "mod_macro License",
         "spdx_abbrev": "LicenseRef-mod_macro"
     },
-    "651": {
+    "654": {
         "license": {
             "expression": "GFDL-1.3-invariants-only",
             "status": [
@@ -10135,7 +10169,7 @@
         "fedora_name": "GNU Free Documentation License v1.3 only - invariants",
         "spdx_abbrev": "GFDL-1.3-invariants-only"
     },
-    "652": {
+    "655": {
         "approved": "yes",
         "spdx_abbrev": "Bitstream-Charter",
         "license": {
@@ -10146,7 +10180,7 @@
         },
         "fedora": {}
     },
-    "653": {
+    "656": {
         "license": {
             "expression": "MS-RL",
             "status": [
@@ -10167,7 +10201,7 @@
         "fedora_name": "Microsoft Reciprocal License",
         "spdx_abbrev": "MS-RL"
     },
-    "654": {
+    "657": {
         "approved": "yes",
         "spdx_abbrev": "LGPL-2.1-only WITH OCaml-LGPL-linking-exception",
         "license": {
@@ -10178,7 +10212,7 @@
         },
         "fedora": {}
     },
-    "655": {
+    "658": {
         "license": {
             "expression": "GPL-2.0-or-later WITH Classpath-exception-2.0",
             "status": [
@@ -10199,7 +10233,7 @@
         "fedora_name": "GNU General Public License v2.0 or later, with Classpath exception",
         "spdx_abbrev": "GPL-2.0-or-later WITH Classpath-exception-2.0"
     },
-    "656": {
+    "659": {
         "license": {
             "expression": "OGL-UK-3.0",
             "status": [
@@ -10220,7 +10254,7 @@
         "fedora_name": "Open Government License",
         "spdx_abbrev": "OGL-UK-3.0"
     },
-    "657": {
+    "660": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-Tyrian",
         "license": {
@@ -10233,7 +10267,7 @@
         },
         "fedora": {}
     },
-    "658": {
+    "661": {
         "approved": "yes",
         "spdx_abbrev": "GPL-3.0-or-later WITH GNAT-exception",
         "license": {
@@ -10244,7 +10278,7 @@
         },
         "fedora": {}
     },
-    "659": {
+    "662": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-CACert",
         "license": {
@@ -10256,7 +10290,7 @@
         },
         "fedora": {}
     },
-    "660": {
+    "663": {
         "approved": "yes",
         "spdx_abbrev": "fwlw",
         "license": {
@@ -10267,7 +10301,7 @@
         },
         "fedora": {}
     },
-    "661": {
+    "664": {
         "approved": "yes",
         "spdx_abbrev": "X11",
         "license": {
@@ -10278,7 +10312,7 @@
         },
         "fedora": {}
     },
-    "662": {
+    "665": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-Llama-2",
         "license": {
@@ -10291,7 +10325,7 @@
         },
         "fedora": {}
     },
-    "663": {
+    "666": {
         "license": {
             "expression": "BSD-1-Clause",
             "status": [
@@ -10312,7 +10346,7 @@
         "fedora_name": "BSD 1 Clause license",
         "spdx_abbrev": "BSD-1-Clause"
     },
-    "664": {
+    "667": {
         "approved": "yes",
         "spdx_abbrev": "LPPL-1.3c",
         "license": {
@@ -10323,7 +10357,7 @@
         },
         "fedora": {}
     },
-    "665": {
+    "668": {
         "approved": "yes",
         "spdx_abbrev": "GPL-2.0-or-later WITH Gmsh-exception",
         "license": {
@@ -10334,7 +10368,7 @@
         },
         "fedora": {}
     },
-    "666": {
+    "669": {
         "approved": "yes",
         "spdx_abbrev": "curl",
         "license": {
@@ -10345,7 +10379,7 @@
         },
         "fedora": {}
     },
-    "667": {
+    "670": {
         "approved": "yes",
         "spdx_abbrev": "magaz",
         "license": {
@@ -10356,7 +10390,7 @@
         },
         "fedora": {}
     },
-    "668": {
+    "671": {
         "approved": "yes",
         "spdx_abbrev": "NCL",
         "license": {
@@ -10367,7 +10401,7 @@
         },
         "fedora": {}
     },
-    "669": {
+    "672": {
         "approved": "yes",
         "spdx_abbrev": "LicenseRef-CCLP1",
         "license": {
@@ -10379,7 +10413,7 @@
         },
         "fedora": {}
     },
-    "670": {
+    "673": {
         "license": {
             "expression": "Xfig",
             "status": [
@@ -10399,7 +10433,7 @@
         "fedora_name": "MIT:Xfig Variant",
         "spdx_abbrev": "Xfig"
     },
-    "671": {
+    "674": {
         "license": {
             "expression": "LicenseRef-REX",
             "status": [
@@ -10420,7 +10454,7 @@
         "fedora_name": "REX License",
         "spdx_abbrev": "LicenseRef-REX"
     },
-    "672": {
+    "675": {
         "approved": "yes",
         "spdx_abbrev": "TTYP0",
         "license": {
@@ -10431,7 +10465,7 @@
         },
         "fedora": {}
     },
-    "673": {
+    "676": {
         "license": {
             "expression": "UPL-1.0",
             "status": [
@@ -10452,7 +10486,7 @@
         "fedora_name": "Universal Permissive License",
         "spdx_abbrev": "UPL-1.0"
     },
-    "674": {
+    "677": {
         "license": {
             "expression": "BitTorrent-1.1",
             "status": [
@@ -10473,7 +10507,7 @@
         "fedora_name": "BitTorrent License",
         "spdx_abbrev": "BitTorrent-1.1"
     },
-    "675": {
+    "678": {
         "approved": "yes",
         "spdx_abbrev": "HPND-sell-variant-MIT-disclaimer",
         "license": {
@@ -10484,7 +10518,7 @@
         },
         "fedora": {}
     },
-    "676": {
+    "679": {
         "license": {
             "expression": "RPSL-1.0",
             "status": [
@@ -10505,7 +10539,7 @@
         "fedora_name": "RealNetworks Public Source License V1.0",
         "spdx_abbrev": "RPSL-1.0"
     },
-    "677": {
+    "680": {
         "approved": "yes",
         "spdx_abbrev": "LGPL-3.0-only WITH OCaml-LGPL-linking-exception",
         "license": {
@@ -10516,7 +10550,7 @@
         },
         "fedora": {}
     },
-    "678": {
+    "681": {
         "license": {
             "expression": "GPL-2.0-or-later WITH Font-exception-2.0",
             "status": [
@@ -10537,7 +10571,7 @@
         "fedora_name": "GNU General Public License v2.0 or later, with font embedding exception",
         "spdx_abbrev": "GPL-2.0-or-later WITH Font-exception-2.0"
     },
-    "679": {
+    "682": {
         "license": {
             "expression": "Spencer-86",
             "status": [
@@ -10558,7 +10592,7 @@
         "fedora_name": "Henry Spencer Reg-Ex Library License",
         "spdx_abbrev": "Spencer-86"
     },
-    "680": {
+    "683": {
         "license": {
             "expression": "Barr",
             "status": [
@@ -10579,7 +10613,7 @@
         "fedora_name": "Barr License",
         "spdx_abbrev": "Barr"
     },
-    "681": {
+    "684": {
         "license": {
             "expression": "OpenPBS-2.3",
             "status": [
@@ -10600,7 +10634,7 @@
         "fedora_name": "OpenPBS (Portable Batch System) v2.3 Software License",
         "spdx_abbrev": "OpenPBS-2.3"
     },
-    "682": {
+    "685": {
         "license": {
             "expression": "LicenseRef-GeoGratis",
             "status": [
@@ -10620,7 +10654,7 @@
         "fedora_name": "GeoGratis Licence Agreement",
         "spdx_abbrev": "LicenseRef-GeoGratis"
     },
-    "683": {
+    "686": {
         "license": {
             "expression": "BSD-4-Clause",
             "status": [
@@ -10641,7 +10675,7 @@
         "fedora_name": "BSD License (Advertising Variant)",
         "spdx_abbrev": "BSD-4-Clause"
     },
-    "684": {
+    "687": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-stanford-mrouted",
         "license": {
@@ -10653,7 +10687,7 @@
         },
         "fedora": {}
     },
-    "685": {
+    "688": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-sgi-glx-1.0",
         "license": {
@@ -10665,7 +10699,7 @@
         },
         "fedora": {}
     },
-    "686": {
+    "689": {
         "approved": "yes",
         "spdx_abbrev": "Linux-OpenIB",
         "license": {
@@ -10676,7 +10710,7 @@
         },
         "fedora": {}
     },
-    "687": {
+    "690": {
         "license": {
             "expression": "EUDatagrid",
             "status": [
@@ -10697,7 +10731,7 @@
         "fedora_name": "EU Datagrid Software License",
         "spdx_abbrev": "EUDatagrid"
     },
-    "688": {
+    "691": {
         "license": {
             "expression": "SPL-1.0",
             "status": [
@@ -10718,7 +10752,7 @@
         "fedora_name": "Sun Public License",
         "spdx_abbrev": "SPL-1.0"
     },
-    "689": {
+    "692": {
         "license": {
             "expression": "LicenseRef-midnight",
             "status": [
@@ -10739,7 +10773,7 @@
         "fedora_name": "midnight License",
         "spdx_abbrev": "LicenseRef-midnight"
     },
-    "690": {
+    "693": {
         "approved": "yes",
         "spdx_abbrev": "bcrypt-Solar-Designer",
         "license": {
@@ -10750,7 +10784,7 @@
         },
         "fedora": {}
     },
-    "691": {
+    "694": {
         "license": {
             "expression": "UnixCrypt",
             "status": [
@@ -10770,7 +10804,7 @@
         "fedora_name": "MIT:UnixCrypt Variant",
         "spdx_abbrev": "UnixCrypt"
     },
-    "692": {
+    "695": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-unrar",
         "license": {
@@ -10782,7 +10816,7 @@
         },
         "fedora": {}
     },
-    "693": {
+    "696": {
         "approved": "yes",
         "spdx_abbrev": "MPEG-SSG",
         "license": {
@@ -10793,7 +10827,7 @@
         },
         "fedora": {}
     },
-    "694": {
+    "697": {
         "license": {
             "expression": "ARL",
             "status": [
@@ -10814,7 +10848,7 @@
         "fedora_name": "Aspell-ru License",
         "spdx_abbrev": "ARL"
     },
-    "695": {
+    "698": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-mcrae-pl-4-r53",
         "license": {
@@ -10826,7 +10860,7 @@
         },
         "fedora": {}
     },
-    "696": {
+    "699": {
         "license": {
             "expression": "Gnuplot",
             "status": [
@@ -10847,7 +10881,7 @@
         "fedora_name": "gnuplot License",
         "spdx_abbrev": "Gnuplot"
     },
-    "697": {
+    "700": {
         "approved": "yes",
         "spdx_abbrev": "GPL-2.0-or-later WITH GNAT-exception",
         "license": {
@@ -10858,7 +10892,7 @@
         },
         "fedora": {}
     },
-    "698": {
+    "701": {
         "approved": "yes",
         "spdx_abbrev": "MPL-2.0+",
         "license": {
@@ -10869,7 +10903,7 @@
         },
         "fedora": {}
     },
-    "699": {
+    "702": {
         "license": {
             "expression": "FSFUL",
             "status": [
@@ -10890,7 +10924,7 @@
         "fedora_name": "FSF Unlimited License",
         "spdx_abbrev": "FSFUL"
     },
-    "700": {
+    "703": {
         "license": {
             "expression": "OSL-3.0",
             "status": [
@@ -10911,7 +10945,7 @@
         "fedora_name": "Open Software License 3.0",
         "spdx_abbrev": "OSL-3.0"
     },
-    "701": {
+    "704": {
         "approved": "yes",
         "spdx_abbrev": "softSurfer",
         "license": {
@@ -10922,7 +10956,7 @@
         },
         "fedora": {}
     },
-    "702": {
+    "705": {
         "approved": "yes",
         "spdx_abbrev": "HPND-Fenneberg-Livingston",
         "license": {
@@ -10933,7 +10967,7 @@
         },
         "fedora": {}
     },
-    "703": {
+    "706": {
         "approved": "no",
         "spdx_abbrev": "EFL-1.0",
         "license": {
@@ -10945,7 +10979,7 @@
         },
         "fedora": {}
     },
-    "704": {
+    "707": {
         "license": {
             "expression": "OSL-1.1",
             "status": [
@@ -10966,7 +11000,7 @@
         "fedora_name": "Open Software License 1.1",
         "spdx_abbrev": "OSL-1.1"
     },
-    "705": {
+    "708": {
         "license": {
             "expression": "ANTLR-PD",
             "status": [
@@ -10987,7 +11021,7 @@
         "fedora_name": "ANTLR Software Rights Notice",
         "spdx_abbrev": "ANTLR-PD"
     },
-    "706": {
+    "709": {
         "approved": "yes",
         "spdx_abbrev": "SGP4",
         "license": {
@@ -10998,7 +11032,7 @@
         },
         "fedora": {}
     },
-    "707": {
+    "710": {
         "license": {
             "expression": "Cube",
             "status": [
@@ -11019,7 +11053,7 @@
         "fedora_name": "Cube License",
         "spdx_abbrev": "Cube"
     },
-    "708": {
+    "711": {
         "approved": "yes",
         "spdx_abbrev": "bzip2-1.0.6",
         "license": {
@@ -11030,7 +11064,7 @@
         },
         "fedora": {}
     },
-    "709": {
+    "712": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-MPEG-4-Audio",
         "license": {
@@ -11043,7 +11077,7 @@
         },
         "fedora": {}
     },
-    "710": {
+    "713": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-OpenMotif",
         "license": {
@@ -11055,7 +11089,7 @@
         },
         "fedora": {}
     },
-    "711": {
+    "714": {
         "license": {
             "expression": "Naumen",
             "status": [
@@ -11076,7 +11110,7 @@
         "fedora_name": "Naumen Public License",
         "spdx_abbrev": "Naumen"
     },
-    "712": {
+    "715": {
         "license": {
             "expression": "GFDL-1.2-no-invariants-only",
             "status": [
@@ -11096,7 +11130,7 @@
         "fedora_name": "GNU Free Documentation License v1.2 only - no invariants",
         "spdx_abbrev": "GFDL-1.2-no-invariants-only"
     },
-    "713": {
+    "716": {
         "license": {
             "expression": "LGPL-2.0-or-later WITH WxWindows-exception-3.1",
             "status": [
@@ -11117,7 +11151,7 @@
         "fedora_name": "wxWindows Library License v 3.1",
         "spdx_abbrev": "LGPL-2.0-or-later WITH WxWindows-exception-3.1"
     },
-    "714": {
+    "717": {
         "approved": "yes",
         "spdx_abbrev": "Spencer-99",
         "license": {
@@ -11128,7 +11162,7 @@
         },
         "fedora": {}
     },
-    "715": {
+    "718": {
         "license": {
             "expression": "CPAL-1.0",
             "status": [
@@ -11149,7 +11183,7 @@
         "fedora_name": "CPAL License 1.0",
         "spdx_abbrev": "CPAL-1.0"
     },
-    "716": {
+    "719": {
         "license": {
             "expression": "GPL-2.0-only WITH Font-exception-2.0",
             "status": [
@@ -11170,7 +11204,7 @@
         "fedora_name": "GNU General Public License v2.0 only, with font embedding exception",
         "spdx_abbrev": "GPL-2.0-only WITH Font-exception-2.0"
     },
-    "717": {
+    "720": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-ARM-SDK",
         "license": {
@@ -11182,7 +11216,7 @@
         },
         "fedora": {}
     },
-    "718": {
+    "721": {
         "approved": "yes",
         "spdx_abbrev": "SGI-OpenGL",
         "license": {
@@ -11193,7 +11227,7 @@
         },
         "fedora": {}
     },
-    "719": {
+    "722": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-Misti-Fonts",
         "license": {
@@ -11206,7 +11240,7 @@
         },
         "fedora": {}
     },
-    "720": {
+    "723": {
         "license": {
             "expression": "NGPL",
             "status": [
@@ -11227,7 +11261,7 @@
         "fedora_name": "Nethack General Public License",
         "spdx_abbrev": "NGPL"
     },
-    "721": {
+    "724": {
         "license": {
             "expression": "CC0-1.0",
             "status": [
@@ -11252,7 +11286,7 @@
         "fedora_name": "Creative Commons Zero 1.0 Universal",
         "spdx_abbrev": "CC0-1.0"
     },
-    "722": {
+    "725": {
         "approved": "yes",
         "spdx_abbrev": "LPPL-1.3a+",
         "license": {
@@ -11264,7 +11298,7 @@
         },
         "fedora": {}
     },
-    "723": {
+    "726": {
         "license": {
             "expression": "Entessa",
             "status": [
@@ -11285,7 +11319,7 @@
         "fedora_name": "Entessa Public License",
         "spdx_abbrev": "Entessa"
     },
-    "724": {
+    "727": {
         "approved": "yes",
         "spdx_abbrev": "HPND-UC",
         "license": {
@@ -11296,7 +11330,7 @@
         },
         "fedora": {}
     },
-    "725": {
+    "728": {
         "approved": "yes",
         "spdx_abbrev": "Kastrup",
         "license": {
@@ -11307,7 +11341,7 @@
         },
         "fedora": {}
     },
-    "726": {
+    "729": {
         "license": {
             "expression": "GPL-2.0-or-later WITH eCos-exception-2.0",
             "status": [
@@ -11328,7 +11362,7 @@
         "fedora_name": "eCos License v2.0",
         "spdx_abbrev": "GPL-2.0-or-later WITH eCos-exception-2.0"
     },
-    "727": {
+    "730": {
         "approved": "no",
         "spdx_abbrev": "CC-BY-NC-ND-1.0",
         "license": {
@@ -11340,7 +11374,7 @@
         },
         "fedora": {}
     },
-    "728": {
+    "731": {
         "license": {
             "expression": "eGenix",
             "status": [
@@ -11361,7 +11395,7 @@
         "fedora_name": "eGenix.com Public License 1.1.0",
         "spdx_abbrev": "eGenix"
     },
-    "729": {
+    "732": {
         "license": {
             "expression": "QPL-1.0",
             "status": [
@@ -11382,7 +11416,7 @@
         "fedora_name": "Q Public License",
         "spdx_abbrev": "QPL-1.0"
     },
-    "730": {
+    "733": {
         "license": {
             "expression": "OFL-1.1",
             "status": [
@@ -11402,7 +11436,7 @@
         "fedora_name": "SIL Open Font License 1.1",
         "spdx_abbrev": "OFL-1.1"
     },
-    "731": {
+    "734": {
         "approved": "yes",
         "spdx_abbrev": "HPND-INRIA-IMAG",
         "license": {
@@ -11413,7 +11447,7 @@
         },
         "fedora": {}
     },
-    "732": {
+    "735": {
         "license": {
             "expression": "CC-BY-ND-2.0",
             "status": [
@@ -11433,7 +11467,7 @@
         "fedora_name": "Creative Commons Attribution-NoDerivs",
         "spdx_abbrev": "CC-BY-ND-2.0"
     },
-    "733": {
+    "736": {
         "license": {
             "expression": "psutils",
             "status": [
@@ -11454,7 +11488,7 @@
         "fedora_name": "psutils License",
         "spdx_abbrev": "psutils"
     },
-    "734": {
+    "737": {
         "license": {
             "expression": "Sleepycat",
             "status": [
@@ -11475,7 +11509,7 @@
         "fedora_name": "Sleepycat Software Product License",
         "spdx_abbrev": "Sleepycat"
     },
-    "735": {
+    "738": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-GPL-2.0-or-later-WITH-UPX",
         "license": {
@@ -11489,7 +11523,7 @@
         },
         "fedora": {}
     },
-    "736": {
+    "739": {
         "approved": "yes",
         "spdx_abbrev": "ssh-keyscan",
         "license": {
@@ -11500,7 +11534,7 @@
         },
         "fedora": {}
     },
-    "737": {
+    "740": {
         "license": {
             "expression": "GPL-2.0-or-later WITH x11vnc-openssl-exception",
             "status": [
@@ -11522,7 +11556,7 @@
         "fedora_name": "GNU General Public License v2.0 or later, with exceptions",
         "spdx_abbrev": "GPL-2.0-or-later WITH x11vnc-openssl-exception"
     },
-    "738": {
+    "741": {
         "license": {
             "expression": "Boehm-GC",
             "status": [
@@ -11542,7 +11576,7 @@
         "fedora_name": "MIT Another Minimal variant",
         "spdx_abbrev": "Boehm-GC"
     },
-    "739": {
+    "742": {
         "license": {
             "expression": "FSFAP",
             "status": [
@@ -11563,7 +11597,7 @@
         "fedora_name": "FSF All Permissive license",
         "spdx_abbrev": "FSFAP"
     },
-    "740": {
+    "743": {
         "license": {
             "expression": "CC-BY-3.0",
             "status": [
@@ -11585,7 +11619,7 @@
         "fedora_name": "Creative Commons Attribution license 3.0",
         "spdx_abbrev": "CC-BY-3.0"
     },
-    "741": {
+    "744": {
         "approved": "yes",
         "spdx_abbrev": "Mackerras-3-Clause",
         "license": {
@@ -11596,7 +11630,7 @@
         },
         "fedora": {}
     },
-    "742": {
+    "745": {
         "license": {
             "expression": "LicenseRef-BeOpen",
             "status": [
@@ -11617,7 +11651,7 @@
         "fedora_name": "BeOpen Open Source License Agreement Version 1",
         "spdx_abbrev": "LicenseRef-BeOpen"
     },
-    "743": {
+    "746": {
         "license": {
             "expression": "HPND-sell-variant",
             "status": [
@@ -11637,7 +11671,7 @@
         "fedora_name": "MIT Old Style",
         "spdx_abbrev": "HPND-sell-variant"
     },
-    "744": {
+    "747": {
         "license": {
             "expression": "LicenseRef-SLIB",
             "status": [
@@ -11658,7 +11692,7 @@
         "fedora_name": "SLIB License",
         "spdx_abbrev": "LicenseRef-SLIB"
     },
-    "745": {
+    "748": {
         "approved": "yes",
         "spdx_abbrev": "GPL-2.0-or-later OR Artistic-1.0-Perl",
         "license": {
@@ -11670,7 +11704,7 @@
         },
         "fedora": {}
     },
-    "746": {
+    "749": {
         "license": {
             "expression": "Minpack",
             "status": [
@@ -11690,7 +11724,7 @@
         "fedora_name": "Minpack License",
         "spdx_abbrev": "Minpack"
     },
-    "747": {
+    "750": {
         "license": {
             "expression": "CC-BY-ND-4.0",
             "status": [
@@ -11710,7 +11744,7 @@
         "fedora_name": "Creative Commons Attribution-NoDerivs",
         "spdx_abbrev": "CC-BY-ND-4.0"
     },
-    "748": {
+    "751": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-verbatim",
         "license": {
@@ -11723,7 +11757,7 @@
         },
         "fedora": {}
     },
-    "749": {
+    "752": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-JasPer-1.0",
         "license": {
@@ -11735,7 +11769,7 @@
         },
         "fedora": {}
     },
-    "750": {
+    "753": {
         "approved": "yes",
         "spdx_abbrev": "BSD-Source-Code",
         "license": {
@@ -11746,7 +11780,7 @@
         },
         "fedora": {}
     },
-    "751": {
+    "754": {
         "approved": "yes",
         "spdx_abbrev": "lsof",
         "license": {
@@ -11757,7 +11791,7 @@
         },
         "fedora": {}
     },
-    "752": {
+    "755": {
         "license": {
             "expression": "LicenseRef-Jabber",
             "status": [
@@ -11778,7 +11812,7 @@
         "fedora_name": "Jabber Open Source License",
         "spdx_abbrev": "LicenseRef-Jabber"
     },
-    "753": {
+    "756": {
         "approved": "yes",
         "spdx_abbrev": "BSD-Systemics-W3Works",
         "license": {
@@ -11789,7 +11823,7 @@
         },
         "fedora": {}
     },
-    "754": {
+    "757": {
         "license": {
             "expression": "LicenseRef-IEEE",
             "status": [
@@ -11809,7 +11843,7 @@
         "fedora_name": "IEEE and Open Group Documentation License",
         "spdx_abbrev": "LicenseRef-IEEE"
     },
-    "755": {
+    "758": {
         "license": {
             "expression": "LicenseRef-PlainTeX",
             "status": [
@@ -11830,7 +11864,7 @@
         "fedora_name": "PlainTeX License",
         "spdx_abbrev": "LicenseRef-PlainTeX"
     },
-    "756": {
+    "759": {
         "license": {
             "expression": "CC-BY-3.0-US",
             "status": [
@@ -11851,7 +11885,7 @@
         "fedora_name": "Creative Commons Attribution license 3.0 United States",
         "spdx_abbrev": "CC-BY-3.0-US"
     },
-    "757": {
+    "760": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-sun-rpc",
         "license": {
@@ -11863,7 +11897,7 @@
         },
         "fedora": {}
     },
-    "758": {
+    "761": {
         "license": {
             "expression": "Apache-2.0",
             "status": [
@@ -11884,7 +11918,7 @@
         "fedora_name": "Apache Software License 2.0",
         "spdx_abbrev": "Apache-2.0"
     },
-    "759": {
+    "762": {
         "license": {
             "expression": "DOC",
             "status": [
@@ -11905,7 +11939,7 @@
         "fedora_name": "DOC License",
         "spdx_abbrev": "DOC"
     },
-    "760": {
+    "763": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-free-fork",
         "license": {
@@ -11917,7 +11951,7 @@
         },
         "fedora": {}
     },
-    "761": {
+    "764": {
         "approved": "yes",
         "spdx_abbrev": "LGPL-2.0-only WITH OCaml-LGPL-linking-exception",
         "license": {
@@ -11928,7 +11962,7 @@
         },
         "fedora": {}
     },
-    "762": {
+    "765": {
         "approved": "yes",
         "spdx_abbrev": "SSLeay-standalone",
         "license": {
@@ -11939,7 +11973,7 @@
         },
         "fedora": {}
     },
-    "763": {
+    "766": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-OpenMusic-yellow",
         "license": {
@@ -11951,7 +11985,7 @@
         },
         "fedora": {}
     },
-    "764": {
+    "767": {
         "approved": "yes",
         "spdx_abbrev": "xkeyboard-config-Zinoviev",
         "license": {
@@ -11962,7 +11996,7 @@
         },
         "fedora": {}
     },
-    "765": {
+    "768": {
         "approved": "yes",
         "spdx_abbrev": "AdaCore-doc",
         "license": {
@@ -11973,7 +12007,7 @@
         },
         "fedora": {}
     },
-    "766": {
+    "769": {
         "license": {
             "expression": "LicenseRef-Lucida",
             "status": [
@@ -11993,7 +12027,7 @@
         "fedora_name": "Lucida Legal Notice",
         "spdx_abbrev": "LicenseRef-Lucida"
     },
-    "767": {
+    "770": {
         "approved": "yes",
         "spdx_abbrev": "GPL-3.0-only WITH GPL-3.0-interface-exception",
         "license": {
@@ -12004,7 +12038,7 @@
         },
         "fedora": {}
     },
-    "768": {
+    "771": {
         "license": {
             "expression": "UCAR",
             "status": [
@@ -12024,7 +12058,7 @@
         "fedora_name": "UCAR License",
         "spdx_abbrev": "UCAR"
     },
-    "769": {
+    "772": {
         "approved": "yes",
         "spdx_abbrev": "any-OSI",
         "license": {
@@ -12035,7 +12069,7 @@
         },
         "fedora": {}
     },
-    "770": {
+    "773": {
         "approved": "yes",
         "spdx_abbrev": "MIT-testregex",
         "license": {
@@ -12046,7 +12080,7 @@
         },
         "fedora": {}
     },
-    "771": {
+    "774": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-LDP-1",
         "license": {
@@ -12059,7 +12093,7 @@
         },
         "fedora": {}
     },
-    "772": {
+    "775": {
         "approved": "no",
         "spdx_abbrev": "APSL-1.2",
         "license": {
@@ -12071,7 +12105,7 @@
         },
         "fedora": {}
     },
-    "773": {
+    "776": {
         "approved": "yes",
         "spdx_abbrev": "Unicode-3.0",
         "license": {
@@ -12082,7 +12116,7 @@
         },
         "fedora": {}
     },
-    "774": {
+    "777": {
         "approved": "no",
         "spdx_abbrev": "LicenseRef-IBM-BIND",
         "license": {
@@ -12094,7 +12128,7 @@
         },
         "fedora": {}
     },
-    "775": {
+    "778": {
         "approved": "yes",
         "spdx_abbrev": "CMU-Mach-nodoc",
         "license": {
@@ -12105,7 +12139,7 @@
         },
         "fedora": {}
     },
-    "776": {
+    "779": {
         "license": {
             "expression": "Glide",
             "status": [
@@ -12126,7 +12160,7 @@
         "fedora_name": "3dfx Glide License",
         "spdx_abbrev": "Glide"
     },
-    "777": {
+    "780": {
         "license": {
             "expression": "LicenseRef-CDL",
             "status": [

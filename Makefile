@@ -6,8 +6,8 @@ all: $(TARGETS)
 clean:
 	rm -f $(TARGETS) contrib/spdx-licences.json contrib/scancode-licensedb.json
 
-# `wget -O' or `wget --compression=auto -O' would also work here
-DOWNLOAD_TO=curl --compressed -Lo
+# `wget --compression=auto --no-verbose -O' would also work here
+DOWNLOAD_TO=curl --no-progress-meter --compressed -Lo
 
 CLEANUP={ exit_val=$$?; rm -f $@; exit $$exit_val; }
 

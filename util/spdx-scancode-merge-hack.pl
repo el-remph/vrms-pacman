@@ -29,8 +29,7 @@ sub process_spdx {
 		for my $field (qw(isOsiApproved isFsfLibre)) {
 			$entry{$field} = !!$_->{$field} if defined $_->{$field};
 		}
-		$result{fc $_->{name}} = $result{fc $_->{licenseId}} = \%entry
-			if %entry;
+		$result{fc $_->{licenseId}} = \%entry if %entry;
 	}
 }
 
@@ -95,8 +94,8 @@ sub process_fedora {
 		$result{$spdx_id}{fedora_approved} = $approved;
 		foreach (
 			map { /(^|\+)$/ ? () : fc }
-				(grep {defined} $_->@{qw{fedora_abbrev fedora_name}}),
-				map { defined ? @$_ : () } $_->{fedora}->@{qw{legacy-abbreviation legacy-name}}
+				$_->{fedora_abbrev} // (),
+				defined($_ = $_->{fedora}{'legacy-abbreviation'}) ? @$_ : ()
 		) {
 			$result{$_} = $result{$spdx_id} unless exists $result{$_};
 		}
