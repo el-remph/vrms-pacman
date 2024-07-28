@@ -55,7 +55,7 @@
 .\" ========================================================================
 .\"
 .IX Title "VRMS-PACMAN 1"
-.TH VRMS-PACMAN 1 2024-07-11 "perl v5.38.2" "User Contributed Perl Documentation"
+.TH VRMS-PACMAN 1 2024-07-28 "perl v5.38.2" "User Contributed Perl Documentation"
 .\" For nroff, turn off justification.  Always turn off hyphenation; it makes
 .\" way too many mistakes in technical documents.
 .if n .ad l
@@ -81,6 +81,11 @@ Print version number and copyright information and exit
 .IX Item "-f, -file=FILE"
 Read input from \fIFILE\fR instead of searching pacman's localdb. Reads from
 stdin if \fIFILE\fR is \-. Input is expected to be output of \f(CW\*(C`pacman\ \-\-info\*(C'\fR
+.IP "\fB\-db\fR, \fB\-database\fR=\fIDB-PATH\fR" 4
+.IX Item "-db, -database=DB-PATH"
+Find the \fIStorable\fR database containing licence data at \fIDB-PATH\fR, rather
+than searching the freedesktop data directories for it (probably looking at
+{~/.local,/usr}/share/vrms\-pacman/licences.pst.bz2)
 .IP \fB\-scancode\-db\fR[=\fICATEGORIES\fR] 4
 .IX Item "-scancode-db[=CATEGORIES]"
 Search the Scancode LicenseDB for licence. If \fICATEGORIES\fR is optionally
@@ -138,6 +143,11 @@ Search SPDX for OSI-approved licences. Default: \fIno\fR
 .IX Item "VRMS_SHUTUP"
 Don't print the caveat message at the end of input if this is set to a true
 value
+.SH EXAMPLES
+.IX Header "EXAMPLES"
+.IP "What I actually end up using, basically most forgiving invocation:" 4
+.IX Item "What I actually end up using, basically most forgiving invocation:"
+$ VRMS_SHUTUP=1 ./vrms\-pacman.pl \-allow\-custom \-spdx \-scancode
 .SH NOTES
 .IX Header "NOTES"
 Inspired by the original \fBvrms\fR\|(1) on debian (now renamed \fBcheck\-dsfg\-status\fR\|(1))

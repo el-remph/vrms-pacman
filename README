@@ -21,3 +21,8 @@ for rpm-based systems (Fedora, RHEL, SuSE, Rocky...) in C, using librpm.
   is inconsistently formatted anyway. Can we strip version suffices and
   somehow disambiguate malformed ones? Can't just strip and leave it at
   that, since eg. the ASPL-1.x are nonfree, while the APSL-2.0 is free
+  - How about sorting licences on stem (name without version), then having
+    a version field in their data, with a default fallback?
+- Some changes to LicenseRef- licences need upstreaming (non-exhaustive):
+  - python-pooch	:: BSD-3-Clause
+  - squashfuse		:: BSD-2-Clause

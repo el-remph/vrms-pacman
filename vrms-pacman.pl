@@ -10,30 +10,23 @@
 
 use strict;
 use warnings;
+use 5.010;	# /p, // (defined-or); further version requirements are
+		# implied by named features, packages or functions
 use feature 'fc';
 
 use File::BaseDir 'data_files';
+use File::Spec::Functions 'catfile';
 use Getopt::Long;
 use IO::Uncompress::Bunzip2 ':all';
+use List::Util qw/any first/;
 use Pod::Usage;
 use Storable 'thaw';
 
-# FIXME: for temporary testing purposes only
-push @INC, '.';
-$_ = length ? ".:$_" : '.' for $ENV{XDG_DATA_DIRS};
-
+push @INC, '.';	# FIXME: for temporary testing purposes only
 require Licences::Heuristics;
 
 our $VERSION = 0;
 our $REGMARK;
-
-sub any {
-	local $_;
-	foreach (@_) {
-		return 1 if $_;
-	}
-	return 0;
-}
 
 my ($total_packages, $free_packages, $nonfree_packages) = (0, 0, 0);
 my ($start_bad, $end_bad);
@@ -57,27 +50,33 @@ my %scancode = (
 
 sub get_db {
 	die unless @_ == 1;
-	my $file = shift . '.pst.bz2';
-	my $path = data_files($file) # data_files('vrms-pacman', $file)
-		// die "$file: can't find readable in XDG_DATA_DIRS";
-	bunzip2($path => \my $stored)
-		or die $Bunzip2Error;
-	$stored =~ s/^pst0//
-		or die "$path: Bad perl Storable file";
+	my $path = shift // do {
+		my $default_file = 'licences.pst.bz2';
+		if (-f $default_file) {
+			$default_file;
+		} else {
+			data_files(catfile 'vrms-pacman' => $default_file)
+				// die "can't find readable $default_file in XDG_DATA_HOME or XDG_DATA_DIRS";
+		}
+	};
+	bunzip2($path => \my $stored)	or die $Bunzip2Error;
+	$stored =~ s/^pst0//		or die "$path: Bad perl Storable file";
 	return thaw $stored;
 }
 
 sub parse_cmdline {
 	# More options and defaults:
-	my $colour = 'auto';
+	my ($colour, $db_path) = ('auto', undef);
 
 	GetOptions
 		'allow-custom!'	=> \$allow_custom,
 		'heuristics!'	=> \$heuristics,
 		'spdx-fsf!'	=> \$spdx_fsf,
 		'spdx-osi!'	=> \$spdx_osi,
+		'spdx!'	=> sub { $spdx_fsf = $spdx_osi = $_[1] },
 
-		'f|file=s' => \$file,
+		'f|file=s'	=> \$file,
+		'db|database=s'	=> \$db_path,
 		'color|colour=s' => \$colour,
 		'scancode-db:s' => sub {
 			local $_;
@@ -120,51 +119,52 @@ sub parse_cmdline {
 
 	($start_bad, $end_bad) = $colour ? ("\e[31m<\e[1m", "\e[0;31m>\e[m") : qw/< >/;
 
-	$db = get_db('licences') if $spdx_fsf or $spdx_osi or any(values %scancode);
+	$db = get_db($db_path) if $spdx_fsf or $spdx_osi or any {$_} values %scancode;
 }
 
-sub spdx_ok {
+sub licence_isfree_db_core {
+	die unless @_ == 1;
 	local $_ = shift;
-	die if @_ or not defined;
 
-	return 0 unless $spdx_fsf or $spdx_osi;
-
-	for ($db->{$_}) {
-		return 0 unless defined;
-		return 1 if $spdx_fsf and $_->{isFsfLibre};
-		return 1 if $spdx_osi and $_->{isOsiApproved};
+	if ($spdx_fsf or $spdx_osi or any {$_} values %scancode) {
+		for ($db->{+fc}) {
+			last unless defined;
+			# If the FSF field is present, it indicates
+			# either approval or explicit disapproval
+			return $_->{isFsfLibre} if $spdx_fsf and exists $_->{isFsfLibre};
+			return 1 if $spdx_osi and $_->{isOsiApproved};
+			return 1 if $scancode{$_->{scancode_category}};
+		}
 	}
-
-	return 0;
+	return 0; # guarantee default return false
 }
 
-sub scancode_ok {
-	die if @_ != 1;
+sub licence_isfree_core {
+	die unless @_ == 1;
+	local $_ = shift;
 
-	return 0 unless $spdx_fsf or $spdx_osi or any(values %scancode);
-
-	local $_ = $db->{shift()};
-	return 0 unless defined;
-	for ($_->{scancode_category}) {
-		return 0 unless defined;
-		return 1 if $scancode{$_};
+	if ($heuristics) {
+		no warnings 'once';
+		return 0 if $_ =~ $Licences::Heuristics::nonfree;
+		return 1 if $_ =~ $Licences::Heuristics::free;
 	}
-	return 0;
+
+	return licence_isfree_db_core($_);
 }
 
 sub handle_LicenseRef {
-	die if @_;	# Just inherits $_ from parent scope
+	die if @_ != 1;
+	local $_ = shift;
 	{
 		no warnings 'once';
 		return 0 if $_ !~ $Licences::Heuristics::LicenseRef_table;
 	}
-	local $_ = $REGMARK;
+	$_ = $REGMARK;
 	return 0 unless defined and m/,/; # The comma means it's probably one of mine
 	return 1 if $heuristics;
-	my ($spdx_key, $scan_key) = split /,/;
-	return 1 if $spdx_key and spdx_ok($spdx_key);
-	return 1 if $scan_key and scancode_ok($scan_key);
-	return 0;
+	# TODO: this comma-separated system is really not all that relevant
+	# anymore now that I'm combining the databases
+	return licence_isfree_db_core(first { $_ ne '' } split /,/);
 	# TODO: if we fail all those tests and return at this point, might that
 	# mean that further tests are redundant?
 }
@@ -175,31 +175,27 @@ sub licence_isfree {
 
 	return $allow_custom if $_ eq 'custom';
 
-	if (s/^custom: *//) {
-		# Some licences are of the format custom:"licence"
-		s/^"(.*)"$/$1/;
-	} else {
-		return 1 if s/^Licen[cs]eRef-// and &handle_LicenseRef;
-	}
-
 	# Remove exception expression (assuming/hoping no exception will
 	# make a licence *less* free)
 	s/[ -]WITH[ -].+//i;
 	# Remove version upgrade specifier (GNU licences' *-or-later/*-only
-	# is handled in $Licences::*). Also remove irritating trailing comma
-	# separator sometimes present
+	# is handled in Licences::Heuristics). Also remove irritating
+	# trailing comma separator sometimes present
 	s/\+?,?$//;
 
-	if ($heuristics) {
-		no warnings 'once';
-		return 0 if $_ =~ $Licences::Heuristics::nonfree;
-		return 1 if $_ =~ $Licences::Heuristics::free;
+	my $lref = undef;
+
+	if (s/^custom: *//) {
+		# Some licences are of the format custom:"licence"
+		s/^"(.*)"$/$1/;
+	} else {
+		if (m/^Licen[cs]eRef-/p) {
+			$lref = ${^POSTMATCH};
+			return 1 if handle_LicenseRef($lref);
+		}
 	}
 
-	# Casefold: every test hereafter will be casefolded
-	$_ = fc;
-	return 1 if spdx_ok($_);
-	return 1 if scancode_ok($_);
+	return 1 if licence_isfree_core($_) or (defined $lref and licence_isfree_core($lref));
 
 	# Fall through to false, if we get this far
 	return 0;
@@ -326,6 +322,12 @@ I<WHEN> to colour output: B<always>, B<never>, or B<auto>. Default: B<auto>
 Read input from I<FILE> instead of searching pacman's localdb. Reads from
 stdin if I<FILE> is -. Input is expected to be output of S<C<pacman --info>>
 
+=item B<-db>, B<-database>=I<DB-PATH>
+
+Find the I<Storable> database containing licence data at I<DB-PATH>, rather
+than searching the freedesktop data directories for it (probably looking at
+{~/.local,/usr}/share/vrms-pacman/licences.pst.bz2)
+
 =item B<-scancode-db>[=I<CATEGORIES>]
 
 Search the Scancode LicenseDB for licence. If I<CATEGORIES> is optionally
@@ -394,6 +396,16 @@ Search SPDX for OSI-approved licences. Default: I<no>
 
 Don't print the caveat message at the end of input if this is set to a true
 value
+
+=back
+
+=head1 EXAMPLES
+
+=over
+
+=item What I actually end up using, basically most forgiving invocation:
+
+$ VRMS_SHUTUP=1 ./vrms-pacman.pl -allow-custom -spdx -scancode
 
 =back
 
