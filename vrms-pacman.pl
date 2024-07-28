@@ -39,12 +39,13 @@ my %scancode = (
 	# In (I think) order of most to least restrictive:
 	'Commercial'       => 0,
 	'Proprietary Free' => 0,
+	# Are the following two definitely in the right order?
 	'Free Restricted'  => 0,
 	'Source-available' => 0,
-	'Copyleft'         => 0,
-	'Copyleft Limited' => 0,
-	'Permissive'       => 0,
-	'Public Domain'    => 0,
+	'Copyleft'         => 1,
+	'Copyleft Limited' => 1,
+	'Permissive'       => 1,
+	'Public Domain'    => 1,
 	'Patent License'   => 0	# TODO: what to do with this..?
 );
 
@@ -53,7 +54,7 @@ sub get_db {
 	my $path = shift // do {
 		my $default_file = 'licences.pst.bz2';
 		if (-f $default_file) {
-			$default_file;
+			$default_file;	# Temporary
 		} else {
 			data_files(catfile 'vrms-pacman' => $default_file)
 				// die "can't find readable $default_file in XDG_DATA_HOME or XDG_DATA_DIRS";

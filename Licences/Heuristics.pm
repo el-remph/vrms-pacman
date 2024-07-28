@@ -25,67 +25,54 @@ our $nonfree = qr{
 |	proprietary
 |	non.?(free|profit)
 |	freeware
+
+|	^LicenseRef-(hplip|GeoGebra)$
 }inx;
 
 ## TODO ##
+# Entries marked with the comment `ID' are actually just regular SPDX
+# IDs with LicenseRef- prepended for some inscrutable reason, and should
+# be picked up by the pass with it removed
 our $LicenseRef_table = qr{^(?inx:
-	\QAdobe-Display-PostScript\E
-|	\QBSD-Arizona\E
+	\QBSD-Arizona\E
 |	\QBSD-Chicago\E
 |	\QBSD-style\E
 |	\QBSD-Utah-California\E
-|	\QCALDERA,\E
-|	\QDEC-3-Clause\E
-|	\QGC\E			(*:Boehm-GC,mozilla-gc)
-|	\QGeoGebra\E
-|	\QGFL\E		(*:LPPL-1.3c+,lppl-1.3c)	# `Gust Font Licence' adds no legal requirements, just requests
-|	\Qhplip\E
-|	\QHPND-sell-MIT-disclaimer-xserver\E
 |	\QIntel-BSD-3-Clause\E
-|	\QIntel-EULA-Developer-Tools\E
+|	\QIntel-EULA-Developer-Tools\E	# Should be picked up by nonfree
 |	\QIntel-Simplified\E
 |	\QIspell\E		# Seems to be like one of those old 5-clause early BSDs, with the advertising clause removed
-|	\QJava\E
+|	\QJava\E	(*:GPL-2.0-only,gpl-2.0)	# WITH Classpath-exception-2.0
 |	\QJupyterLab\E
-|	\Qlibavif\E		(*:BSD-2-Clause,bsd-simplified)	# Also contrib `IJG AND Apache-2.0' --
-							# note that the former is not OSI-kosher,
-							# though it is FSF-halal. Can we process
-							# whole SPDX expressions from REGMARK?
+|	\Qlibavif\E		# BSD-2-Clause AND IJG AND Apache-2.0 note that IJG is not OSI-kosher,
+				# though it is FSF-halal. Can we process whole SPDX expressions from REGMARK?
 |	\Qlibpciaccess\E	# MIT AND ISC AND X11
-|	\Qlibxext\E		# Open Group, variety of similar licences
-|	\Qlibxkbfile\E
-|	\Qlibxvmc\E
+|	\Qlibxext\E		# MIT-open-group AND X11 AND HPND AND HPND-doc AND MIT AND ISC
+				# (x11-opengroup AND x11-xconsortium AND historical AND hpnd-doc AND mit AND isc)
+|	\Qlibxkbfile\E		(*:MIT-open-group,x11-opengroup)
+|	\Qlibxvmc\E		(*:MIT,mit)
 |	\QModified-MIT\E
 |	\QMonofur-Free-License\E
-|	\QMPICH\E
 |	\QNmap-Public-Source-License-Version-0.95\E
 |	\QNVIDIA-CUDA\E
+|	OCB1?			(*:,ocb-open-source-2013)	# libgcrypt says ok, scancode says `proprietary free'
 |	OFL(-?1\.0)?		(*:OFL-1.0,ofl-1.0)
 |	\QOpenIB.org-BSD-FreeBSD\E
 |	\QOpenIB.org-BSD-MIT\E
 |	\QOpenLDAP-Public-License\E
 |	\QPathScale-BSD-Patent-License\E
-|	\QPD,\E
-|	\Qpooch\E
-|	\QSCOWL\E
 |	\Qsdbus-c++-LGPL-Exception-1.0\E
-|	\QSqlite\E
-|	\Qsquashfuse\E
 |	\QThirdyParty\E
-|	\QTrueCrypt\E
-|	\Qtz\E
-|	\QUbuntu-Font-License-1.0\E
-|	\QUltraPermissive\E
 |	\QUnicode-3.0\E
 |	\QUnknown-BSD\E
-|	\QUnRAR\E
+|	\QUnRAR\E		(*:,unrar)	# Also maybe unrar-3.0?
 |	\QVic-Fieger-License\E
 |	\Qxedit\E
 |	\Qxkbcomp\E
 |	\Qxkbutils\E
-|	\Qxkeyboard-config\E
+|	\Qxkeyboard-config\E	# MIT-open-group AND X11 AND HPND AND MIT
 |	\Qxorg-fonts-encodings\E
-|	\Qxprop\E
+|	\Qxprop\E		# MIT-open-group AND HPND
 )$};
 
 # TODO: map these to SPDX or scancode licences so the heuristic acts to
@@ -120,6 +107,20 @@ our $gnu = qr{^(?:
 |	L?LGPL(-?2(\.[01])?|-?3(\.0)?)?
 )(-o(nly|r-later))?$}ixn;
 
+# These are not to be found in the SPDX, nor even the ScanCode LicenseDB
+our $free_irregular = qr{^(?inx:
+	Boost			(*:BSL-1.0,boost-1.0)
+|	BSDL			(*:BSD-2-Clause,bsd-simplified)	# Ruby's name for it
+|	dumb			(*:Zlib,zlib)	# Debian-approved, resolves to zlib. Lives up to its name
+|	\QEDL-1.0\E		(*:BSD-3-Clause,bsd-new)	# Not the English Defence League
+|	ex			(*:BSD-4-Clause,bsd-original)
+|	Expat			(*:MIT,mit)
+|	FIPL(-?1(\.0)?)?	(*:FreeImage,freeimage)	# Really just mpl-1.0
+|	INN			(*:ISC,isc)
+|	LBNL			(*:BSD-3-Clause-LBNL,lbnl-bsd)
+|	WTF(PL)?		(*:WTFPL,wtfpl-2.0)
+)$};
+
 our $free_other = qr{^(?inx:
 	\Q0BSD\E
 |	\QAFL-2.1\E
@@ -130,37 +131,28 @@ our $free_other = qr{^(?inx:
 |	\QArtistic-1.0-Perl\E
 |	\QBeerware\E		# Neither FSF- nor OSI-approved, but eh
 |	\QBitstream-Vera\E	# Not sure about this
-|	\QBoost\E
 |	BSD(-?[234](-Clause(-Patent)?)?)?
 |	BSD-3-Clause-(Attribution|Clear|flex|HP|LBNL|Modification)
 |	\QBSD-4.3TAHOE\E
 |	\QBSD-4-Clause-UC\E
-|	\QBSDL\E		# Ruby's name for the BSD-2-Clause
 |	\QBSL-1.0\E		# Boost; *not to be confused with* the BUSL
 |	CC0(-1\.0)?
 |	CDDL(-1\.0)?
 |	CECILL(-[BC]|-?2\.[01])?
 |	CPL(-1\.0)?
-|	dumb			# Debian-approved, basically just zlib. Lives up to its name
-|	\QEDL-1.0\E		# Not the English Defence League; the `Eclipse
-				# Distribution Licence', literally just the BSD-3-Clause
 |	EPL(-?[12]\.0)?
 |	EUPL(-?1\.[12])?
-|	ex			# BSD-4-Clause
-|	Expat
-|	FIPL(-?1(\.0)?)?	# MPL-1.0
 |	FSF(AP|UL(LR(WD)?)?)
 |	\QGL2PS\E
 |	HPND(-sell-variant)?
 |	\QICU\E
 |	\QIJG\E
-|	INN			# ISC
 |	\QIPL-1.0\E
 |	ISCL?
+|	Ispell
 |	JasPer-?2\.0		# NCSA with the biggest fucking disclaimer I have ever seen
-|	LBNL			# BSD-3-Clause-LBNL
 |	Linux-man-pages-(1-para|copyleft(-2-para|-var)?)
-|	\QLinux-OpenIB\E	# Just a BSD-2-Clause
+|	\QLinux-OpenIB\E	(*:BSD-2-Clause,bsd-simplified)
 |	\QLPPL\E
 |	\QMinpack\E		# Fucked-up BSD-4-Clause
 |	MIT(-0|-open-group|NFA|.No.Attribution)?
@@ -174,7 +166,6 @@ our $free_other = qr{^(?inx:
 |	OpenSSL
 |	\Qperl\E
 |	PerlArtistic2?
-|	\QPHP\E
 |	PHP(-?3(\.01?)?)?
 |	\QPostgreSQL\E
 |	public.?domain
@@ -198,7 +189,6 @@ our $free_other = qr{^(?inx:
 |	\QUnlicense\E
 |	vim
 |	\QW3C\E
-|	WTF(PL)?	(*:WTFPL,wtfpl-2.0)
 |	wxwindows
 |	X(11(-distribute-modifications-variant)?)?
 |	\QXfig\E
@@ -207,4 +197,4 @@ our $free_other = qr{^(?inx:
 )$};
 
 # Aka whitelist
-our $free = qr/$gnu|$free_other|$creative_commons/;
+our $free = qr/$gnu|$free_other|$free_irregular|$creative_commons/;
