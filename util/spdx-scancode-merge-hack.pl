@@ -5,6 +5,8 @@
 use strict;
 use warnings;
 use feature qw/fc postderef unicode_strings/;
+
+use CPAN::Version;
 use JSON;
 use Storable 'nstore_fd';
 
@@ -15,7 +17,7 @@ sub json_from_filename {
 	my $filename = shift;
 	open my $json_stream, '<', $filename or die "$filename: $!";
 	local $/; # slurp
-	return JSON->new->utf8->boolean_values(0, 1)->decode(<$json_stream>);
+	return JSON->new->utf8->boolean_values(!!0, !!1)->decode(<$json_stream>);
 	# lexical file stream should auto-close, I hope
 }
 
@@ -27,7 +29,7 @@ sub process_spdx {
 	while (defined($_ = shift $spdx_db->{licenses}->@*)) {
 		my %entry;
 		for my $field (qw(isOsiApproved isFsfLibre)) {
-			$entry{$field} = !!$_->{$field} if defined $_->{$field};
+			$entry{$field} = $_->{$field} if defined $_->{$field};
 		}
 		$result{fc $_->{licenseId}} = \%entry if %entry;
 	}
@@ -62,10 +64,13 @@ sub process_scancode {
 	}
 }
 
-# FIXME: fedora's licence names (fedora_abbrev, fedora/legacy-abbreviation)
-# are ambiguous, which is why they're moving off them; in the absence of
-# clarification, a fedora_abbrev like CC-BY-SA will default to the earliest
-# sorted version, while eg. the GNU project might prefer it to default to 4.0
+# TODO: fedora's licence names (fedora_abbrev, fedora/legacy-abbreviation)
+# are ambiguous, which is why they're moving off them; should including
+# them in the search be optional? Most of them are only missing version
+# numbers anyway compared to their SPDX equivalents, so version
+# normalisation should handle them. Some have nontrivial differences (see
+# util/fedora-legacy-ids.pl), but in practice I have never encountered
+# those IDs in a pacman repo; we can cross that bridge should we come to it
 sub process_fedora {
 	die if @_ != 1;
 	local $_;
@@ -76,6 +81,10 @@ sub process_fedora {
 		my $hashref = shift;
 		$hashref->@{sort { $a <=> $b } keys %$hashref};
 	};
+	# keys are what it says on the tin; values are hashes, with keys
+	# of SPDX IDs that each legacy ID could refer to, and unimportant
+	# values (just for deduplication)
+	my %legacy_abbrevs;
 
 	while (@fedora_db) {
 		$_ = shift @fedora_db;
@@ -93,12 +102,39 @@ sub process_fedora {
 
 		$result{$spdx_id}{fedora_approved} = $approved;
 		foreach (
-			map { /(^|\+)$/ ? () : fc }
-				$_->{fedora_abbrev} // (),
-				defined($_ = $_->{fedora}{'legacy-abbreviation'}) ? @$_ : ()
+			$_->{fedora_abbrev} // (),
+			@{ $_->{fedora}{'legacy-abbreviation'} // [] }
 		) {
-			$result{$_} = $result{$spdx_id} unless exists $result{$_};
+			next if m/(^|\+)$/;
+			$_ = fc;
+			next if exists $result{$_};
+			$legacy_abbrevs{$_}{$spdx_id} = 1;
 		}
+	}
+
+	# FIXME: BSD is a special case
+	while (my ($abbrev, $spdx_ids) = each %legacy_abbrevs) {
+		my @spdx_ids = keys %$spdx_ids;
+
+		if (@spdx_ids > 1) {
+			(my $first_word_l, undef) = split /\W/, $abbrev;
+			@spdx_ids = sort { CPAN::Version->vcmp($b, $a) } @spdx_ids;
+			@spdx_ids = do {
+				my (@share_first_word, @dont);
+				while (@spdx_ids) {
+					$_ = shift @spdx_ids;
+					(my $first_word_r, undef) = split /\W/;
+					if ($first_word_l eq $first_word_r) {
+						push @share_first_word, $_;
+					} else {
+						push @dont, $_;
+					}
+				}
+				(@share_first_word, @dont);
+			};
+		}
+
+		$result{$abbrev} = $result{$spdx_ids[0]};
 	}
 }
 
