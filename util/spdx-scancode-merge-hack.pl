@@ -15,7 +15,7 @@ sub json_from_filename {
 	my $filename = shift;
 	open my $json_stream, '<', $filename or die "$filename: $!";
 	local $/; # slurp
-	return JSON->new->utf8->boolean_values(0, 1)->decode(<$json_stream>);
+	return JSON->new->utf8->boolean_values(!!0, !!1)->decode(<$json_stream>);
 	# lexical file stream should auto-close, I hope
 }
 
@@ -27,7 +27,7 @@ sub process_spdx {
 	while (defined($_ = shift $spdx_db->{licenses}->@*)) {
 		my %entry;
 		for my $field (qw(isOsiApproved isFsfLibre)) {
-			$entry{$field} = !!$_->{$field} if defined $_->{$field};
+			$entry{$field} = $_->{$field} if defined $_->{$field};
 		}
 		$result{fc $_->{licenseId}} = \%entry if %entry;
 	}
@@ -62,10 +62,40 @@ sub process_scancode {
 	}
 }
 
+sub process_fedora {
+	die if @_ != 1;
+	local $_;
+	# until I sort out suffixed licences being the same licence, the
+	# order in which they are processed is significant, so this ensures
+	# results are deterministic
+	my @fedora_db = do {
+		my $hashref = shift;
+		$hashref->@{sort { $a <=> $b } keys %$hashref};
+	};
+
+	while (@fedora_db) {
+		$_ = shift @fedora_db;
+		my $spdx_id = fc $_->{spdx_abbrev};
+		# skip unless found in %result
+		next unless exists $result{$spdx_id}
+			or ($spdx_id =~ s/-o(nly|r-later)$|\+$//
+				and exists $result{$spdx_id});
+
+		my $approved = $_->{approved} eq 'yes';
+		unless ($approved or $_->{approved} eq 'no') {
+			warn "$_->{license}{expression}: $_->{approved}: unrecognised approval field";
+			next;
+		}
+
+		$result{$spdx_id}{fedora_approved} = $approved;
+	}
+}
+
 binmode STDOUT or die $!;
 
 process_spdx(json_from_filename(shift // 'contrib/spdx-licenses.json'));
 process_scancode(json_from_filename(shift // 'contrib/scancode-licensedb.json'));
+process_fedora(json_from_filename(shift // 'contrib/fedora-licenses.json'));
 
 # Custom adjustments:
 foreach (map fc, qw(FSFAP FSFUL FSFULLR FSFULLRWD)) {

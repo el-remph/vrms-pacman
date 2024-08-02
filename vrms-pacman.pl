@@ -33,8 +33,8 @@ my ($start_bad, $end_bad);
 my $db = undef;
 
 # options and defaults:
-my ($allow_custom, $file, $heuristics, $spdx_fsf, $spdx_osi)
-	= (0, undef, 1, 0, 0);
+my ($allow_custom, $file, $heuristics, $spdx_fsf, $spdx_osi, $fedora)
+	= (0, undef, 1, 0, 0, 0);
 my %scancode = (
 	# In (I think) order of most to least restrictive:
 	'Commercial'       => 0,
@@ -75,6 +75,7 @@ sub parse_cmdline {
 		'spdx-fsf!'	=> \$spdx_fsf,
 		'spdx-osi!'	=> \$spdx_osi,
 		'spdx!'	=> sub { $spdx_fsf = $spdx_osi = $_[1] },
+		'fedora!'	=> \$fedora,
 
 		'f|file=s'	=> \$file,
 		'db|database=s'	=> \$db_path,
@@ -133,6 +134,8 @@ sub licence_isfree_db_core {
 			# If the FSF field is present, it indicates
 			# either approval or explicit disapproval
 			return $_->{isFsfLibre} if $spdx_fsf and exists $_->{isFsfLibre};
+			# same for fedora
+			return $_->{fedora_approval} if $fedora and exists $_->{fedora_approval};
 			return 1 if $spdx_osi and $_->{isOsiApproved};
 			return 1 if $scancode{$_->{scancode_category}};
 		}
@@ -378,6 +381,10 @@ positives, bah. Default: I<no>
 
 Arch/pacman-specific, tailored heuristics; the main and default method.
 Default: I<yes>
+
+=item B<-fedora>
+
+Search for Fedora-approved licences. Default: I<no>
 
 =item B<-spdx-fsf>
 
