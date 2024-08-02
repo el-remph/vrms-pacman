@@ -29,8 +29,7 @@ sub process_spdx {
 		for my $field (qw(isOsiApproved isFsfLibre)) {
 			$entry{$field} = !!$_->{$field} if defined $_->{$field};
 		}
-		$result{fc $_->{name}} = $result{fc $_->{licenseId}} = \%entry
-			if %entry;
+		$result{fc $_->{licenseId}} = \%entry if %entry;
 	}
 }
 
